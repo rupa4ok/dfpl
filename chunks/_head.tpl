@@ -7,6 +7,7 @@
     <meta name="csrf-param" content="_csrf">
     <meta name="csrf-token" content="WlQyYzl2SGkxJlBOeDADLhYSfVMOF2UFO2xbJFYBMD0UZnM6aSR6CA==">
     <title>{$_modx->resource.pagetitle}</title>
+    <base href="http://s15918.h4.modhost.pro" />
     <meta name="og:title" content="Премьерлига. Любительский футбол">
     <meta property="og:image" content="http://cdn.sportspring.ru/league/1000532/logo/5b97b9a320267_thumb.jpg">
     <meta name="og:image" content="http://cdn.sportspring.ru/league/1000532/logo/5b97b9a320267_thumb.jpg">

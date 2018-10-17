@@ -650,6 +650,14 @@
                 <h2 class="visually-hidden">Новости</h2>
                 <ul class="news-cards__list js-news">
 
+                    {$_modx->runSnippet('pdoResources@PropertySet', [
+                    'parents' => 4,
+                    'tpl' => '@FILE /chunks/catalog/news.tpl',
+                    'includeTVs' => 'image',
+                    'processTVs' => '1',
+                    'depth' => '0',
+                    'limit' => '4'
+                    ])}
 
 
                 </ul>
