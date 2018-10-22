@@ -13,7 +13,7 @@ require_once '/home/s15918/www/core/elements/snippets/core/Base.php';
 $q = new Base($modx);
 
 $table = 's_club';
-$data = array('name' => 1);
+$data = array('name' => 2);
 
 $q->_INSERT($table, $data);
 

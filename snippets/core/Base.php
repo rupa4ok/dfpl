@@ -6,7 +6,6 @@
  * Time: 1:57
  */
 
-
 class Base
 {
     
