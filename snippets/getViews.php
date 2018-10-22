@@ -13,10 +13,12 @@ require_once '/home/s15918/www/core/elements/snippets/core/Base.php';
 $q = new Base($modx);
 
 $table = 's_club';
-$data = array('name' => 2);
+$data = array('name' => 'Новый игрок');
+$key = 'id';
+$vall = 1;
 
-$q->_INSERT($table, $data);
+$q->insert($table, $data);
+
+//$q->update($table, $data, $key, $vall);
 
 $q->getRow();
-
-return;

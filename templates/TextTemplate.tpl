@@ -13,7 +13,12 @@
 
                 <div class="page">
                     <div class="page-text">
+                        {$_modx->runSnippet('!getViews', [])}
+
+                        <div id="areaA"></div>
+
                         {$_modx->resource.content}
+                        <div id="groupsTable"></div>
                         <div class="clear"></div>
                     </div>
                 </div>
