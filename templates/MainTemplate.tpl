@@ -650,70 +650,21 @@
                 <h2 class="visually-hidden">Новости</h2>
                 <ul class="news-cards__list js-news">
 
-                    <li class="news-cards__item">
-                        <a class="news-cards__picture" href="/posts/1006422">
-                            <img class="news-cards__picture-img"
-                                 src="http://cdn.sportspring.ru/news/1006422/5bbca04427bbe_440x293.jpg" width="440"
-                                 height="293" alt="Играй в Премьерлиге 5х5 - и выигрывай с Maxline!">
-                        </a>
-                        <div class="news-cards__content">
-                            <div class="news-cards__date">09 октября</div>
-                            <a class="news-cards__title" href="/posts/1006422">
-                                Играй в Премьерлиге 5х5 - и выигрывай с Maxline! </a>
-                            <p class="news-cards__text">
-                                Начиная с третьей игровой недели, букмекерская контора Maxline предлагает котировки на
-                                матчи Первого дивизиона Центр-Запада футзального турнира Премьерлиги. </p>
-                        </div>
-                    </li>
-                    <li class="news-cards__item">
-                        <a class="news-cards__picture" href="/posts/1006038">
-                            <img class="news-cards__picture-img"
-                                 src="http://cdn.sportspring.ru/news/1006038/5ba8e1c2d61a3_440x293.jpg" width="440"
-                                 height="293" alt="Минск Юнайтед - обладатель первого Кубка Беларуси по футболу 8х8!">
-                        </a>
-                        <div class="news-cards__content">
-                            <div class="news-cards__date">24 сентября</div>
-                            <a class="news-cards__title" href="/posts/1006038">
-                                Минск Юнайтед - обладатель первого Кубка Беларуси по футболу 8х8! </a>
-                            <p class="news-cards__text">
-                                В воскресенье, 23 сентября, на стадионе ФШМ в Минске состоялся первый розыгрыш Кубка
-                                Беларуси по футболу 8х8, в котором приняли участие команды из Минска, Кобрина, Речицы и
-                                Хойников. Уверенную победу в турнире одержала столичная команда. </p>
-                        </div>
-                    </li>
-                    <li class="news-cards__item">
-                        <a class="news-cards__picture" href="/posts/1005919">
-                            <img class="news-cards__picture-img"
-                                 src="http://cdn.sportspring.ru/news/1005919/5ba0fe3f1d181_440x293.jpg" width="440"
-                                 height="293" alt="23 сентября в Минске пройдет I Кубок Беларуси по футболу 8х8.">
-                        </a>
-                        <div class="news-cards__content">
-                            <div class="news-cards__date">18 сентября</div>
-                            <a class="news-cards__title" href="/posts/1005919">
-                                23 сентября в Минске пройдет I Кубок Беларуси по футболу 8х8. </a>
-                            <p class="news-cards__text">
-                                В ближайшее воскресенье, 23 сентября, в Минске на стадионе ФШМ пройдет первый розыгрыш
-                                Кубка Беларуси по футболу 8х8. </p>
-                        </div>
-                    </li>
-                    <li class="news-cards__item">
-                        <a class="news-cards__picture" href="/posts/1005685">
-                            <img class="news-cards__picture-img"
-                                 src="http://cdn.sportspring.ru/news/1005685/5b937eebb71d7_440x293.jpg" width="440"
-                                 height="293" alt="Новый мини-футбольный сезон стартует уже 9 сентября!">
-                        </a>
-                        <div class="news-cards__content">
-                            <div class="news-cards__date">08 сентября</div>
-                            <a class="news-cards__title" href="/posts/1005685">
-                                Новый мини-футбольный сезон стартует уже 9 сентября! </a>
-                            <p class="news-cards__text">
-                                Пятый юбилейный сезон Премьерлиги 5х5 по мини-футболу стартует уже в ближайшее
-                                воскресенье, 9 сентября. </p>
-                        </div>
-                    </li>
+                    {$_modx->runSnippet('pdoResources@PropertySet', [
+                    'parents' => 4,
+                    'tpl' => '@FILE /chunks/catalog/news.tpl',
+                    'includeTVs' => 'image',
+                    'processTVs' => '1',
+                    'depth' => '0',
+                    'limit' => '4'
+                    ])}
+
                 </ul>
                 <a href="/posts" class="button go-to-all">
                     Все новости </a>
+
+                --{$_modx->runSnippet('getViews@PropertySet', [])}--
+
             </section>
 
             <div class="banner-index">
