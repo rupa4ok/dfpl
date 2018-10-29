@@ -67,127 +67,20 @@
         </div>
         <nav id="SamMainMenu" class="navigation">
             <div class="navigation__wrapper">
-                <ul class="navigation__list">
-                    <li class="navigation__unit js-drop-menu"><a class="navigation__unit-link"
-                                                                 href="/page/1001213"><span
-                                    class="navigation__unit-container">О Премьерлиге</span></a>
-                        <div class="drop-menu-wrapper">
-                            <ul class="drop-menu">
-                                <li class="drop-menu__item"><a class="drop-menu__item-link"
-                                                               href="/stadiums">Стадионы</a></li>
-                                <li class="drop-menu__item"><a class="drop-menu__item-link" href="/management">Руководители</a>
-                                </li>
-                                <li class="drop-menu__item"><a class="drop-menu__item-link"
-                                                               href="/partners">Партнеры</a></li>
-                                <li class="drop-menu__item"><a class="drop-menu__item-link" href="/stats">Лига в цифрах
-                                        и фактах</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="navigation__unit js-drop-menu"><a class="navigation__unit-link" href="/tournaments"><span
-                                    class="navigation__unit-container">Турниры</span></a>
-                        <section class="tournaments-drop-menu">
-                            <ul class="tournaments-drop-menu__list">
-                                <li class="tournaments-drop-menu__unit"><h2 class="tournaments-drop-menu__unit-title">
-                                        <span class="tournaments-drop-menu__unit-container" title="5х5. Юго-Восток">5х5. Юго-Восток</span>
-                                    </h2>
-                                    <ul class="tournaments-drop-menu__unit-list">
-                                        <li class="tournaments-drop-menu__unit-item"><a
-                                                    class="tournaments-drop-menu__unit-item-link"
-                                                    href="/tournament/1002256"
-                                                    title="Премьерлига 5х5. Юго-Восток. Группа 1">5х5. Юго-Восток. 1</a>
-                                        </li>
-                                        <li class="tournaments-drop-menu__unit-item"><a
-                                                    class="tournaments-drop-menu__unit-item-link"
-                                                    href="/tournament/1002257"
-                                                    title="Премьерлига 5х5. Юго-Восток. Группа 2">5х5. Юго-Восток. 2</a>
-                                        </li>
-                                        <li class="tournaments-drop-menu__unit-item"><a
-                                                    class="tournaments-drop-menu__unit-item-link"
-                                                    href="/tournament/1002258"
-                                                    title="Премьерлига 5х5. Юго-Восток. Группа 3">5х5. Юго-Восток. 3</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="tournaments-drop-menu__unit"><h2 class="tournaments-drop-menu__unit-title">
-                                        <span class="tournaments-drop-menu__unit-container" title="5х5. Центр-Запад">5х5. Центр-Запад</span>
-                                    </h2>
-                                    <ul class="tournaments-drop-menu__unit-list">
-                                        <li class="tournaments-drop-menu__unit-item"><a
-                                                    class="tournaments-drop-menu__unit-item-link"
-                                                    href="/tournament/1002296"
-                                                    title="Премьерлига 5х5. Центр-Запад. Первый дивизион">5х5.
-                                                Центр-Запад. Д1</a></li>
-                                        <li class="tournaments-drop-menu__unit-item"><a
-                                                    class="tournaments-drop-menu__unit-item-link"
-                                                    href="/tournament/1002294"
-                                                    title="Премьерлига 5х5. Центр-Запад. Второй дивизион">5х5.
-                                                Центр-Запад. Д2</a></li>
-                                        <li class="tournaments-drop-menu__unit-item"><a
-                                                    class="tournaments-drop-menu__unit-item-link"
-                                                    href="/tournament/1002295"
-                                                    title="Премьерлига 5х5. Центр-Запад. Третий дивизион">5х5.
-                                                Центр-Запад. Д3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="tournaments-drop-menu__unit"><h2 class="tournaments-drop-menu__unit-title">
-                                        <span class="tournaments-drop-menu__unit-container" title="Кубок Беларуси 8х8">Кубок Беларуси 8х8</span>
-                                    </h2>
-                                    <ul class="tournaments-drop-menu__unit-list">
-                                        <li class="tournaments-drop-menu__unit-item"><a
-                                                    class="tournaments-drop-menu__unit-item-link"
-                                                    href="/tournament/1002382" title="I Кубок Беларуси по футболу 8х8">Кубок
-                                                Беларуси 8х8</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <div class="tournaments-drop-menu__footer">
-                                <ul class="tournaments-drop-menu__footer-list">
-                                    <li class="tournaments-drop-menu__footer-item"><a
-                                                class="tournaments-drop-menu__footer-link"
-                                                href="/disqualifications"><span
-                                                    class="tournaments-drop-menu__footer-container">Дисквалификации</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </li>
-                    <li class="navigation__unit js-drop-menu"><a class="navigation__unit-link"
-                                                                 href="/participants/players"><span
-                                    class="navigation__unit-container">Участники</span></a>
-                        <div class="drop-menu-wrapper">
-                            <ul class="drop-menu">
-                                <li class="drop-menu__item"><a class="drop-menu__item-link" href="/participants/teams">Команды</a>
-                                </li>
-                                <li class="drop-menu__item"><a class="drop-menu__item-link"
-                                                               href="/participants/players">Игроки</a></li>
-                                <li class="drop-menu__item"><a class="drop-menu__item-link"
-                                                               href="/participants/referees">Судьи</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="navigation__unit"><a class="navigation__unit-link" href="/posts"><span
-                                    class="navigation__unit-container">Новости</span></a></li>
-                    <li class="navigation__unit js-drop-menu"><a class="navigation__unit-link" href="/photos"><span
-                                    class="navigation__unit-container">Медиа</span></a>
-                        <div class="drop-menu-wrapper">
-                            <ul class="drop-menu">
-                                <li class="drop-menu__item"><a class="drop-menu__item-link" href="/photos">Фото</a></li>
-                                <li class="drop-menu__item"><a class="drop-menu__item-link" href="/videos">Видео</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="navigation__unit js-drop-menu"><a class="navigation__unit-link"
-                                                                 href="/page/1001214"><span
-                                    class="navigation__unit-container">Заявиться на турнир</span></a>
-                        <div class="drop-menu-wrapper">
-                            <ul class="drop-menu"></ul>
-                        </div>
-                    </li>
-                </ul>
+                {'pdoMenu'|snippet:[
+                        'parents' => '0',
+                        'outerClass' => 'navigation__list',
+                        'tpl' => '@INLINE <li[[+classes]]><a class="navigation__unit-link" href="[[+link]]" [[+attributes]]><span class="navigation__unit-container">[[+menutitle]]</span></a>[[+wrapper]]</li>',
+                        'tplOuter' => '@INLINE <ul[[+classes]]>[[+wrapper]]</ul>',
+                        'tplInner' => '@INLINE <div class="drop-menu-wrapper"><ul[[+classes]]>[[+wrapper]]</ul></div>',
+                        'tplInnerRow' => '@INLINE <li class="drop-menu__item"><a class="drop-menu__item-link" href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
+                        'level' => '2',
+                        'rowClass' => 'navigation__unit js-drop-menu',
+                        'innerClass' => 'drop-menu'
+                        ]}    
+                
+
             </div>
         </nav>
     </div>
-    <div class="header__line mobile-hide"></div>
 </header>

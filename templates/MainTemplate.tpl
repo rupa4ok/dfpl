@@ -3,547 +3,6 @@
 {block 'main'}
 
 <main class="main">
-    <section class="calendar">
-        <h2 class="visually-hidden">Календарь матчей</h2>
-        <input type="hidden" id="calendarWidgetParams" data-view-open="1">
-        <div id="js-calendar-widget" class="calendar__top-wrapper" data-league-id="1000532"
-             data-url="/get-calendar-widget"
-             data-match-url="/get-calendar-widget-match"
-        >
-            <div class="calendar__top">
-                <h3 class="calendar__title js-collapse js-calendar-widget-header js-open"
-                    data-collapse-id="js-calendar-widget-cont"
-                    data-open-callback="calendarEnable"
-                    data-close-callback="calendarDisable"
-                >Календарь</h3>
-                <div class="calendar__tournaments-list--container js-calendar-widget-tournament-select"
-                     data-league="1000532"
-                     style="display: block;"
-                >
-                    <ul class="calendar__tournaments-list calendar__tournaments-list--full js-slick"
-                        data-speed="250"
-                        data-start-index="0"
-                        data-custom-arrows="true"
-                        data-custom-prev-arrow-class="arrow-back--tournaments"
-                        data-custom-next-arrow-class="arrow-forward--tournaments"
-                        data-custom-arrows-very-small="true"
-                        data-slides-to-show="3"
-                        data-slides-to-scroll="2"
-                        data-dots="false"
-                    >
-                        <li class="calendar__tournaments-item js-active"
-                            data-value="1002296"
-                            data-is-parent="0"
-                            data-league="1000532"
-                        >
-                            <a class="calendar__tournaments-item-link">
-                                <span class="calendar__tournaments-item-container">5х5. Центр-Запад. Д1</span>
-                            </a>
-                        </li>
-                        <li class="calendar__tournaments-item "
-                            data-value="1002294"
-                            data-is-parent="0"
-                            data-league="1000532"
-                        >
-                            <a class="calendar__tournaments-item-link">
-                                <span class="calendar__tournaments-item-container">5х5. Центр-Запад. Д2</span>
-                            </a>
-                        </li>
-                        <li class="calendar__tournaments-item "
-                            data-value="1002295"
-                            data-is-parent="0"
-                            data-league="1000532"
-                        >
-                            <a class="calendar__tournaments-item-link">
-                                <span class="calendar__tournaments-item-container">5х5. Центр-Запад. Д3</span>
-                            </a>
-                        </li>
-                        <li class="calendar__tournaments-item "
-                            data-value="1002256"
-                            data-is-parent="0"
-                            data-league="1000532"
-                        >
-                            <a class="calendar__tournaments-item-link">
-                                <span class="calendar__tournaments-item-container">5х5. Юго-Восток. 1</span>
-                            </a>
-                        </li>
-                        <li class="calendar__tournaments-item "
-                            data-value="1002257"
-                            data-is-parent="0"
-                            data-league="1000532"
-                        >
-                            <a class="calendar__tournaments-item-link">
-                                <span class="calendar__tournaments-item-container">5х5. Юго-Восток. 2</span>
-                            </a>
-                        </li>
-                        <li class="calendar__tournaments-item "
-                            data-value="1002258"
-                            data-is-parent="0"
-                            data-league="1000532"
-                        >
-                            <a class="calendar__tournaments-item-link">
-                                <span class="calendar__tournaments-item-container">5х5. Юго-Восток. 3</span>
-                            </a>
-                        </li>
-                        <li class="calendar__tournaments-item "
-                            data-value="1002382"
-                            data-is-parent="0"
-                            data-league="1000532"
-                        >
-                            <a class="calendar__tournaments-item-link">
-                                <span class="calendar__tournaments-item-container">Кубок Беларуси 8х8</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="calendar__selects js-calendar-widget-selects">
-                    <div class="js-calendar-widget-round-select js-calendar-widget-not-show"
-                         style="display: none;"
-                         data-league="1000532"
-                         data-tournament="1002296"
-                         data-parent="1002296"
-                    >
-                        <ul class="js-dropdown" data-customize="calendar">
-                            <li class="js-active" data-value="1004080">
-                                Регулярный чемпионат
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="js-calendar-widget-round-select js-calendar-widget-not-show"
-                         style="display: none;"
-                         data-league="1000532"
-                         data-tournament="1002294"
-                         data-parent="1002294"
-                    >
-                        <ul class="js-dropdown" data-customize="calendar">
-                            <li class="js-active" data-value="1003797">
-                                Регулярный чемпионат
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="js-calendar-widget-round-select js-calendar-widget-not-show"
-                         style="display: none;"
-                         data-league="1000532"
-                         data-tournament="1002295"
-                         data-parent="1002295"
-                    >
-                        <ul class="js-dropdown" data-customize="calendar">
-                            <li class="js-active" data-value="1003796">
-                                Регулярный чемпионат
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="js-calendar-widget-round-select js-calendar-widget-not-show"
-                         style="display: none;"
-                         data-league="1000532"
-                         data-tournament="1002256"
-                         data-parent="1002256"
-                    >
-                        <ul class="js-dropdown" data-customize="calendar">
-                            <li class="js-active" data-value="1004019">
-                                Регулярный чемпионат
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="js-calendar-widget-round-select js-calendar-widget-not-show"
-                         style="display: none;"
-                         data-league="1000532"
-                         data-tournament="1002257"
-                         data-parent="1002257"
-                    >
-                        <ul class="js-dropdown" data-customize="calendar">
-                            <li class="js-active" data-value="1003793">
-                                Регулярный чемпионат
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="js-calendar-widget-round-select js-calendar-widget-not-show"
-                         style="display: none;"
-                         data-league="1000532"
-                         data-tournament="1002258"
-                         data-parent="1002258"
-                    >
-                        <ul class="js-dropdown" data-customize="calendar">
-                            <li class="js-active" data-value="1003935">
-                                Регулярный чемпионат
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="js-calendar-widget-round-select js-calendar-widget-not-show"
-                         style="display: none;"
-                         data-league="1000532"
-                         data-tournament="1002382"
-                         data-parent="1002382"
-                    >
-                        <ul class="js-dropdown" data-customize="calendar">
-                            <li class="js-active" data-value="1003932">
-                                Кубок Беларуси по футболу 8х8
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="js-calendar-widget-cont" class="calendar__bottom-wrapper-cont">
-            <img src="/img/loader.gif" class="loader" style="display: none">
-            <div class="calendar__bottom-wrapper js-calendar-widget-data"
-                 data-league="1000532"
-                 data-tournament="1002296"
-                 data-round="1004080"
-            >
-                <div class="calendar__bottom">
-                    <div class="calendar__games-list--container">
-                        <ul class="calendar__games-list js-slick"
-                            data-speed="250"
-                            data-custom-arrows="true"
-                            data-custom-prev-arrow-class="arrow-back--games"
-                            data-custom-next-arrow-class="arrow-forward--games"
-                            data-custom-arrows-small="true"
-                            data-slides-to-show="5"
-                            data-slides-to-scroll="1"
-                            data-initial-slide="6"
-                            data-dots="false"
-                        >
-                            <li class="calendar__games-item js-calendar-widget-match "
-                                data-match-id="1192371"
-                            >
-                                <a href="/match/1192371">
-                                    <table class="calendar__games-score">
-                                        <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--data-time"
-                                                colspan="2">
-                                                25 Сентября / 20:00
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--team">
-                                                <div class="calendar__team">Прогресс</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--goals">
-                                                3
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--team">
-                                                <div class="calendar__team">Минск Юнайтед</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--goals">
-                                                11
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="calendar__games-item js-calendar-widget-match "
-                                data-match-id="1192369"
-                            >
-                                <a href="/match/1192369">
-                                    <table class="calendar__games-score">
-                                        <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--data-time"
-                                                colspan="2">
-                                                25 Сентября / 21:00
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--team">
-                                                <div class="calendar__team">Итранзишэн</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--goals">
-                                                2
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--team">
-                                                <div class="calendar__team">Связист</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--goals">
-                                                9
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="calendar__games-item js-calendar-widget-match "
-                                data-match-id="1192368"
-                            >
-                                <a href="/match/1192368">
-                                    <table class="calendar__games-score">
-                                        <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--data-time"
-                                                colspan="2">
-                                                28 Сентября / 20:00
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--team">
-                                                <div class="calendar__team">Soccershop.by</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--goals">
-                                                6
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--team">
-                                                <div class="calendar__team">Смена</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--goals">
-                                                2
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="calendar__games-item js-calendar-widget-match "
-                                data-match-id="1192328"
-                            >
-                                <a href="/match/1192328">
-                                    <table class="calendar__games-score">
-                                        <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--data-time"
-                                                colspan="2">
-                                                02 Октября / 20:00
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--team">
-                                                <div class="calendar__team">МФК Штурм</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--goals">
-                                                8
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--team">
-                                                <div class="calendar__team">Прогресс</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--goals">
-                                                2
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="calendar__games-item js-calendar-widget-match "
-                                data-match-id="1192331"
-                            >
-                                <a href="/match/1192331">
-                                    <table class="calendar__games-score">
-                                        <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--data-time"
-                                                colspan="2">
-                                                02 Октября / 21:00
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--team">
-                                                <div class="calendar__team">Пячоць</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--goals">
-                                                1
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--team">
-                                                <div class="calendar__team">Soccershop.by</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--goals">
-                                                5
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="calendar__games-item js-calendar-widget-match "
-                                data-match-id="1192330"
-                            >
-                                <a href="/match/1192330">
-                                    <table class="calendar__games-score">
-                                        <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--data-time"
-                                                colspan="2">
-                                                05 Октября / 20:00
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--team">
-                                                <div class="calendar__team">Смена</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--goals">
-                                                5
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--team">
-                                                <div class="calendar__team">Итранзишэн</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--goals">
-                                                3
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="calendar__games-item js-calendar-widget-match "
-                                data-match-id="1192370"
-                            >
-                                <a href="/match/1192370">
-                                    <table class="calendar__games-score">
-                                        <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--data-time"
-                                                colspan="2">
-                                                09 Октября / 21:00
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--team">
-                                                <div class="calendar__team">Джек Хот</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--goals">
-                                                2
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--team">
-                                                <div class="calendar__team">МФК Штурм</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--bold calendar__games-score-cell--goals">
-                                                5
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="calendar__games-item js-calendar-widget-match "
-                                data-match-id="1192333"
-                            >
-                                <a href="/match/1192333">
-                                    <table class="calendar__games-score">
-                                        <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--data-time"
-                                                colspan="2">
-                                                09 Октября / 22:00
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--team">
-                                                <div class="calendar__team">Итранзишэн</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--goals">
-                                                4
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--team">
-                                                <div class="calendar__team">Пячоць</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--goals">
-                                                4
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="calendar__games-item js-calendar-widget-match "
-                                data-match-id="1192334"
-                            >
-                                <a href="/match/1192334">
-                                    <table class="calendar__games-score">
-                                        <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--data-time"
-                                                colspan="2">
-                                                12 Октября / 21:00
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--team">
-                                                <div class="calendar__team">Джек Хот</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--goals">
-                                                -
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--team">
-                                                <div class="calendar__team">Смена</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--goals">
-                                                -
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="calendar__games-item js-calendar-widget-match "
-                                data-match-id="1192336"
-                            >
-                                <a href="/match/1192336">
-                                    <table class="calendar__games-score">
-                                        <tr class="calendar__games-score-row calendar__games-score-row--date-time">
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--data-time"
-                                                colspan="2">
-                                                12 Октября / 22:00
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-1">
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--team">
-                                                <div class="calendar__team">West</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--goals">
-                                                -
-                                            </td>
-                                            <td class="calendar__games-score-cell calendar__games-score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="calendar__games-score-row calendar__games-score-row--row-2">
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--team">
-                                                <div class="calendar__team">Soccershop.by</div>
-                                            </td>
-                                            <td class="calendar__games-score-cell  calendar__games-score-cell--goals">
-                                                -
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="calendar__tables-results">
-                        <a class="calendar__tables" href="/tournament/1002296/tables?round_id=1004080">Таблицы</a>
-                        <a class="calendar__results" href="/tournament/1002296/calendar?round_id=1004080">Результаты</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="slider-carousel">
         <div class="slider-carousel__wrapper">
             <div class="slider-carousel__slide">
@@ -644,128 +103,635 @@
     </section>
     <div class="main-container main-container--inner">
         <div class="main-content ">
+            
+            
+            <section class="tabs tabs--schedule">
+        <div class="selects-list">
+                    <div class="js-tournament-widget-tournament-select" data-league="1000532">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821780982 js-already-init" data-light="true">
+                            <option selected="" value="1002296" data-is-parent="0" data-league="1000532">
+                                5х5. Центр-Запад. Д1
+                            </option>
+                            <option value="1002294" data-is-parent="0" data-league="1000532">
+                                5х5. Центр-Запад. Д2
+                            </option>
+                            <option value="1002295" data-is-parent="0" data-league="1000532">
+                                5х5. Центр-Запад. Д3
+                            </option>
+                            <option value="1002256" data-is-parent="0" data-league="1000532">
+                                5х5. Юго-Восток. 1
+                            </option>
+                            <option value="1002257" data-is-parent="0" data-league="1000532">
+                                5х5. Юго-Восток. 2
+                            </option>
+                            <option value="1002258" data-is-parent="0" data-league="1000532">
+                                5х5. Юго-Восток. 3
+                            </option>
+                            <option value="1002382" data-is-parent="0" data-league="1000532">
+                                Кубок Беларуси 8х8
+                            </option>
+                        </select>
+                        <div id="js-div-select-154082178098" class="js-div-select select-item select-item--light">
+                            <div class="js-div-select-title">
+                                <div class="select-item__default">
+                                    <p class="select-item__default-text">
+                                5х5. Центр-Запад. Д1
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                5х5. Центр-Запад. Д1
+                            </li><li class="js-div-select-li">
+                                5х5. Центр-Запад. Д2
+                            </li><li class="js-div-select-li">
+                                5х5. Центр-Запад. Д3
+                            </li><li class="js-div-select-li">
+                                5х5. Юго-Восток. 1
+                            </li><li class="js-div-select-li">
+                                5х5. Юго-Восток. 2
+                            </li><li class="js-div-select-li">
+                                5х5. Юго-Восток. 3
+                            </li><li class="js-div-select-li">
+                                Кубок Беларуси 8х8
+                            </li></ul></div>
+                    </div>
+                    <div class="js-tournament-widget-round-select" style="display:none;" data-league="1000532" data-tournament="1002296" data-parent="1002296">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821780995 js-already-init" data-light="true">
+                            <option selected="" value="1004080">
+                                Регулярный чемпионат
+                            </option>
+                        </select><div id="js-div-select-1540821780995" class="js-div-select select-item select-item--light"><div class="js-div-select-title"><div class="select-item__default"><p class="select-item__default-text">
+                                Регулярный чемпионат
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                Регулярный чемпионат
+                            </li></ul></div>
+                    </div>
+                    <div class="js-tournament-widget-round-select" style="display:none;" data-league="1000532" data-tournament="1002294" data-parent="1002294">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821780997 js-already-init" data-light="true">
+                            <option value="1003797">
+                                Регулярный чемпионат
+                            </option>
+                        </select><div id="js-div-select-1540821780997" class="js-div-select select-item select-item--light"><div class="js-div-select-title"><div class="select-item__default"><p class="select-item__default-text">
+                                Регулярный чемпионат
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                Регулярный чемпионат
+                            </li></ul></div>
+                    </div>
+                    <div class="js-tournament-widget-round-select" style="display:none;" data-league="1000532" data-tournament="1002295" data-parent="1002295">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821780998 js-already-init" data-light="true">
+                            <option value="1003796">
+                                Регулярный чемпионат
+                            </option>
+                        </select><div id="js-div-select-1540821780998" class="js-div-select select-item select-item--light"><div class="js-div-select-title"><div class="select-item__default"><p class="select-item__default-text">
+                                Регулярный чемпионат
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                Регулярный чемпионат
+                            </li></ul></div>
+                    </div>
+                    <div class="js-tournament-widget-round-select" style="display:none;" data-league="1000532" data-tournament="1002256" data-parent="1002256">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821780999 js-already-init" data-light="true">
+                            <option value="1004019">
+                                Регулярный чемпионат
+                            </option>
+                        </select><div id="js-div-select-1540821780999" class="js-div-select select-item select-item--light"><div class="js-div-select-title"><div class="select-item__default"><p class="select-item__default-text">
+                                Регулярный чемпионат
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                Регулярный чемпионат
+                            </li></ul></div>
+                    </div>
+                    <div class="js-tournament-widget-round-select" style="display:none;" data-league="1000532" data-tournament="1002257" data-parent="1002257">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821781000 js-already-init" data-light="true">
+                            <option value="1003793">
+                                Регулярный чемпионат
+                            </option>
+                        </select><div id="js-div-select-1540821781000" class="js-div-select select-item select-item--light"><div class="js-div-select-title"><div class="select-item__default"><p class="select-item__default-text">
+                                Регулярный чемпионат
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                Регулярный чемпионат
+                            </li></ul></div>
+                    </div>
+                    <div class="js-tournament-widget-round-select" style="display:none;" data-league="1000532" data-tournament="1002258" data-parent="1002258">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821781002 js-already-init" data-light="true">
+                            <option value="1003935">
+                                Регулярный чемпионат
+                            </option>
+                        </select><div id="js-div-select-1540821781002" class="js-div-select select-item select-item--light"><div class="js-div-select-title"><div class="select-item__default"><p class="select-item__default-text">
+                                Регулярный чемпионат
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                Регулярный чемпионат
+                            </li></ul></div>
+                    </div>
+                    <div class="js-tournament-widget-round-select" style="display:none;" data-league="1000532" data-tournament="1002382" data-parent="1002382">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821781003 js-already-init" data-light="true">
+                            <option value="1003932">
+                                Кубок Беларуси по футболу 8х8
+                            </option>
+                        </select><div id="js-div-select-1540821781003" class="js-div-select select-item select-item--light"><div class="js-div-select-title"><div class="select-item__default"><p class="select-item__default-text">
+                                Кубок Беларуси по футболу 8х8
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                Кубок Беларуси по футболу 8х8
+                            </li></ul></div>
+                    </div>
+                </div>
+        <div class="mobile-white-block"></div>
+            <div class="js-schedule">
+                  
+                
+        <div class="schedule__unit js-calendar-matches-header js-calendar-last-matches-header">
+        <div class="schedule__head">
+            <span class="schedule__head-text">
+                25 сентября, вторник            </span>
+        </div>
+        
+<ul class="schedule__matches-list">
+                            <li class="schedule__matches-item js-calendar-match js-calendar-last-match">
+            <div class="schedule__time-place">
+                <span class="schedule__time">
+                    20:00                </span>
+                                    <span class="schedule__place mobile-hide" title="СК " Динамо",="" Минск,="" ул.="" Даумана="" 23"="">
+                        СК "Динамо"                    </span>
+                            </div>
+            <a class="schedule__team-1" href="/tournament/1002296/teams/application?team_id=1057573">
+                <span class="schedule__team-name schedule__team-name--right ">
+                    Прогресс                </span>
+                <div class="schedule__team-logo schedule__team-logo--margin-left">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057573/logo/5bae21d58c8f8_100x100.jpg">
+                </div>
+            </a>
+            <a class="schedule__score" href="/match/1192371">
+                <div class="schedule__score-main">
+                    3 : 11                </div>
+                <div class="schedule__score-additional">
+                                    </div>
+            </a>
+            <a class="schedule__team-2" href="/tournament/1002296/teams/application?team_id=1057390">
+                <div class="schedule__team-logo schedule__team-logo--margin-right">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057390/logo/5b9d75f7254bc_100x100.jpg">
+                </div>
+                <span class="schedule__team-name schedule__team-name--left ">
+                    Минск Юнайтед                </span>
+            </a>
+                    </li>
+                            <li class="schedule__matches-item js-calendar-match js-calendar-last-match">
+            <div class="schedule__time-place">
+                <span class="schedule__time">
+                    21:00                </span>
+                                    <span class="schedule__place mobile-hide" title="СК " Динамо",="" Минск,="" ул.="" Даумана="" 23"="">
+                        СК "Динамо"                    </span>
+                            </div>
+            <a class="schedule__team-1" href="/tournament/1002296/teams/application?team_id=1057571">
+                <span class="schedule__team-name schedule__team-name--right ">
+                    Итранзишэн                </span>
+                <div class="schedule__team-logo schedule__team-logo--margin-left">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057571/logo/5bb34f3a134e1_100x100.jpg">
+                </div>
+            </a>
+            <a class="schedule__score" href="/match/1192369">
+                <div class="schedule__score-main">
+                    2 : 9                </div>
+                <div class="schedule__score-additional">
+                                    </div>
+            </a>
+            <a class="schedule__team-2" href="/tournament/1002296/teams/application?team_id=1057567">
+                <div class="schedule__team-logo schedule__team-logo--margin-right">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057567/logo/5bb3527b96634_100x100.jpg">
+                </div>
+                <span class="schedule__team-name schedule__team-name--left ">
+                    Связист                </span>
+            </a>
+                    </li>
+    </ul>    </div>
+            <div class="schedule__unit js-calendar-matches-header js-calendar-last-matches-header">
+        <div class="schedule__head">
+            <span class="schedule__head-text">
+                28 сентября, пятница            </span>
+        </div>
+        
+<ul class="schedule__matches-list">
+                            <li class="schedule__matches-item js-calendar-match js-calendar-last-match">
+            <div class="schedule__time-place">
+                <span class="schedule__time">
+                    20:00                </span>
+                                    <span class="schedule__place mobile-hide" title="СК " Динамо",="" Минск,="" ул.="" Даумана="" 23"="">
+                        СК "Динамо"                    </span>
+                            </div>
+            <a class="schedule__team-1" href="/tournament/1002296/teams/application?team_id=1057570">
+                <span class="schedule__team-name schedule__team-name--right ">
+                    Soccershop.by                </span>
+                <div class="schedule__team-logo schedule__team-logo--margin-left">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057570/logo/5bb34c96d0c9f_100x100.jpg">
+                </div>
+            </a>
+            <a class="schedule__score" href="/match/1192368">
+                <div class="schedule__score-main">
+                    6 : 2                </div>
+                <div class="schedule__score-additional">
+                                    </div>
+            </a>
+            <a class="schedule__team-2" href="/tournament/1002296/teams/application?team_id=1057568">
+                <div class="schedule__team-logo schedule__team-logo--margin-right">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057568/logo/5bb34eb1dcbdc_100x100.jpg">
+                </div>
+                <span class="schedule__team-name schedule__team-name--left ">
+                    Смена                </span>
+            </a>
+                    </li>
+    </ul>    </div>
+            <div class="schedule__unit js-calendar-matches-header js-calendar-last-matches-header">
+        <div class="schedule__head">
+            <span class="schedule__head-text">
+                2 октября, вторник            </span>
+        </div>
+        
+<ul class="schedule__matches-list">
+                            <li class="schedule__matches-item js-calendar-match js-calendar-last-match">
+            <div class="schedule__time-place">
+                <span class="schedule__time">
+                    20:00                </span>
+                                    <span class="schedule__place mobile-hide" title="СК " Динамо",="" Минск,="" ул.="" Даумана="" 23"="">
+                        СК "Динамо"                    </span>
+                            </div>
+            <a class="schedule__team-1" href="/tournament/1002296/teams/application?team_id=1057566">
+                <span class="schedule__team-name schedule__team-name--right ">
+                    МФК Штурм                </span>
+                <div class="schedule__team-logo schedule__team-logo--margin-left">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057566/logo/5bb35193da72e_100x100.jpg">
+                </div>
+            </a>
+            <a class="schedule__score" href="/match/1192328">
+                <div class="schedule__score-main">
+                    8 : 2                </div>
+                <div class="schedule__score-additional">
+                                    </div>
+            </a>
+            <a class="schedule__team-2" href="/tournament/1002296/teams/application?team_id=1057573">
+                <div class="schedule__team-logo schedule__team-logo--margin-right">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057573/logo/5bae21d58c8f8_100x100.jpg">
+                </div>
+                <span class="schedule__team-name schedule__team-name--left ">
+                    Прогресс                </span>
+            </a>
+                    </li>
+                            <li class="schedule__matches-item js-calendar-match js-calendar-last-match">
+            <div class="schedule__time-place">
+                <span class="schedule__time">
+                    21:00                </span>
+                                    <span class="schedule__place mobile-hide" title="СК " Динамо",="" Минск,="" ул.="" Даумана="" 23"="">
+                        СК "Динамо"                    </span>
+                            </div>
+            <a class="schedule__team-1" href="/tournament/1002296/teams/application?team_id=1057569">
+                <span class="schedule__team-name schedule__team-name--right ">
+                    Пячоць                </span>
+                <div class="schedule__team-logo schedule__team-logo--margin-left">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057569/logo/5bb3507178628_100x100.jpg">
+                </div>
+            </a>
+            <a class="schedule__score" href="/match/1192331">
+                <div class="schedule__score-main">
+                    1 : 5                </div>
+                <div class="schedule__score-additional">
+                                    </div>
+            </a>
+            <a class="schedule__team-2" href="/tournament/1002296/teams/application?team_id=1057570">
+                <div class="schedule__team-logo schedule__team-logo--margin-right">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057570/logo/5bb34c96d0c9f_100x100.jpg">
+                </div>
+                <span class="schedule__team-name schedule__team-name--left ">
+                    Soccershop.by                </span>
+            </a>
+                    </li>
+    </ul>    </div>
+            
+            
+            
+            
+            
+            
+            
+            
+         
+   
+
+        </div>
+</section>
 
 
-            <section class="news-cards">
-                <h2 class="visually-hidden">Новости</h2>
-                <ul class="news-cards__list js-news">
+ <section class="tabs tabs--schedule2">
+        <div class="selects-list">
+                    <div class="js-tournament-widget-tournament-select" data-league="1000532">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821780982 js-already-init" data-light="true">
+                            <option selected="" value="1002296" data-is-parent="0" data-league="1000532">
+                                5х5. Центр-Запад. Д1
+                            </option>
+                            <option value="1002294" data-is-parent="0" data-league="1000532">
+                                5х5. Центр-Запад. Д2
+                            </option>
+                            <option value="1002295" data-is-parent="0" data-league="1000532">
+                                5х5. Центр-Запад. Д3
+                            </option>
+                            <option value="1002256" data-is-parent="0" data-league="1000532">
+                                5х5. Юго-Восток. 1
+                            </option>
+                            <option value="1002257" data-is-parent="0" data-league="1000532">
+                                5х5. Юго-Восток. 2
+                            </option>
+                            <option value="1002258" data-is-parent="0" data-league="1000532">
+                                5х5. Юго-Восток. 3
+                            </option>
+                            <option value="1002382" data-is-parent="0" data-league="1000532">
+                                Кубок Беларуси 8х8
+                            </option>
+                        </select>
+                        <div id="js-div-select-15408217809811" class="js-div-select select-item select-item--light">
+                            <div class="js-div-select-title">
+                                <div class="select-item__default">
+                                    <p class="select-item__default-text">
+                                5х5. Центр-Запад. Д1
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                5х5. Центр-Запад. Д1
+                            </li><li class="js-div-select-li">
+                                5х5. Центр-Запад. Д2
+                            </li><li class="js-div-select-li">
+                                5х5. Центр-Запад. Д3
+                            </li><li class="js-div-select-li">
+                                5х5. Юго-Восток. 1
+                            </li><li class="js-div-select-li">
+                                5х5. Юго-Восток. 2
+                            </li><li class="js-div-select-li">
+                                5х5. Юго-Восток. 3
+                            </li><li class="js-div-select-li">
+                                Кубок Беларуси 8х8
+                            </li></ul></div>
+                    </div>
+                    <div class="js-tournament-widget-round-select" style="display:none;" data-league="1000532" data-tournament="1002296" data-parent="1002296">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821780995 js-already-init" data-light="true">
+                            <option selected="" value="1004080">
+                                Регулярный чемпионат
+                            </option>
+                        </select><div id="js-div-select-1540821780995" class="js-div-select select-item select-item--light"><div class="js-div-select-title"><div class="select-item__default"><p class="select-item__default-text">
+                                Регулярный чемпионат
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                Регулярный чемпионат
+                            </li></ul></div>
+                    </div>
+                    <div class="js-tournament-widget-round-select" style="display:none;" data-league="1000532" data-tournament="1002294" data-parent="1002294">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821780997 js-already-init" data-light="true">
+                            <option value="1003797">
+                                Регулярный чемпионат
+                            </option>
+                        </select><div id="js-div-select-1540821780997" class="js-div-select select-item select-item--light"><div class="js-div-select-title"><div class="select-item__default"><p class="select-item__default-text">
+                                Регулярный чемпионат
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                Регулярный чемпионат
+                            </li></ul></div>
+                    </div>
+                    <div class="js-tournament-widget-round-select" style="display:none;" data-league="1000532" data-tournament="1002295" data-parent="1002295">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821780998 js-already-init" data-light="true">
+                            <option value="1003796">
+                                Регулярный чемпионат
+                            </option>
+                        </select><div id="js-div-select-1540821780998" class="js-div-select select-item select-item--light"><div class="js-div-select-title"><div class="select-item__default"><p class="select-item__default-text">
+                                Регулярный чемпионат
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                Регулярный чемпионат
+                            </li></ul></div>
+                    </div>
+                    <div class="js-tournament-widget-round-select" style="display:none;" data-league="1000532" data-tournament="1002256" data-parent="1002256">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821780999 js-already-init" data-light="true">
+                            <option value="1004019">
+                                Регулярный чемпионат
+                            </option>
+                        </select><div id="js-div-select-1540821780999" class="js-div-select select-item select-item--light"><div class="js-div-select-title"><div class="select-item__default"><p class="select-item__default-text">
+                                Регулярный чемпионат
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                Регулярный чемпионат
+                            </li></ul></div>
+                    </div>
+                    <div class="js-tournament-widget-round-select" style="display:none;" data-league="1000532" data-tournament="1002257" data-parent="1002257">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821781000 js-already-init" data-light="true">
+                            <option value="1003793">
+                                Регулярный чемпионат
+                            </option>
+                        </select><div id="js-div-select-1540821781000" class="js-div-select select-item select-item--light"><div class="js-div-select-title"><div class="select-item__default"><p class="select-item__default-text">
+                                Регулярный чемпионат
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                Регулярный чемпионат
+                            </li></ul></div>
+                    </div>
+                    <div class="js-tournament-widget-round-select" style="display:none;" data-league="1000532" data-tournament="1002258" data-parent="1002258">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821781002 js-already-init" data-light="true">
+                            <option value="1003935">
+                                Регулярный чемпионат
+                            </option>
+                        </select><div id="js-div-select-1540821781002" class="js-div-select select-item select-item--light"><div class="js-div-select-title"><div class="select-item__default"><p class="select-item__default-text">
+                                Регулярный чемпионат
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                Регулярный чемпионат
+                            </li></ul></div>
+                    </div>
+                    <div class="js-tournament-widget-round-select" style="display:none;" data-league="1000532" data-tournament="1002382" data-parent="1002382">
+                        <select style="width: 260px; display: none;" class="js-select js-div-select-1540821781003 js-already-init" data-light="true">
+                            <option value="1003932">
+                                Кубок Беларуси по футболу 8х8
+                            </option>
+                        </select><div id="js-div-select-1540821781003" class="js-div-select select-item select-item--light"><div class="js-div-select-title"><div class="select-item__default"><p class="select-item__default-text">
+                                Кубок Беларуси по футболу 8х8
+                            </p></div></div><ul class="js-div-select-ul select-item__options"><li class="js-div-select-li js-active">
+                                Кубок Беларуси по футболу 8х8
+                            </li></ul></div>
+                    </div>
+                </div>
+        <div class="mobile-white-block"></div>
+            <div class="js-schedule">
+                  
+                
+        <div class="schedule__unit js-calendar-matches-header js-calendar-last-matches-header">
+        <div class="schedule__head">
+            <span class="schedule__head-text">
+                25 сентября, вторник            </span>
+        </div>
+        
+<ul class="schedule__matches-list">
+                            <li class="schedule__matches-item js-calendar-match js-calendar-last-match">
+            <div class="schedule__time-place">
+                <span class="schedule__time">
+                    20:00                </span>
+                                    <span class="schedule__place mobile-hide" title="СК " Динамо",="" Минск,="" ул.="" Даумана="" 23"="">
+                        СК "Динамо"                    </span>
+                            </div>
+            <a class="schedule__team-1" href="/tournament/1002296/teams/application?team_id=1057573">
+                <span class="schedule__team-name schedule__team-name--right ">
+                    Прогресс                </span>
+                <div class="schedule__team-logo schedule__team-logo--margin-left">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057573/logo/5bae21d58c8f8_100x100.jpg">
+                </div>
+            </a>
+            <a class="schedule__score" href="/match/1192371">
+                <div class="schedule__score-main">
+                    3 : 11                </div>
+                <div class="schedule__score-additional">
+                                    </div>
+            </a>
+            <a class="schedule__team-2" href="/tournament/1002296/teams/application?team_id=1057390">
+                <div class="schedule__team-logo schedule__team-logo--margin-right">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057390/logo/5b9d75f7254bc_100x100.jpg">
+                </div>
+                <span class="schedule__team-name schedule__team-name--left ">
+                    Минск Юнайтед                </span>
+            </a>
+                    </li>
+                            <li class="schedule__matches-item js-calendar-match js-calendar-last-match">
+            <div class="schedule__time-place">
+                <span class="schedule__time">
+                    21:00                </span>
+                                    <span class="schedule__place mobile-hide" title="СК " Динамо",="" Минск,="" ул.="" Даумана="" 23"="">
+                        СК "Динамо"                    </span>
+                            </div>
+            <a class="schedule__team-1" href="/tournament/1002296/teams/application?team_id=1057571">
+                <span class="schedule__team-name schedule__team-name--right ">
+                    Итранзишэн                </span>
+                <div class="schedule__team-logo schedule__team-logo--margin-left">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057571/logo/5bb34f3a134e1_100x100.jpg">
+                </div>
+            </a>
+            <a class="schedule__score" href="/match/1192369">
+                <div class="schedule__score-main">
+                    2 : 9                </div>
+                <div class="schedule__score-additional">
+                                    </div>
+            </a>
+            <a class="schedule__team-2" href="/tournament/1002296/teams/application?team_id=1057567">
+                <div class="schedule__team-logo schedule__team-logo--margin-right">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057567/logo/5bb3527b96634_100x100.jpg">
+                </div>
+                <span class="schedule__team-name schedule__team-name--left ">
+                    Связист                </span>
+            </a>
+                    </li>
+    </ul>    </div>
+            <div class="schedule__unit js-calendar-matches-header js-calendar-last-matches-header">
+        <div class="schedule__head">
+            <span class="schedule__head-text">
+                28 сентября, пятница            </span>
+        </div>
+        
+<ul class="schedule__matches-list">
+                            <li class="schedule__matches-item js-calendar-match js-calendar-last-match">
+            <div class="schedule__time-place">
+                <span class="schedule__time">
+                    20:00                </span>
+                                    <span class="schedule__place mobile-hide" title="СК " Динамо",="" Минск,="" ул.="" Даумана="" 23"="">
+                        СК "Динамо"                    </span>
+                            </div>
+            <a class="schedule__team-1" href="/tournament/1002296/teams/application?team_id=1057570">
+                <span class="schedule__team-name schedule__team-name--right ">
+                    Soccershop.by                </span>
+                <div class="schedule__team-logo schedule__team-logo--margin-left">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057570/logo/5bb34c96d0c9f_100x100.jpg">
+                </div>
+            </a>
+            <a class="schedule__score" href="/match/1192368">
+                <div class="schedule__score-main">
+                    6 : 2                </div>
+                <div class="schedule__score-additional">
+                                    </div>
+            </a>
+            <a class="schedule__team-2" href="/tournament/1002296/teams/application?team_id=1057568">
+                <div class="schedule__team-logo schedule__team-logo--margin-right">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057568/logo/5bb34eb1dcbdc_100x100.jpg">
+                </div>
+                <span class="schedule__team-name schedule__team-name--left ">
+                    Смена                </span>
+            </a>
+                    </li>
+    </ul>    </div>
+            <div class="schedule__unit js-calendar-matches-header js-calendar-last-matches-header">
+        <div class="schedule__head">
+            <span class="schedule__head-text">
+                2 октября, вторник            </span>
+        </div>
+        
+<ul class="schedule__matches-list">
+                            <li class="schedule__matches-item js-calendar-match js-calendar-last-match">
+            <div class="schedule__time-place">
+                <span class="schedule__time">
+                    20:00                </span>
+                                    <span class="schedule__place mobile-hide" title="СК " Динамо",="" Минск,="" ул.="" Даумана="" 23"="">
+                        СК "Динамо"                    </span>
+                            </div>
+            <a class="schedule__team-1" href="/tournament/1002296/teams/application?team_id=1057566">
+                <span class="schedule__team-name schedule__team-name--right ">
+                    МФК Штурм                </span>
+                <div class="schedule__team-logo schedule__team-logo--margin-left">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057566/logo/5bb35193da72e_100x100.jpg">
+                </div>
+            </a>
+            <a class="schedule__score" href="/match/1192328">
+                <div class="schedule__score-main">
+                    8 : 2                </div>
+                <div class="schedule__score-additional">
+                                    </div>
+            </a>
+            <a class="schedule__team-2" href="/tournament/1002296/teams/application?team_id=1057573">
+                <div class="schedule__team-logo schedule__team-logo--margin-right">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057573/logo/5bae21d58c8f8_100x100.jpg">
+                </div>
+                <span class="schedule__team-name schedule__team-name--left ">
+                    Прогресс                </span>
+            </a>
+                    </li>
+                            <li class="schedule__matches-item js-calendar-match js-calendar-last-match">
+            <div class="schedule__time-place">
+                <span class="schedule__time">
+                    21:00                </span>
+                                    <span class="schedule__place mobile-hide" title="СК " Динамо",="" Минск,="" ул.="" Даумана="" 23"="">
+                        СК "Динамо"                    </span>
+                            </div>
+            <a class="schedule__team-1" href="/tournament/1002296/teams/application?team_id=1057569">
+                <span class="schedule__team-name schedule__team-name--right ">
+                    Пячоць                </span>
+                <div class="schedule__team-logo schedule__team-logo--margin-left">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057569/logo/5bb3507178628_100x100.jpg">
+                </div>
+            </a>
+            <a class="schedule__score" href="/match/1192331">
+                <div class="schedule__score-main">
+                    1 : 5                </div>
+                <div class="schedule__score-additional">
+                                    </div>
+            </a>
+            <a class="schedule__team-2" href="/tournament/1002296/teams/application?team_id=1057570">
+                <div class="schedule__team-logo schedule__team-logo--margin-right">
+                    <img class="schedule__team-img" src="http://cdn.sportspring.ru/team/1057570/logo/5bb34c96d0c9f_100x100.jpg">
+                </div>
+                <span class="schedule__team-name schedule__team-name--left ">
+                    Soccershop.by                </span>
+            </a>
+                    </li>
+    </ul>    </div>
+            
+            
+            
+            
+            
+            
+            
+            
+         
+   
 
-                    {$_modx->runSnippet('pdoResources@PropertySet', [
-                    'parents' => 4,
-                    'tpl' => '@FILE /chunks/catalog/news.tpl',
-                    'includeTVs' => 'image',
-                    'processTVs' => '1',
-                    'depth' => '0',
-                    'limit' => '4'
-                    ])}
+        </div>
+</section>
 
-                </ul>
-                <a href="/posts" class="button go-to-all">
-                    Все новости </a>
-
-                --{$_modx->runSnippet('getViews@PropertySet', [])}--
-
-            </section>
+<section class="main_page_content_section">
+    <div class="main_page_content_block">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has 
+        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
+        in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+        like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+</section>
 
             <div class="banner-index">
             </div>
-
-            <section class="photo">
-                <h2 class="visually-hidden">Фото</h2>
-                <ul class="photo__list js-albums-list">
-                    <li class="photo__item">
-                        <div class="photo__item-wrapper-top">
-                            <a href="/photos/1005159" class="photo__picture">
-                                <img class="photo__picture-img"
-                                     src="http://cdn.sportspring.ru/albums/1005159/5bbdd03f327a5_284x190.jpg"
-                                     width="284" height="190" alt="2 тур. Итранзишэн - Пячоць">
-                            </a>
-                            <a href="/photos/1005159" class="photo__title">
-                                2 тур. Итранзишэн - Пячоць </a>
-                        </div>
-                        <div class="photo__item-wrapper-bottom">
-                            <div class="photo__date">10 октября</div>
-                            <div class="photo__number">64</div>
-                        </div>
-                    </li>
-                    <li class="photo__item">
-                        <div class="photo__item-wrapper-top">
-                            <a href="/photos/1005158" class="photo__picture">
-                                <img class="photo__picture-img"
-                                     src="http://cdn.sportspring.ru/albums/1005158/5bbdcf523be76_284x190.jpg"
-                                     width="284" height="190" alt="9 тур. Джек Хот - МФК Штурм">
-                            </a>
-                            <a href="/photos/1005158" class="photo__title">
-                                9 тур. Джек Хот - МФК Штурм </a>
-                        </div>
-                        <div class="photo__item-wrapper-bottom">
-                            <div class="photo__date">10 октября</div>
-                            <div class="photo__number">53</div>
-                        </div>
-                    </li>
-                    <li class="photo__item">
-                        <div class="photo__item-wrapper-top">
-                            <a href="/photos/1005157" class="photo__picture">
-                                <img class="photo__picture-img"
-                                     src="http://cdn.sportspring.ru/albums/1005157/5bbdcede39390_284x190.jpg"
-                                     width="284" height="190" alt="5 тур. Трансимпериал - МВРЗ">
-                            </a>
-                            <a href="/photos/1005157" class="photo__title">
-                                5 тур. Трансимпериал - МВРЗ </a>
-                        </div>
-                        <div class="photo__item-wrapper-bottom">
-                            <div class="photo__date">10 октября</div>
-                            <div class="photo__number">68</div>
-                        </div>
-                    </li>
-                    <li class="photo__item">
-                        <div class="photo__item-wrapper-top">
-                            <a href="/photos/1005126" class="photo__picture">
-                                <img class="photo__picture-img"
-                                     src="http://cdn.sportspring.ru/albums/1005126/5bbc88510d37a_284x190.jpg"
-                                     width="284" height="190" alt="3 тур. Напалм — Бабруйскі бровар">
-                            </a>
-                            <a href="/photos/1005126" class="photo__title">
-                                3 тур. Напалм — Бабруйскі бровар </a>
-                        </div>
-                        <div class="photo__item-wrapper-bottom">
-                            <div class="photo__date">09 октября</div>
-                            <div class="photo__number">61</div>
-                        </div>
-                    </li>
-                    <li class="photo__item">
-                        <div class="photo__item-wrapper-top">
-                            <a href="/photos/1005125" class="photo__picture">
-                                <img class="photo__picture-img"
-                                     src="http://cdn.sportspring.ru/albums/1005125/5bbc894b2b621_284x190.jpg"
-                                     width="284" height="190" alt="3 тур. A1QA — AFC Red Bisons">
-                            </a>
-                            <a href="/photos/1005125" class="photo__title">
-                                3 тур. A1QA — AFC Red Bisons </a>
-                        </div>
-                        <div class="photo__item-wrapper-bottom">
-                            <div class="photo__date">09 октября</div>
-                            <div class="photo__number">89</div>
-                        </div>
-                    </li>
-                    <li class="photo__item">
-                        <div class="photo__item-wrapper-top">
-                            <a href="/photos/1005124" class="photo__picture">
-                                <img class="photo__picture-img"
-                                     src="http://cdn.sportspring.ru/albums/1005124/5bbc888fe41c3_284x190.jpg"
-                                     width="284" height="190" alt="3 тур. ФК Гатово — Newton Heath ">
-                            </a>
-                            <a href="/photos/1005124" class="photo__title">
-                                3 тур. ФК Гатово — Newton Heath </a>
-                        </div>
-                        <div class="photo__item-wrapper-bottom">
-                            <div class="photo__date">09 октября</div>
-                            <div class="photo__number">76</div>
-                        </div>
-                    </li>
-                </ul>
-                <a class="button button--photo" href="/photos">Все фото</a>
-            </section>
 
             <div class="banner-index">
             </div>
@@ -785,37 +751,7 @@
                 <i class="fa fa-star birth-widget-star" aria-hidden="true"></i>
                 <i class="fa fa-star birth-widget-star" aria-hidden="true"></i>
                 <i class="fa fa-star birth-widget-star" aria-hidden="true"></i>
-                <div class="birth-widget-content">
-                    <p class="birth-widget__title">Поздравляем с днем рождения!</p>
-                    <ul class="birth-widget__list">
-                        <li class="birth-widget__item">
-                            <a class="birth-widget__item-picture" href="/player/1484154">
-                                <img class="birth-widget__item-img" src="/assets/3ab9deb0/football_player_200x200.png"
-                                     width="65" height="65">
-                            </a>
-                            <div class="birth-widget__item-wrapper">
-                                <a class="birth-widget__name" href="/player/1484154">Владимир Басалыга</a>
-                                <div class="birth-widget__age">
-                                    <span class="birth-widget__age-date">11 октября 1980</span>
-                                    <span class="birth-widget__age-value">38 лет</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="birth-widget__item">
-                            <a class="birth-widget__item-picture" href="/player/1494076">
-                                <img class="birth-widget__item-img" src="/assets/3ab9deb0/football_player_200x200.png"
-                                     width="65" height="65">
-                            </a>
-                            <div class="birth-widget__item-wrapper">
-                                <a class="birth-widget__name" href="/player/1494076">Сергей Холод</a>
-                                <div class="birth-widget__age">
-                                    <span class="birth-widget__age-date">11 октября 1983</span>
-                                    <span class="birth-widget__age-value">35 лет</span>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            
             </div>
             <h2 class="visually-hidden">Таблицы турнира</h2>
             <div class="tournament-widget mobile-hide js-tournament-widget" data-league-id="1000532"
@@ -1183,267 +1119,8 @@
                                     Вся таблица </a>
                             </div>
                         </div>
-                        <div class="sidebar__table sidebar__table--schedule">
-                            <h3 class="sidebar__table-title">Результаты</h3>
-                            <table class="sidebar__table-content" cellspacing="0">
-                                <tr class="sidebar__table-row sidebar__table-row--head sidebar__schedule-row sidebar__schedule-row--head">
-                                    <td class="sidebar__table-cell sidebar__table-cell--head" colspan="4">
-                                        9 октября, вторник
-                                    </td>
-                                </tr>
-                                <tr class="sidebar__table-row sidebar__schedule-row">
-                                    <td class="sidebar__table-cell sidebar__table-cell--match-time">
-                                        21:00
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-1">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057572"
-                                           title="Джек Хот">
-                                            Джек Хот </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--score">
-                                        <a href="/match/1192370">
-                                            2 : 5 </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-2">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057566"
-                                           title="МФК Штурм">
-                                            МФК Штурм </a>
-                                    </td>
-                                </tr>
-                                <tr class="sidebar__table-row sidebar__schedule-row">
-                                    <td class="sidebar__table-cell sidebar__table-cell--match-time">
-                                        22:00
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-1">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057571"
-                                           title="Итранзишэн">
-                                            Итранзишэн </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--score">
-                                        <a href="/match/1192333">
-                                            4 : 4 </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-2">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057569" title="Пячоць">
-                                            Пячоць </a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table class="sidebar__table-content" cellspacing="0">
-                                <tr class="sidebar__table-row sidebar__table-row--head sidebar__schedule-row sidebar__schedule-row--head">
-                                    <td class="sidebar__table-cell sidebar__table-cell--head" colspan="4">
-                                        5 октября, пятница
-                                    </td>
-                                </tr>
-                                <tr class="sidebar__table-row sidebar__schedule-row">
-                                    <td class="sidebar__table-cell sidebar__table-cell--match-time">
-                                        20:00
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-1">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057568" title="Смена">
-                                            Смена </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--score">
-                                        <a href="/match/1192330">
-                                            5 : 3 </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-2">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057571"
-                                           title="Итранзишэн">
-                                            Итранзишэн </a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table class="sidebar__table-content" cellspacing="0">
-                                <tr class="sidebar__table-row sidebar__table-row--head sidebar__schedule-row sidebar__schedule-row--head">
-                                    <td class="sidebar__table-cell sidebar__table-cell--head" colspan="4">
-                                        2 октября, вторник
-                                    </td>
-                                </tr>
-                                <tr class="sidebar__table-row sidebar__schedule-row">
-                                    <td class="sidebar__table-cell sidebar__table-cell--match-time">
-                                        20:00
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-1">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057566"
-                                           title="МФК Штурм">
-                                            МФК Штурм </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--score">
-                                        <a href="/match/1192328">
-                                            8 : 2 </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-2">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057573"
-                                           title="Прогресс">
-                                            Прогресс </a>
-                                    </td>
-                                </tr>
-                                <tr class="sidebar__table-row sidebar__schedule-row">
-                                    <td class="sidebar__table-cell sidebar__table-cell--match-time">
-                                        21:00
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-1">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057569" title="Пячоць">
-                                            Пячоць </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--score">
-                                        <a href="/match/1192331">
-                                            1 : 5 </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-2">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057570"
-                                           title="Soccershop.by">
-                                            Soccershop.by </a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table class="sidebar__table-content" cellspacing="0">
-                                <tr class="sidebar__table-row sidebar__table-row--head sidebar__schedule-row sidebar__schedule-row--head">
-                                    <td class="sidebar__table-cell sidebar__table-cell--head" colspan="4">
-                                        28 сентября, пятница
-                                    </td>
-                                </tr>
-                                <tr class="sidebar__table-row sidebar__schedule-row">
-                                    <td class="sidebar__table-cell sidebar__table-cell--match-time">
-                                        20:00
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-1">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057570"
-                                           title="Soccershop.by">
-                                            Soccershop.by </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--score">
-                                        <a href="/match/1192368">
-                                            6 : 2 </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-2">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057568" title="Смена">
-                                            Смена </a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <table class="sidebar__table-content" cellspacing="0">
-                                <tr class="sidebar__table-row sidebar__table-row--head sidebar__schedule-row sidebar__schedule-row--head">
-                                    <td class="sidebar__table-cell sidebar__table-cell--head" colspan="4">
-                                        25 сентября, вторник
-                                    </td>
-                                </tr>
-                                <tr class="sidebar__table-row sidebar__schedule-row">
-                                    <td class="sidebar__table-cell sidebar__table-cell--match-time">
-                                        20:00
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-1">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057573"
-                                           title="Прогресс">
-                                            Прогресс </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--score">
-                                        <a href="/match/1192371">
-                                            3 : 11 </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-2">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057390"
-                                           title="Минск Юнайтед">
-                                            Минск Юнайтед </a>
-                                    </td>
-                                </tr>
-                                <tr class="sidebar__table-row sidebar__schedule-row">
-                                    <td class="sidebar__table-cell sidebar__table-cell--match-time">
-                                        21:00
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-1">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057571"
-                                           title="Итранзишэн">
-                                            Итранзишэн </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--score">
-                                        <a href="/match/1192369">
-                                            2 : 9 </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-2">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057567" title="Связист">
-                                            Связист </a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <div class="link--sidebar-wrapper">
-                                <a class="link link--sidebar link--schedule"
-                                   href="/tournament/1002296/calendar?round_id=1004080">
-                                    Все результаты </a>
-                            </div>
-                        </div>
-                        <div class="sidebar__table sidebar__table--schedule">
-                            <h3 class="sidebar__table-title">Календарь</h3>
-                            <table class="sidebar__table-content" cellspacing="0">
-                                <tr class="sidebar__table-row sidebar__table-row--head sidebar__schedule-row sidebar__schedule-row--head">
-                                    <td class="sidebar__table-cell sidebar__table-cell--head" colspan="4">
-                                        12 октября, пятница
-                                    </td>
-                                </tr>
-                                <tr class="sidebar__table-row sidebar__schedule-row">
-                                    <td class="sidebar__table-cell sidebar__table-cell--match-time">
-                                        21:00
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-1">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057572"
-                                           title="Джек Хот">
-                                            Джек Хот </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--score">
-                                        <a href="/match/1192334">
-                                            - : - </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-2">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057568" title="Смена">
-                                            Смена </a>
-                                    </td>
-                                </tr>
-                                <tr class="sidebar__table-row sidebar__schedule-row">
-                                    <td class="sidebar__table-cell sidebar__table-cell--match-time">
-                                        22:00
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-1">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1058158" title="West">
-                                            West </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--score">
-                                        <a href="/match/1192336">
-                                            - : - </a>
-                                    </td>
-                                    <td class="sidebar__table-cell sidebar__table--team-2">
-                                        <a class="sidebar__team"
-                                           href="/tournament/1002296/teams/application?team_id=1057570"
-                                           title="Soccershop.by">
-                                            Soccershop.by </a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <div class="link--sidebar-wrapper">
-                                <a class="link link--sidebar link--schedule"
-                                   href="/tournament/1002296/calendar?round_id=1004080">
-                                    Все расписание </a>
-                            </div>
-                        </div>
+                        
+                        
 
                         <div class="sidebar__table sidebar__table--statistics">
                             <h3 class="sidebar__table-title">Статистика</h3>
@@ -1459,13 +1136,7 @@
                                         <li class="tabs__item tabs__text--assistants "
                                             data-tab-id="stats-tabs-1002296--assists">
                                             <a class="tabs__text">
-                                                <span class="tabs__text-container">Ассистенты</span>
-                                            </a>
-                                        </li>
-                                        <li class="tabs__item tabs__text--cards "
-                                            data-tab-id="stats-tabs-1002296--cards">
-                                            <a class="tabs__text">
-                                                <span class="tabs__text-container">Ж\КК</span>
+                                                <span class="tabs__text-container">Лучшие игроки</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -1798,165 +1469,7 @@
                                             </tr>
                                         </table>
                                     </div>
-                                    <div id="stats-tabs-1002296--cards"
-                                         class="tabs__pane js-tab-cont js-stats-tabs-cards ">
-                                        <table class="sidebar__table-content" cellspacing="0">
-                                            <tr class="sidebar__table-row sidebar__table-row--head sidebar__statistics-row sidebar__statistics-row--head">
-                                                <th class="sidebar__table-cell sidebar__table-cell--head sidebar__table-cell--player-head"
-                                                    colspan="2">
-                                                    Игрок
-                                                </th>
-                                                <th class="sidebar__table-cell sidebar__table-cell--head sidebar__table-cell--variable-1-head"
-                                                    title="Жёлтыe карточки">
-                                                    ЖК
-                                                </th>
-                                                <th class="sidebar__table-cell sidebar__table-cell--head sidebar__table-cell--variable-2-head"
-                                                    title="Красные карточки">
-                                                    КК
-                                                </th>
-                                            </tr>
-                                            <tr class="sidebar__table-row sidebar__statistics-row">
-                                                <td class="sidebar__table-cell sidebar__table-cell--photo" rowspan="2">
-                                                    <a class="sidebar__table-cell--photo-img" href="/player/1465838">
-                                                        <img class="table__player-img"
-                                                             src="/assets/3ab9deb0/football_player_60x60.png">
-                                                    </a>
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--player">
-                                                    <a href="/player/1465838" class="sidebar__player player-name left"
-                                                       title="Куликов Евгений Евгеньевич">
-                                                        Куликов Евгений Евгеньевич </a>
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--variable-1"
-                                                    rowspan="2">
-                                                    1
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--variable-2"
-                                                    rowspan="2">
-                                                    0
-                                                </td>
-                                            </tr>
-                                            <tr class="sidebar__table-row sidebar__statistics-row">
-                                                <td class="sidebar__table-cell sidebar__table-cell--team">
-                                                    <a href="/tournament/1002296/teams/application?team_id=1057572"
-                                                       class="sidebar__team player-team-title left" title="Джек Хот">
-                                                        Джек Хот </a>
-                                                </td>
-                                            </tr>
-                                            <tr class="sidebar__table-row sidebar__statistics-row">
-                                                <td class="sidebar__table-cell sidebar__table-cell--photo" rowspan="2">
-                                                    <a class="sidebar__table-cell--photo-img" href="/player/1478056">
-                                                        <img class="table__player-img"
-                                                             src="/assets/3ab9deb0/football_player_60x60.png">
-                                                    </a>
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--player">
-                                                    <a href="/player/1478056" class="sidebar__player player-name left"
-                                                       title="Хмельницкий Вадим Витальевич">
-                                                        Хмельницкий Вадим Витальевич </a>
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--variable-1"
-                                                    rowspan="2">
-                                                    1
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--variable-2"
-                                                    rowspan="2">
-                                                    0
-                                                </td>
-                                            </tr>
-                                            <tr class="sidebar__table-row sidebar__statistics-row">
-                                                <td class="sidebar__table-cell sidebar__table-cell--team">
-                                                    <a href="/tournament/1002296/teams/application?team_id=1057573"
-                                                       class="sidebar__team player-team-title left" title="Прогресс">
-                                                        Прогресс </a>
-                                                </td>
-                                            </tr>
-                                            <tr class="sidebar__table-row sidebar__statistics-row">
-                                                <td class="sidebar__table-cell sidebar__table-cell--photo" rowspan="2">
-                                                    <a class="sidebar__table-cell--photo-img" href="/player/1478096">
-                                                        <img class="table__player-img"
-                                                             src="/assets/3ab9deb0/football_player_60x60.png">
-                                                    </a>
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--player">
-                                                    <a href="/player/1478096" class="sidebar__player player-name left"
-                                                       title="Тарчило Сергей Иванович">
-                                                        Тарчило Сергей Иванович </a>
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--variable-1"
-                                                    rowspan="2">
-                                                    1
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--variable-2"
-                                                    rowspan="2">
-                                                    0
-                                                </td>
-                                            </tr>
-                                            <tr class="sidebar__table-row sidebar__statistics-row">
-                                                <td class="sidebar__table-cell sidebar__table-cell--team">
-                                                    <a href="/tournament/1002296/teams/application?team_id=1057567"
-                                                       class="sidebar__team player-team-title left" title="Связист">
-                                                        Связист </a>
-                                                </td>
-                                            </tr>
-                                            <tr class="sidebar__table-row sidebar__statistics-row">
-                                                <td class="sidebar__table-cell sidebar__table-cell--photo" rowspan="2">
-                                                    <a class="sidebar__table-cell--photo-img" href="/player/1478286">
-                                                        <img class="table__player-img"
-                                                             src="/assets/3ab9deb0/football_player_60x60.png">
-                                                    </a>
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--player">
-                                                    <a href="/player/1478286" class="sidebar__player player-name left"
-                                                       title="Логутов Валерий ">
-                                                        Логутов Валерий </a>
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--variable-1"
-                                                    rowspan="2">
-                                                    1
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--variable-2"
-                                                    rowspan="2">
-                                                    0
-                                                </td>
-                                            </tr>
-                                            <tr class="sidebar__table-row sidebar__statistics-row">
-                                                <td class="sidebar__table-cell sidebar__table-cell--team">
-                                                    <a href="/tournament/1002296/teams/application?team_id=1057572"
-                                                       class="sidebar__team player-team-title left" title="Джек Хот">
-                                                        Джек Хот </a>
-                                                </td>
-                                            </tr>
-                                            <tr class="sidebar__table-row sidebar__statistics-row">
-                                                <td class="sidebar__table-cell sidebar__table-cell--photo" rowspan="2">
-                                                    <a class="sidebar__table-cell--photo-img" href="/player/1477709">
-                                                        <img class="table__player-img"
-                                                             src="/assets/3ab9deb0/football_player_60x60.png">
-                                                    </a>
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--player">
-                                                    <a href="/player/1477709" class="sidebar__player player-name left"
-                                                       title="Кошелев Артём Андреевич">
-                                                        Кошелев Артём Андреевич </a>
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--variable-1"
-                                                    rowspan="2">
-                                                    1
-                                                </td>
-                                                <td class="sidebar__table-cell sidebar__table-cell--variable-2"
-                                                    rowspan="2">
-                                                    0
-                                                </td>
-                                            </tr>
-                                            <tr class="sidebar__table-row sidebar__statistics-row">
-                                                <td class="sidebar__table-cell sidebar__table-cell--team">
-                                                    <a href="/tournament/1002296/teams/application?team_id=1057568"
-                                                       class="sidebar__team player-team-title left" title="Смена">
-                                                        Смена </a>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
+                                    
                                 </div>
                             </section>
                             <div class="link--sidebar-wrapper">
@@ -1964,6 +1477,35 @@
                                     Вся статистика </a>
                             </div>
                         </div>
+                        
+                        <div class="sidebar__table sidebar__table--statistics">
+                            <h3 class="sidebar__table-title">Наши партнеры</h3>
+                            <div class="sidebar_partners">
+                                <div class="the_partner">
+                                    <a href="http://soccershop.by/" title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
+                                        <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
+                                    </a>
+                                </div>
+                                 <div class="the_partner">
+                                    <a href="http://soccershop.by/" title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
+                                        <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
+                                    </a>
+                                </div>
+                                 <div class="the_partner">
+                                    <a href="http://soccershop.by/" title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
+                                        <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
+                                    </a>
+                                </div>
+                                 <div class="the_partner">
+                                    <a href="http://soccershop.by/" title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
+                                        <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
