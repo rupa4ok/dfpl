@@ -77,9 +77,7 @@
                         'level' => '2',
                         'rowClass' => 'navigation__unit js-drop-menu',
                         'innerClass' => 'drop-menu'
-                        ]}    
-                
-
+                        ]}
             </div>
         </nav>
     </div>
