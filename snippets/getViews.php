@@ -17,8 +17,6 @@ $data = array('name' => 'Новый игрок');
 $key = 'id';
 $vall = 1;
 
-$q->insert($table, $data);
-
 //$q->update($table, $data, $key, $vall);
 
 $q->getRow();

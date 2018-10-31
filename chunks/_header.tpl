@@ -76,7 +76,8 @@
                         'tplInnerRow' => '@INLINE <li class="drop-menu__item"><a class="drop-menu__item-link" href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
                         'level' => '2',
                         'rowClass' => 'navigation__unit js-drop-menu',
-                        'innerClass' => 'drop-menu'
+                        'innerClass' => 'drop-menu',
+                        'hereClass' => 'navigation__unit--active'
                         ]}
             </div>
         </nav>
