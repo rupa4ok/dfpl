@@ -51,4 +51,15 @@ class Base extends Modx
         return;
     }
     
+    public function getPlayer()
+    {
+        $res = $this->modx->getObject('modResource', 14);
+        $tvs = $res->getMany('TemplateVarResources');
+        foreach ($tvs as $k => $tv) {
+            $tvs[$k] = $tv->toArray();
+            print_r($tvs[$k]);
+        }
+        return;
+    }
+    
 }
