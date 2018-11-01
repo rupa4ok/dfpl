@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="95549ab8-9af9-4afd-8f50-0521064e8659" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/core/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/core/Base.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snippets/getViews.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/getViews.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Docs.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Docs.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,20 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_footer.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chunks/_footer.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextTemplate.tpl" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TextTemplate.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/TextTemplate.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="61" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="61" />
+            <state relative-caret-position="450">
+              <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -37,26 +26,8 @@
       <file leaf-file-name="getViews.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snippets/getViews.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Base.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/snippets/core/Base.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="711">
-              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Docs.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Docs.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state relative-caret-position="252">
+              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -95,8 +66,8 @@
         <option value="$PROJECT_DIR$/chunks/WelcomeChunk.tpl" />
         <option value="$PROJECT_DIR$/chunks/_header.tpl" />
         <option value="$PROJECT_DIR$/templates/Docs.tpl" />
-        <option value="$PROJECT_DIR$/snippets/getViews.php" />
         <option value="$PROJECT_DIR$/snippets/core/Base.php" />
+        <option value="$PROJECT_DIR$/snippets/getViews.php" />
       </list>
     </option>
   </component>
@@ -228,7 +199,10 @@
       <workItem from="1540982913296" duration="771000" />
       <workItem from="1541020293028" duration="4079000" />
       <workItem from="1541047342154" duration="1757000" />
-      <workItem from="1541055666881" duration="709000" />
+      <workItem from="1541055666881" duration="1416000" />
+      <workItem from="1541057386654" duration="735000" />
+      <workItem from="1541059792229" duration="595000" />
+      <workItem from="1541095605104" duration="338000" />
     </task>
     <task id="LOCAL-00001" summary="Перепиливаю старый шаблон">
       <created>1539634108058</created>
@@ -272,25 +246,32 @@
       <option name="project" value="LOCAL" />
       <updated>1540983111206</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Front 1/11/2018 - создание структуры">
+      <created>1541056734478</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1541056734478</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51460000" />
+    <option name="totallyTimeSpent" value="53835000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3297062" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="8" weight="0.32536975" />
+      <window_info anchor="bottom" id="File Transfer" order="8" weight="0.32535365" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32861805" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="right" id="Remote Host" order="3" weight="0.18367347" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19871107" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.18336888" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20628998" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -317,7 +298,8 @@
     <MESSAGE value="Merge remote-tracking branch 'remotes/origin/develop'" />
     <MESSAGE value="Front 29/10/2018" />
     <MESSAGE value="Front 31/10/2018 - правка верстки + добавление шаблонов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Front 31/10/2018 - правка верстки + добавление шаблонов" />
+    <MESSAGE value="Front 1/11/2018 - создание структуры" />
+    <option name="LAST_COMMIT_MESSAGE" value="Front 1/11/2018 - создание структуры" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -325,13 +307,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/MainTemplate.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36990">
-          <caret line="2055" selection-start-line="2055" selection-end-line="2055" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/EmptyTemplate.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -533,38 +508,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Stadiums.tpl" />
     <entry file="file://$PROJECT_DIR$/chunks/sidebar.tpl" />
+    <entry file="file://$PROJECT_DIR$/templates/Docs.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/core/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1107">
+          <caret line="59" column="30" lean-forward="true" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Player.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6077" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/getViews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/chunks/_footer.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
+        <state relative-caret-position="18">
           <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/TextTemplate.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Docs.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/getViews.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/core/Base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+        <state relative-caret-position="450">
+          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
         </state>
       </provider>
     </entry>
