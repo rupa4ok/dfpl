@@ -33,6 +33,16 @@
         <span class="player-promo__teams-name">
             Red Stars, Иран, FC Maracana        </span>
     </p>
+     <p class="player-promo__teams">
+        <span class="player-promo__teams-text">Роль на поле:</span>
+        <span class="player-promo__teams-name">
+            Водонос        </span>
+    </p>
+     <p class="player-promo__teams">
+        <span class="player-promo__teams-text">Сколько раз был лучшим игроком:</span>
+        <span class="player-promo__teams-name">
+            абсолютный чемпион по литрболу        </span>
+    </p>
     <p class="player-promo__statistics">
         <span class="player-promo__statistics-text">За все время:</span>
         <span class="player-promo__statistics-values">
@@ -58,17 +68,11 @@
         <td class="table__cell table__cell--empty" colspan="2"></td>
         <td class="table__cell">12</td>
         <td class="table__cell table__cell--goals">28 (0,1)</td>
-        <td class="table__cell mobile-mini-hide">7</td>
-        <td class="table__cell mobile-hide">0</td>
-        <td class="table__cell mobile-hide">0</td>
     </tr>
     <tr class="table__head">
         <th class="table__cell table__cell--empty" colspan="2"></th>
         <th class="table__cell" title="Игры">И</th>
         <th class="table__cell table__cell--goals" title="Голы (пенальти, 10-метровые)">Г (Пн., 10м)</span></th>
-        <th class="table__cell mobile-mini-hide" title="Передачи">Пр</th>
-        <th class="table__cell mobile-hide" title="Жёлтые карточки">ЖК</th>
-        <th class="table__cell mobile-hide" title="Красные карточки">КК</th>
     </tr>
             <tr class="table__team-total">
             <td class="table__cell table__cell--team" colspan="2">
@@ -81,15 +85,12 @@
             </td>
             <td class="table__cell table__cell--variable">1</td>
             <td class="table__cell table__cell--variable table__cell--goals">3</td>
-            <td class="table__cell table__cell--variable mobile-mini-hide">0</td>
-            <td class="table__cell table__cell--variable mobile-hide">0</td>
-            <td class="table__cell table__cell--variable mobile-hide">0</td>
         </tr>
                                 <tr class="table__row">
                 <td class="table__cell table__cell--tournament">
                     <a class="player__tournament" href="#">5х5. Центр-Запад. Д2</a>
                                     </td>
-                <td class="table__cell table__cell--match" colspan="2">
+                <td class="table__cell table__cell--match" colspan="">
                     <div class="player__match-results">
                         <a class="player__match-team" href="/team/1056652">Пеналька</a>
                         <a class="player__match-score" href="/match/1184281">
@@ -101,247 +102,6 @@
                                     </td>
                 <td class="table__cell table__cell--variable table__cell--goals">3</td>
                 <td class="table__cell table__cell--variable mobile-mini-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-            </tr>
-                    <tr class="table__team-total">
-            <td class="table__cell table__cell--team" colspan="2">
-                <a class="table__team" href="/team/1056659">
-                    <div class="table__team-logo">
-                        <img class="table__team-img" src="http://cdn.sportspring.ru/team/1056659/logo/5bb74a8a14f54_100x100.jpg" alt="Иран">
-                    </div>
-                    <span class="table__team-name">Иран</span>
-                </a>
-            </td>
-            <td class="table__cell table__cell--variable">7</td>
-            <td class="table__cell table__cell--variable table__cell--goals">16 (0,1)</td>
-            <td class="table__cell table__cell--variable mobile-mini-hide">6</td>
-            <td class="table__cell table__cell--variable mobile-hide">0</td>
-            <td class="table__cell table__cell--variable mobile-hide">0</td>
-        </tr>
-                                <tr class="table__row">
-                <td class="table__cell table__cell--tournament">
-                    <a class="player__tournament" href="#">5х5. Центр-Запад. Д3</a>
-                                    </td>
-                <td class="table__cell table__cell--match" colspan="2">
-                    <div class="player__match-results">
-                        <a class="player__match-team" href="/team/1056659">Иран</a>
-                        <a class="player__match-score" href="/match/1184429">
-                            3 : 3                        </a>
-                        <a class="player__match-team" href="/team/1056653">Alliance</a>
-                    </div>
-                                            <p class="player__match-time-date">
-                            28 ОКТ. / ВС / 14:00                        </p>
-                                    </td>
-                <td class="table__cell table__cell--variable table__cell--goals">2</td>
-                <td class="table__cell table__cell--variable mobile-mini-hide">1</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-            </tr>
-                                <tr class="table__row">
-                <td class="table__cell table__cell--tournament">
-                    <a class="player__tournament" href="#">5х5. Центр-Запад. Д3</a>
-                                    </td>
-                <td class="table__cell table__cell--match" colspan="2">
-                    <div class="player__match-results">
-                        <a class="player__match-team" href="/team/1056661">Лестер</a>
-                        <a class="player__match-score" href="/match/1184410">
-                            3 : 4                        </a>
-                        <a class="player__match-team" href="/team/1056659">Иран</a>
-                    </div>
-                                            <p class="player__match-time-date">
-                            21 ОКТ. / ВС / 17:00                        </p>
-                                    </td>
-                <td class="table__cell table__cell--variable table__cell--goals">1</td>
-                <td class="table__cell table__cell--variable mobile-mini-hide">1</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-            </tr>
-                                <tr class="table__row">
-                <td class="table__cell table__cell--tournament">
-                    <a class="player__tournament" href="#">5х5. Центр-Запад. Д3</a>
-                                    </td>
-                <td class="table__cell table__cell--match" colspan="2">
-                    <div class="player__match-results">
-                        <a class="player__match-team" href="/team/1056659">Иран</a>
-                        <a class="player__match-score" href="/match/1184407">
-                            10 : 2                        </a>
-                        <a class="player__match-team" href="/team/1056660">СпецСвязь</a>
-                    </div>
-                                            <p class="player__match-time-date">
-                            14 ОКТ. / ВС / 15:30                        </p>
-                                    </td>
-                <td class="table__cell table__cell--variable table__cell--goals">4 (0,1)</td>
-                <td class="table__cell table__cell--variable mobile-mini-hide">2</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-            </tr>
-                                <tr class="table__row">
-                <td class="table__cell table__cell--tournament">
-                    <a class="player__tournament" href="#">5х5. Центр-Запад. Д3</a>
-                                    </td>
-                <td class="table__cell table__cell--match" colspan="2">
-                    <div class="player__match-results">
-                        <a class="player__match-team" href="/team/1056658">Поликлиника 12</a>
-                        <a class="player__match-score" href="/match/1184395">
-                            6 : 8                        </a>
-                        <a class="player__match-team" href="/team/1056659">Иран</a>
-                    </div>
-                                            <p class="player__match-time-date">
-                            07 ОКТ. / ВС / 22:00                        </p>
-                                    </td>
-                <td class="table__cell table__cell--variable table__cell--goals">4</td>
-                <td class="table__cell table__cell--variable mobile-mini-hide">1</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-            </tr>
-                                <tr class="table__row">
-                <td class="table__cell table__cell--tournament">
-                    <a class="player__tournament" href="#">5х5. Центр-Запад. Д3</a>
-                                    </td>
-                <td class="table__cell table__cell--match" colspan="2">
-                    <div class="player__match-results">
-                        <a class="player__match-team" href="/team/1056659">Иран</a>
-                        <a class="player__match-score" href="/match/1184418">
-                            13 : 4                        </a>
-                        <a class="player__match-team" href="/team/1056662">Камрад</a>
-                    </div>
-                                            <p class="player__match-time-date">
-                            05 ОКТ. / ПТ / 22:00                        </p>
-                                    </td>
-                <td class="table__cell table__cell--variable table__cell--goals">4</td>
-                <td class="table__cell table__cell--variable mobile-mini-hide">1</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-            </tr>
-                                <tr class="table__row">
-                <td class="table__cell table__cell--tournament">
-                    <a class="player__tournament" href="#">5х5. Центр-Запад. Д3</a>
-                                    </td>
-                <td class="table__cell table__cell--match" colspan="2">
-                    <div class="player__match-results">
-                        <a class="player__match-team" href="/team/1056664">Старт</a>
-                        <a class="player__match-score" href="/match/1184401">
-                            8 : 0                        </a>
-                        <a class="player__match-team" href="/team/1056659">Иран</a>
-                    </div>
-                                            <p class="player__match-time-date">
-                            23 СЕНТ. / ВС / 17:00                        </p>
-                                    </td>
-                <td class="table__cell table__cell--variable table__cell--goals">0</td>
-                <td class="table__cell table__cell--variable mobile-mini-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-            </tr>
-                                <tr class="table__row">
-                <td class="table__cell table__cell--tournament">
-                    <a class="player__tournament" href="#">5х5. Центр-Запад. Д3</a>
-                                    </td>
-                <td class="table__cell table__cell--match" colspan="2">
-                    <div class="player__match-results">
-                        <a class="player__match-team" href="/team/1056654">SKYINCOM</a>
-                        <a class="player__match-score" href="/match/1184433">
-                            8 : 2                        </a>
-                        <a class="player__match-team" href="/team/1056659">Иран</a>
-                    </div>
-                                            <p class="player__match-time-date">
-                            16 СЕНТ. / ВС / 22:00                        </p>
-                                    </td>
-                <td class="table__cell table__cell--variable table__cell--goals">1</td>
-                <td class="table__cell table__cell--variable mobile-mini-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-            </tr>
-                    <tr class="table__team-total">
-            <td class="table__cell table__cell--team" colspan="2">
-                <a class="table__team" href="/team/1057061">
-                    <div class="table__team-logo">
-                        <img class="table__team-img" src="http://cdn.sportspring.ru/team/1057061/logo/5b967bb665197_100x100.jpg" alt="FC Maracana">
-                    </div>
-                    <span class="table__team-name">FC Maracana</span>
-                </a>
-            </td>
-            <td class="table__cell table__cell--variable">4</td>
-            <td class="table__cell table__cell--variable table__cell--goals">9</td>
-            <td class="table__cell table__cell--variable mobile-mini-hide">1</td>
-            <td class="table__cell table__cell--variable mobile-hide">0</td>
-            <td class="table__cell table__cell--variable mobile-hide">0</td>
-        </tr>
-                                <tr class="table__row">
-                <td class="table__cell table__cell--tournament">
-                    <a class="player__tournament" href="#">5х5. Юго-Восток. 1</a>
-                                    </td>
-                <td class="table__cell table__cell--match" colspan="2">
-                    <div class="player__match-results">
-                        <a class="player__match-team" href="/team/1057060">Юркас-2</a>
-                        <a class="player__match-score" href="/match/1190687">
-                            2 : 9                        </a>
-                        <a class="player__match-team" href="/team/1057061">FC Maracana</a>
-                    </div>
-                                            <p class="player__match-time-date">
-                            28 ОКТ. / ВС / 16:45                        </p>
-                                    </td>
-                <td class="table__cell table__cell--variable table__cell--goals">4</td>
-                <td class="table__cell table__cell--variable mobile-mini-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-            </tr>
-                                <tr class="table__row">
-                <td class="table__cell table__cell--tournament">
-                    <a class="player__tournament" href="#">5х5. Юго-Восток. 1</a>
-                                    </td>
-                <td class="table__cell table__cell--match" colspan="2">
-                    <div class="player__match-results">
-                        <a class="player__match-team" href="/team/1057835">Трайдекс</a>
-                        <a class="player__match-score" href="/match/1190678">
-                            0 : 12                        </a>
-                        <a class="player__match-team" href="/team/1057061">FC Maracana</a>
-                    </div>
-                                            <p class="player__match-time-date">
-                            14 ОКТ. / ВС / 18:40                        </p>
-                                    </td>
-                <td class="table__cell table__cell--variable table__cell--goals">3</td>
-                <td class="table__cell table__cell--variable mobile-mini-hide">1</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-            </tr>
-                                <tr class="table__row">
-                <td class="table__cell table__cell--tournament">
-                    <a class="player__tournament" href="#">5х5. Юго-Восток. 1</a>
-                                    </td>
-                <td class="table__cell table__cell--match" colspan="2">
-                    <div class="player__match-results">
-                        <a class="player__match-team" href="/team/1057061">FC Maracana</a>
-                        <a class="player__match-score" href="/match/1190670">
-                            9 : 1                        </a>
-                        <a class="player__match-team" href="/team/1057184">БеZгрима</a>
-                    </div>
-                                            <p class="player__match-time-date">
-                            30 СЕНТ. / ВС / 16:00                        </p>
-                                    </td>
-                <td class="table__cell table__cell--variable table__cell--goals">2</td>
-                <td class="table__cell table__cell--variable mobile-mini-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-            </tr>
-                                <tr class="table__row">
-                <td class="table__cell table__cell--tournament">
-                    <a class="player__tournament" href="#">5х5. Юго-Восток. 1</a>
-                                    </td>
-                <td class="table__cell table__cell--match" colspan="2">
-                    <div class="player__match-results">
-                        <a class="player__match-team" href="/team/1057182">Приорбанк</a>
-                        <a class="player__match-score" href="/match/1190731">
-                            8 : 4                        </a>
-                        <a class="player__match-team" href="/team/1057061">FC Maracana</a>
-                    </div>
-                                            <p class="player__match-time-date">
-                            16 СЕНТ. / ВС / 17:00                        </p>
-                                    </td>
-                <td class="table__cell table__cell--variable table__cell--goals">0</td>
-                <td class="table__cell table__cell--variable mobile-mini-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
-                <td class="table__cell table__cell--variable mobile-hide">0</td>
             </tr>
             </table>
     </section>

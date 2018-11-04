@@ -47,7 +47,7 @@
                            target="_blank">
                             <img src="http://cdn.sportspring.ru/partner/2434/logo/5b90fc5812f3a_135x135.jpg">
                         </a>
-                    </li>
+                    </li>Gjvtyz
                     <li class="partners__item">
                         <a href="https://maxline.by/" title="Maxline.by — букмекерская контора" target="_blank">
                             <img src="http://cdn.sportspring.ru/partner/2653/logo/5bbc944b6beeb_135x135.jpg">
