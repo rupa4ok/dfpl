@@ -4,7 +4,7 @@
         <div class="header__wrapper">
             <div class="header__top">
                 <a class="header__logo " href="/">
-                    <img src="http://cdn.sportspring.ru/league/1000532/logo/5b97b9a320267_172x172.jpg" width="172"
+                    <img src="assets/images/logo-1.png" width="172"
                          height="169" alt="Логотип любительской футбольной лиги Санкт-Петербурга">
                 </a>
                 <a class="header__title" href="/">
@@ -68,17 +68,17 @@
         <nav id="SamMainMenu" class="navigation">
             <div class="navigation__wrapper">
                 {'pdoMenu'|snippet:[
-                        'parents' => '0',
-                        'outerClass' => 'navigation__list',
-                        'tpl' => '@INLINE <li[[+classes]]><a class="navigation__unit-link" href="[[+link]]" [[+attributes]]><span class="navigation__unit-container">[[+menutitle]]</span></a>[[+wrapper]]</li>',
-                        'tplOuter' => '@INLINE <ul[[+classes]]>[[+wrapper]]</ul>',
-                        'tplInner' => '@INLINE <div class="drop-menu-wrapper"><ul[[+classes]]>[[+wrapper]]</ul></div>',
-                        'tplInnerRow' => '@INLINE <li class="drop-menu__item"><a class="drop-menu__item-link" href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
-                        'level' => '2',
-                        'rowClass' => 'navigation__unit js-drop-menu',
-                        'innerClass' => 'drop-menu',
-                        'hereClass' => 'navigation__unit--active'
-                        ]}
+                'parents' => '0',
+                'outerClass' => 'navigation__list',
+                'tpl' => '@INLINE <li[[+classes]]><a class="navigation__unit-link" href="[[+link]]" [[+attributes]]><span class="navigation__unit-container">[[+menutitle]]</span></a>[[+wrapper]]</li>',
+                'tplOuter' => '@INLINE <ul[[+classes]]>[[+wrapper]]</ul>',
+                'tplInner' => '@INLINE <div class="drop-menu-wrapper"><ul[[+classes]]>[[+wrapper]]</ul></div>',
+                'tplInnerRow' => '@INLINE <li class="drop-menu__item"><a class="drop-menu__item-link" href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
+                'level' => '2',
+                'rowClass' => 'navigation__unit js-drop-menu',
+                'innerClass' => 'drop-menu',
+                'hereClass' => 'navigation__unit--active'
+                ]}
             </div>
         </nav>
     </div>
