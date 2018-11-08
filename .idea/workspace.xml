@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d28dd0ff-10fe-4aa8-a1d5-cf7b8d2e8b76" name="Default" comment="Front 2/11/2018 - создание структуры" />
+
+    <list default="true" id="d28dd0ff-10fe-4aa8-a1d5-cf7b8d2e8b76" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +48,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/chunks/_footer.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="655">
+              <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -51,7 +57,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/MainTemplate.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
+
+            <state relative-caret-position="162">
+
               <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
@@ -60,7 +68,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/TextTemplate.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
+
+            <state relative-caret-position="900">
+
               <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
             </state>
           </provider>
@@ -69,7 +79,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chunks/_topmenu.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
+
+            <state relative-caret-position="432">
+
               <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
             </state>
           </provider>
@@ -83,7 +95,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snippets/core/Base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
+
+            <state relative-caret-position="684">
+
               <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
             </state>
           </provider>
@@ -135,8 +149,25 @@
         <subPane>
           <expand>
             <path>
-              <item name="dfpl_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dfpl_new" type="462c0819:PsiDirectoryNode" />
+
+              <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dfpl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dfpl" type="462c0819:PsiDirectoryNode" />
+              <item name="chunks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dfpl" type="462c0819:PsiDirectoryNode" />
+              <item name="snippets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dfpl" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+
             </path>
           </expand>
           <select />
@@ -222,7 +253,11 @@
       <workItem from="1541168114815" duration="111000" />
       <workItem from="1541168237076" duration="708000" />
       <workItem from="1541169286746" duration="4000" />
-      <workItem from="1541675594060" duration="114000" />
+
+      <workItem from="1541272996574" duration="1455000" />
+      <workItem from="1541315909366" duration="696000" />
+      <workItem from="1541574576866" duration="67000" />
+
     </task>
     <task id="LOCAL-00001" summary="Перепиливаю старый шаблон">
       <created>1539634108058</created>
@@ -273,11 +308,20 @@
       <option name="project" value="LOCAL" />
       <updated>1541056734478</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Front 2/11/2018 - создание структуры">
+      <created>1541273066296</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1541273066296</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55489000" />
+
+    <option name="totallyTimeSpent" value="57593000" />
+
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -291,15 +335,22 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21801706" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32992035" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3297062" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="8" weight="0.32317737" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32861805" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.18283582" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22228146" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Migrations" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32992035" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -310,9 +361,11 @@
       <window_info anchor="bottom" id="File Transfer" order="12" weight="0.32423207" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.18283582" />
-      <window_info anchor="right" id="Database" order="4" />
+
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,6 +438,25 @@
     </entry>
     <entry file="file://E:/Сайты/Modx/modx-2.6.5-pl/modx-2.6.5-pl/core/xpdo/xpdo.class.php" />
     <entry file="file://E:/Сайты/Modx/modx-2.6.5-pl/modx-2.6.5-pl/core/model/modx/modx.class.php" />
+
+    <entry file="file://$PROJECT_DIR$/templates/MainTemplate.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chunks/_scripts.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chunks/_topmenu.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+
     <entry file="file://$PROJECT_DIR$/templates/MediaTemplate.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -401,6 +473,15 @@
         </state>
       </provider>
     </entry>
+
+    <entry file="file://$PROJECT_DIR$/snippets/core/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+
     <entry file="file://$PROJECT_DIR$/templates/Player.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6077" />
@@ -413,6 +494,15 @@
         </state>
       </provider>
     </entry>
+
+    <entry file="file://$PROJECT_DIR$/templates/TextTemplate.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+
     <entry file="file://$PROJECT_DIR$/chunks/_header.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
@@ -422,8 +512,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chunks/_footer.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="655">
+          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
         </state>
       </provider>
     </entry>
