@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a8b0dfcb-4223-4dce-a38f-4ca7363897b8" name="dfpl" url="http://s15918@h4.modhost.pro">
+        <fileTransfer host="s15918@h4.modhost.pro" port="22" rootFolder="/home/s15918/www/core/elements" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
