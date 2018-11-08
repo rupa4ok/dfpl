@@ -9,177 +9,34 @@
     </section>
     <main class="main">
         <div class="main-container main-container--inner">
-            <div class="main-content ">
+            <div class="main-content">
 
 
                 <section class="photo">
                     <h2 class="visually-hidden">Фото</h2>
                     <ul class="photo__list js-albums-list">
-                        <li class="photo__item">
+                        
+                              {'!pdoPage' | snippet : [
+                                    'parents' => '3', 
+                                     'tpl' => '@INLINE <li class="photo__item">
                             <div class="photo__item-wrapper-top">
-                                <a href="/photos/1005159" class="photo__picture">
+                                <a href="{{~{{+id}}}}" class="photo__picture">
                                     <img class="photo__picture-img"
                                          src="http://cdn.sportspring.ru/albums/1005159/5bbdd03f327a5_284x190.jpg"
                                          width="284" height="190" alt="2 тур. Итранзишэн - Пячоць">
                                 </a>
-                                <a href="/photos/1005159" class="photo__title">
-                                    2 тур. Итранзишэн - Пячоць </a>
+                                <a href="{{~{{+id}}}}" class="photo__title">
+                                    [[+pagetitle]] </a>
                             </div>
                             <div class="photo__item-wrapper-bottom">
                                 <div class="photo__date">10 октября</div>
-                                <div class="photo__number">64</div>
                             </div>
-                        </li>
-                        <li class="photo__item">
-                            <div class="photo__item-wrapper-top">
-                                <a href="/photos/1005158" class="photo__picture">
-                                    <img class="photo__picture-img"
-                                         src="http://cdn.sportspring.ru/albums/1005158/5bbdcf523be76_284x190.jpg"
-                                         width="284" height="190" alt="9 тур. Джек Хот - МФК Штурм">
-                                </a>
-                                <a href="/photos/1005158" class="photo__title">
-                                    9 тур. Джек Хот - МФК Штурм </a>
-                            </div>
-                            <div class="photo__item-wrapper-bottom">
-                                <div class="photo__date">10 октября</div>
-                                <div class="photo__number">53</div>
-                            </div>
-                        </li>
-                        <li class="photo__item">
-                            <div class="photo__item-wrapper-top">
-                                <a href="/photos/1005157" class="photo__picture">
-                                    <img class="photo__picture-img"
-                                         src="http://cdn.sportspring.ru/albums/1005157/5bbdcede39390_284x190.jpg"
-                                         width="284" height="190" alt="5 тур. Трансимпериал - МВРЗ">
-                                </a>
-                                <a href="/photos/1005157" class="photo__title">
-                                    5 тур. Трансимпериал - МВРЗ </a>
-                            </div>
-                            <div class="photo__item-wrapper-bottom">
-                                <div class="photo__date">10 октября</div>
-                                <div class="photo__number">68</div>
-                            </div>
-                        </li>
-                        <li class="photo__item">
-                            <div class="photo__item-wrapper-top">
-                                <a href="/photos/1005126" class="photo__picture">
-                                    <img class="photo__picture-img"
-                                         src="http://cdn.sportspring.ru/albums/1005126/5bbc88510d37a_284x190.jpg"
-                                         width="284" height="190" alt="3 тур. Напалм — Бабруйскі бровар">
-                                </a>
-                                <a href="/photos/1005126" class="photo__title">
-                                    3 тур. Напалм — Бабруйскі бровар </a>
-                            </div>
-                            <div class="photo__item-wrapper-bottom">
-                                <div class="photo__date">09 октября</div>
-                                <div class="photo__number">61</div>
-                            </div>
-                        </li>
-                        <li class="photo__item">
-                            <div class="photo__item-wrapper-top">
-                                <a href="/photos/1005125" class="photo__picture">
-                                    <img class="photo__picture-img"
-                                         src="http://cdn.sportspring.ru/albums/1005125/5bbc894b2b621_284x190.jpg"
-                                         width="284" height="190" alt="3 тур. A1QA — AFC Red Bisons">
-                                </a>
-                                <a href="/photos/1005125" class="photo__title">
-                                    3 тур. A1QA — AFC Red Bisons </a>
-                            </div>
-                            <div class="photo__item-wrapper-bottom">
-                                <div class="photo__date">09 октября</div>
-                                <div class="photo__number">89</div>
-                            </div>
-                        </li>
-                        <li class="photo__item">
-                            <div class="photo__item-wrapper-top">
-                                <a href="/photos/1005124" class="photo__picture">
-                                    <img class="photo__picture-img"
-                                         src="http://cdn.sportspring.ru/albums/1005124/5bbc888fe41c3_284x190.jpg"
-                                         width="284" height="190" alt="3 тур. ФК Гатово — Newton Heath ">
-                                </a>
-                                <a href="/photos/1005124" class="photo__title">
-                                    3 тур. ФК Гатово — Newton Heath </a>
-                            </div>
-                            <div class="photo__item-wrapper-bottom">
-                                <div class="photo__date">09 октября</div>
-                                <div class="photo__number">76</div>
-                            </div>
-                        </li>
-                        <li class="photo__item">
-                            <div class="photo__item-wrapper-top">
-                                <a href="/photos/1005123" class="photo__picture">
-                                    <img class="photo__picture-img"
-                                         src="http://cdn.sportspring.ru/albums/1005123/5bbc875a1763b_284x190.jpg"
-                                         width="284" height="190" alt="3 тур. Строитель — 7 тонн-2">
-                                </a>
-                                <a href="/photos/1005123" class="photo__title">
-                                    3 тур. Строитель — 7 тонн-2 </a>
-                            </div>
-                            <div class="photo__item-wrapper-bottom">
-                                <div class="photo__date">09 октября</div>
-                                <div class="photo__number">77</div>
-                            </div>
-                        </li>
-                        <li class="photo__item">
-                            <div class="photo__item-wrapper-top">
-                                <a href="/photos/1005095" class="photo__picture">
-                                    <img class="photo__picture-img"
-                                         src="http://cdn.sportspring.ru/albums/1005095/5bbb6458f0688_284x190.jpg"
-                                         width="284" height="190" alt="1 тур. Поликлиника 12 — Иран">
-                                </a>
-                                <a href="/photos/1005095" class="photo__title">
-                                    1 тур. Поликлиника 12 — Иран </a>
-                            </div>
-                            <div class="photo__item-wrapper-bottom">
-                                <div class="photo__date">08 октября</div>
-                                <div class="photo__number">79</div>
-                            </div>
-                        </li>
-                        <li class="photo__item">
-                            <div class="photo__item-wrapper-top">
-                                <a href="/photos/1005094" class="photo__picture">
-                                    <img class="photo__picture-img"
-                                         src="http://cdn.sportspring.ru/albums/1005094/5bbb6356f02e4_284x190.jpg"
-                                         width="284" height="190" alt="4 тур. Стройтрест №1 — Фишка ремонта">
-                                </a>
-                                <a href="/photos/1005094" class="photo__title">
-                                    4 тур. Стройтрест №1 — Фишка ремонта </a>
-                            </div>
-                            <div class="photo__item-wrapper-bottom">
-                                <div class="photo__date">08 октября</div>
-                                <div class="photo__number">70</div>
-                            </div>
-                        </li>
-                        <li class="photo__item">
-                            <div class="photo__item-wrapper-top">
-                                <a href="/photos/1005093" class="photo__picture">
-                                    <img class="photo__picture-img"
-                                         src="http://cdn.sportspring.ru/albums/1005093/5bbb61d210c13_284x190.jpg"
-                                         width="284" height="190" alt="6 тур. Freedom — Licvin Sky">
-                                </a>
-                                <a href="/photos/1005093" class="photo__title">
-                                    6 тур. Freedom — Licvin Sky </a>
-                            </div>
-                            <div class="photo__item-wrapper-bottom">
-                                <div class="photo__date">08 октября</div>
-                                <div class="photo__number">70</div>
-                            </div>
-                        </li>
-                        <li class="photo__item">
-                            <div class="photo__item-wrapper-top">
-                                <a href="/photos/1005092" class="photo__picture">
-                                    <img class="photo__picture-img"
-                                         src="http://cdn.sportspring.ru/albums/1005092/5bbb6441ec973_284x190.jpg"
-                                         width="284" height="190" alt="4 тур. Velcom — Трансимпериал">
-                                </a>
-                                <a href="/photos/1005092" class="photo__title">
-                                    4 тур. Velcom — Трансимпериал </a>
-                            </div>
-                            <div class="photo__item-wrapper-bottom">
-                                <div class="photo__date">08 октября</div>
-                                <div class="photo__number">59</div>
-                            </div>
-                        </li>
+                        </li>'
+                                ]}
+                                
+                        
+                        
+                        
                         <li class="photo__item">
                             <div class="photo__item-wrapper-top">
                                 <a href="/photos/1005091" class="photo__picture">

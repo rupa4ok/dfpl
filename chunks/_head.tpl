@@ -16,10 +16,13 @@
     <meta name="twitter:site" content="Премьерлига. Любительский футбол">
     <link type="image/png" href="http://cdn.sportspring.ru/league/1000532/favicon.ico" rel="icon">
 
+<link href="css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/premierliga.css" rel="stylesheet">
     <link href="plugins/slick/slick.css" rel="stylesheet">
+    
     <link href="css/mobile/premierliga.css" rel="stylesheet">
+    <link href="css/uscl.nomobile.css" rel="stylesheet">
 
     <script src="js/jquery-3.2.1.js"></script>
     <link rel="stylesheet" href="http://cdn.webix.com/edge/webix.css">
