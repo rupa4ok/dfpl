@@ -1,3 +1,6 @@
+
+
+
 <link href="plugins/fontawesome/css/fontawesome.min.css" rel="stylesheet">
 <link href="plugins/fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="plugins/fontawesome/css/svg-with-js.css" rel="stylesheet">
@@ -21,6 +24,7 @@
 <script src="assets/73e6af64/js/posts.js"></script>
 <script src="assets/724123e/js/albums.js"></script>
 <script src="assets/a94d7669/js/videos.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 
 </body>
 
