@@ -8,5 +8,5 @@
     <p class="button" data-step="1" data-position="250,480" data-in="left" data-out="left"
        data-delay="500"><a href="{$item['uri']}" class="btn red btn-primary">Подробнее <i
                     class="fa fa-angle-right" aria-hidden="true"></i></a></p>
-    <a href="{$item['uri']}" class="slider_link"  data-step="1" data-in="right" data-delay="0" data-out="right"></a>
+    <a href="{$item['uri']}" class="slider_link" data-step="1" data-in="right" data-delay="0" data-out="right"></a>
 </div>
