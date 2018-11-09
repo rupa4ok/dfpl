@@ -10,8 +10,6 @@
     <main class="main">
         <div class="main-container main-container--inner">
             <div class="main-content ">
-
-
                 <section class="news-list">
                     <h2 class="visually-hidden">Новости</h2>
                     <ul class="news-list__list js-news">
@@ -147,11 +145,7 @@
             </div>
             
             {include 'file:chunks/sidebar.tpl'}
-            
-            
-            
-            
-            
+
         </div>
         <section class="partners mobile-hide">
             <div class="partners-wrapper">

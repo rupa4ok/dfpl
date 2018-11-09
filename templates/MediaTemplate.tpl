@@ -11,20 +11,15 @@
         <div class="main-container main-container--inner">
             <div class="main-content">
 
-
                 <section class="photo">
                     <h2 class="visually-hidden">Фото</h2>
                     <ul class="photo__list js-albums-list">
-                        
-                              {'!pdoPage' | snippet : [
-                                    'parents' => '3', 
-                                    'tpl' => '@FILE /chunks/catalog/photo.tpl'
-                                ]}
-                               
-                                
-                        
-                        
-                        
+
+                        {'!pdoPage' | snippet : [
+                        'parents' => '3',
+                        'tpl' => '@FILE /chunks/catalog/photo.tpl'
+                        ]}
+
                         <li class="photo__item">
                             <div class="photo__item-wrapper-top">
                                 <a href="/photos/1005091" class="photo__picture">
@@ -1287,5 +1282,4 @@
             </div>
         </section>
     </main>
-
 {/block}
