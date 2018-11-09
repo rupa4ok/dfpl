@@ -37,7 +37,9 @@
             </li>
             <li class="social__item social__item--youtube">
                 <a class="social__link social__link--youtube"
+
                    href="https://www.youtube.com/channel/UCnsh1nVWZIMZPblhEntMnOQ?view_as=subscriber" target="_blank">
+
                     <svg class="svg-icon--youtube" width="20" height="20" version="1.1"
                          xmlns="http://www.w3.org/2000/svg"
                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
