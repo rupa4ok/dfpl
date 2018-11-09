@@ -1,6 +1,3 @@
-
-
-
 <link href="plugins/fontawesome/css/fontawesome.min.css" rel="stylesheet">
 <link href="plugins/fontawesome/css/fontawesome.css" rel="stylesheet">
 <link href="plugins/fontawesome/css/svg-with-js.css" rel="stylesheet">
