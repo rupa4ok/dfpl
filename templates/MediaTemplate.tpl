@@ -10,7 +10,6 @@
     <main class="main">
         <div class="main-container main-container--inner">
             <div class="main-content">
-                
                 <section class="photo">
                     <h2 class="visually-hidden">Фото</h2>
                     <ul class="photo__list js-albums-list">
