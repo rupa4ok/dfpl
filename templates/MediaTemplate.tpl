@@ -18,7 +18,7 @@
                         
                               {'!pdoPage' | snippet : [
                                     'parents' => '3', 
-                                    'tpl' => '@FILE /chunks/catalog/Photo.tpl'
+                                    'tpl' => '@FILE /chunks/catalog/photo.tpl'
                                 ]}
                                
                                 
