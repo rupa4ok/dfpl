@@ -8,6 +8,8 @@
 class Base extends Modx
 {
     
+    public $table_e = 's_events';
+    
     public function __construct($modx)
     {
         $this->modx = $modx;
@@ -86,7 +88,7 @@ class Base extends Modx
      */
     public function getGoal($id,$club)
     {
-        $sql = 'SELECT * FROM s_events WHERE match_id = :id AND club_id = :club AND status = 1';
+        $sql = "SELECT * FROM {$this->table_e} WHERE match_id = :id AND club_id = :club AND status = 1";
         $statement = $this->modx->prepare($sql);
         if ( $statement->execute(array('id'=>$id,'club'=>$club)) ) {
             $result = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -117,6 +119,14 @@ class Base extends Modx
             $tvs[$k] = $tv->toArray();
             print_r($tvs[$k]);
         }
+        return;
+    }
+    
+    public function GetPlayerList()
+    {
+        $array = array('1', '2', '3');
+        $comma_separated = implode(",", $array);
+        echo $comma_separated;
         return;
     }
     

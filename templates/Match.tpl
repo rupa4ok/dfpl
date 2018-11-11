@@ -36,7 +36,7 @@
                                         <div class="match-promo__best-player mobile-hide
         match-promo__best-player--right        match-promo__small-star                    ">
                                             <a class="match-promo__best-player-name" href="/player/1473737">
-                                                Дмитрий Лукьянюк </a>
+                                                {$_modx->resource.best1 | resource : 'pagetitle'} </a>
                                             <p class="match-promo__best-player-text">
                                                 Лучший игрок команды </p>
                                         </div>
@@ -66,7 +66,7 @@
                                         <div class="match-promo__best-player mobile-hide
         match-promo__best-player--left        match-promo__small-star                match-promo__small-star--left    ">
                                             <a class="match-promo__best-player-name" href="/player/1473773">
-                                                Евгений Савицкий </a>
+                                                {$_modx->resource.best2 | resource : 'pagetitle'} </a>
                                             <p class="match-promo__best-player-text">
                                                 Лучший игрок команды </p>
                                         </div>
