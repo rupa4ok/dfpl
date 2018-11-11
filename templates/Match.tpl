@@ -18,13 +18,12 @@
                 <section class="match">
                     <h3 class="visually-hidden">Матч</h3>
                     <section class="match-promo">
-                        <div class="match-promo-unit match-promo-unit--active
-                                                match-promo-unit--shadow        "
+                        <div class="match-promo-unit match-promo-unit--active match-promo-unit--shadow "
                              style="background-image: url('/assets/257cb080/football_match_cover_cover.jpg');">
-                            <p class="match-promo__date-time ">
-                                23 Сентября / Воскресенье / 14:30 </p>
+                            <p class="match-promo__date-time ">{$_modx->resource.publishedon | date_format:"%d %B / %A / %H:%M"}</p>
                             <div class="match-promo__place-wrapper">
-                                <p class="match-promo__place" title="Стадион ФШМ, Минск, ул. Серова, 18">Стадион ФШМ</p>
+                                <p class="match-promo__place"
+                                   title="Стадион ФШМ, Минск, ул. Серова, 18">{$_modx->resource.place}</p>
                             </div>
                             <div class="match-promo__score-wrapper">
                                 <div class="match-promo__team-container match-promo__team-container--left">
@@ -32,10 +31,8 @@
                                         <div class="match-promo__team-text match-promo__team-text--right">
                                             <a class="match-promo__team-name" href="/team/1057445"
                                                title="Кобринское ПМС">
-                                                Кобринское ПМС </a>
-                                            <!--
-                                                        <p class="match-promo__team-city"></p>
-                                                -->                        </div>
+                                                {$_modx->resource.club1 | resource : 'pagetitle'} </a>
+                                        </div>
                                         <div class="match-promo__best-player mobile-hide
         match-promo__best-player--right        match-promo__small-star                    ">
                                             <a class="match-promo__best-player-name" href="/player/1473737">
@@ -52,7 +49,7 @@
                                 </div>
                                 <a href="/match/1187160" id="match-score" class="match-promo__score">
                                     <div class="match-promo__score-main">
-                                        5 : 1
+                                        {'!getGoals' | snippet : []}
                                     </div>
                                 </a>
                                 <div class="match-promo__team-container match-promo__team-container--right">
@@ -64,10 +61,8 @@
                                     <div class="match-promo__team-content match-promo__team-content--left">
                                         <div class="match-promo__team-text match-promo__team-text--left">
                                             <a class="match-promo__team-name" href="/team/1057446" title="Хойники">
-                                                Хойники </a>
-                                            <!--
-                                                        <p class="match-promo__team-city"></p>
-                                                -->                        </div>
+                                                {$_modx->resource.club2 | resource : 'pagetitle'}</a>
+                                        </div>
                                         <div class="match-promo__best-player mobile-hide
         match-promo__best-player--left        match-promo__small-star                match-promo__small-star--left    ">
                                             <a class="match-promo__best-player-name" href="/player/1473773">
@@ -732,7 +727,9 @@
                                                         <div class="vertical-timeline__event-info vertical-timeline__event-info--right">
                                                         </div>
                                                         <div class="vertical-timeline__score-wrapper">
-                                                            <div class="vertical-timeline__score">5 : 1</div>
+                                                            <div class="vertical-timeline__score">
+
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </li>

@@ -11,8 +11,20 @@ class Base extends Modx
     public function __construct($modx)
     {
         $this->modx = $modx;
+
+        // Включаем обработку ошибок
+        $modx->getService('error','error.modError');
+        $modx->setLogLevel(modX::LOG_LEVEL_INFO);
+        $modx->setLogTarget(XPDO_CLI_MODE ? 'ECHO' : 'HTML');
     }
     
+    /**
+     * Добавление в бд
+     *
+     * @param $table
+     * @param $data
+     *
+     */
     public function insert($table, $data){
         $keys = array_keys($data);
         $fields = '`' . implode('`,`', $keys) . '`';
@@ -38,6 +50,21 @@ class Base extends Modx
         return;
     }
     
+    /**
+     * Получаем массив tv текущего ресурса
+     * @param $id
+     * @return mixed | array
+     */
+    public function getTv($id)
+    {
+        $res = $this->modx->getObject('modResource', $id);
+        $tvs = $res->getMany('TemplateVarResources');
+        foreach ($tvs as $k => $tv) {
+            $tvs[$k] = $tv->toArray();
+        }
+        return $tvs;
+    }
+    
     public function getRow()
     {
         $sql = 'SELECT * FROM s_club WHERE id > :id';
@@ -51,7 +78,38 @@ class Base extends Modx
         return;
     }
     
+    /**
+     * Количество голов для матча
+     * @param $id
+     * @param $club
+     * @return mixed
+     */
+    public function getGoal($id,$club)
+    {
+        $sql = 'SELECT * FROM s_events WHERE match_id = :id AND club_id = :club AND status = 1';
+        $statement = $this->modx->prepare($sql);
+        if ( $statement->execute(array('id'=>$id,'club'=>$club)) ) {
+            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        }
+        $count = $statement->rowCount();
+        return $count;
+    }
+    
+    /**
+     * Список игроков
+     */
     public function getPlayer()
+    {
+        $res = $this->modx->getObject('modResource', 14);
+        $tvs = $res->getMany('TemplateVarResources');
+        foreach ($tvs as $k => $tv) {
+            $tvs[$k] = $tv->toArray();
+            print_r($tvs[$k]);
+        }
+        return;
+    }
+    
+    public function getTeam()
     {
         $res = $this->modx->getObject('modResource', 14);
         $tvs = $res->getMany('TemplateVarResources');

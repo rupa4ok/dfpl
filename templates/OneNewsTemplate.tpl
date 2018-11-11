@@ -7,38 +7,27 @@
                 <section class="news-item">
                     <h2 class="visually-hidden">Новость</h2>
                     <div class="news-item__picture"
-                         style="background-image: url('http://cdn.sportspring.ru/news/1006422/5bbca04427bbe_910x610.jpg');">
+                         style="background-image: url('{$_modx->resource.image}');">
                         <div class="news-item__picture-content mobile-hide">
                             <div class="news-item__date">
                                 <p class="news-item__date-p">09 октября</p>
                             </div>
                             <div class="news-item__title">
-                                <p class="news-item__title-p">Играй в Премьерлиге 5х5 - и выигрывай с Maxline!</p>
-                                <ul class="tags tags--news-item-list">
-                                    <li class="tag__item">
-                                        <a class="tag__text">5х5. Центр-Запад. Д1</a>
-                                    </li>
-                                </ul>
+                                <p class="news-item__title-p">{$_modx->resource.pagetitle}</p>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="news-item__content">
                         <div class="news-item__content-wrapper">
                             <p class="news-item__date-p">09 октября</p>
-                            <p class="news-item__title-p">Играй в Премьерлиге 5х5 - и выигрывай с Maxline!</p>
+                            <p class="news-item__title-p">{$_modx->resource.pagetitle}</p>
                             <div class="news-item__text">
-                                <p>Начиная с третьей игровой недели, букмекерская контора Maxline предлагает котировки
-                                    на матчи Первого дивизиона Центр-Запада футзального турнира Премьерлиги.</p>
-                                <p>Как правило, линия будет появляться в игровой день в районе полудня.</p>
-                                <p>Играй в Премьерлиге 5х5 - и выигрывай с Maxline!</p>
+                                <p>{$_modx->resource.content}</p>
                                 <div class="clear"></div>
                             </div>
                         </div>
-                        <ul class="tags tags--news-list">
-                            <li class="tag__item">
-                                <a class="tag__text">5х5. Центр-Запад. Д1</a>
-                            </li>
-                        </ul>
+                        
                     </div>
                 </section>
             </div>

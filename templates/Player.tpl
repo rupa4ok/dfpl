@@ -16,36 +16,44 @@
                 <section class="player">
                     <h2 class="visually-hidden">Участники-игрок</h2>
                     <div class="player-promo">
-
+                        {'!getStat' | snippet : []}
                         <div class="player-promo__picture">
-                            <img class="player-promo__img" src="/assets/4d776251/football_player_thumb.png" width="320"
-                                 height="320" alt="Фото игрока">
+
+                            {if $_modx->resource.playerImage}
+                                <img class="player-promo__img" src="{$_modx->resource.playerImage}" width="320"
+                                     height="320" alt="Фото игрока">
+                            {else}
+                                <img class="player-promo__img" src="/assets/images/football_player_thumb.png"
+                                     width="320"
+                                     height="320" alt="Фото игрока">
+                            {/if}
+
                         </div>
                         <div class="player-promo__content">
-                            <p class="player-promo__name">Сабери Саид </p>
+                            <p class="player-promo__name">{$_modx->resource.pagetitle}</p>
                             <p class="player-promo__birthday">
                                 <span class="player-promo__birthday-text">Дата рождения:</span>
-                                <span class="player-promo__birthday-date">04 июля 1995</span>
+                                <span class="player-promo__birthday-date">{$_modx->resource.bDate}</span>
                             </p>
                             <p class="player-promo__teams">
                                 <span class="player-promo__teams-text">Клуб:</span>
                                 <span class="player-promo__teams-name">
-            Red Stars, Иран, FC Maracana        </span>
+            {$_modx->resource.club | resource : 'pagetitle'}</span>
                             </p>
                             <p class="player-promo__teams">
                                 <span class="player-promo__teams-text">Роль на поле:</span>
-                                <span class="player-promo__teams-name">
-            Водонос        </span>
+                                <span class="player-promo__teams-name">{$_modx->resource.role}</span>
                             </p>
                             <p class="player-promo__teams">
                                 <span class="player-promo__teams-text">Сколько раз был лучшим игроком:</span>
                                 <span class="player-promo__teams-name">
-            абсолютный чемпион по литрболу        </span>
+            {$_modx->getPlaceholder('stat.best')}     </span>
                             </p>
                             <p class="player-promo__statistics">
                                 <span class="player-promo__statistics-text">За все время:</span>
                                 <span class="player-promo__statistics-values">
-            12-28-7-0-0 / И-Г-П-ЖК-КК        </span>
+
+            {$_modx->getPlaceholder('stat.game')}-{$_modx->getPlaceholder('stat.goal')}-{$_modx->getPlaceholder('stat.pass')}-{$_modx->getPlaceholder('stat.yellow')}-{$_modx->getPlaceholder('stat.red')}/ И-Г-П-ЖК-КК        </span>
                             </p>
                         </div>
                     </div>

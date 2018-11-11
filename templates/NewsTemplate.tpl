@@ -14,6 +14,14 @@
                     <h2 class="visually-hidden">Новости</h2>
                     <ul class="news-list__list js-news">
 
+                         {'!pdoPage' | snippet : [
+                        'parents' => '4',
+                        'includeTVs'=>'image',
+                        'processTVs' => '1',
+                        'includeContent' => '1',
+                        'tpl' => '@FILE /chunks/catalog/news.tpl'
+                        ]}
+
                         <li class="news-list__item">
                             <a class="news-list__picture mobile-hide" href="/posts/1006422">
                                 <img class="news-list__picture-img"

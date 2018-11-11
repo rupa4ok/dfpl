@@ -1,11 +1,26 @@
 <li class="video__item">
     <div class="video__item-wrapper">
         <a href="#video_block" data-fancybox class="video__picture">
-            <img class="video__picture-img" src="http://cdn.sportspring.ru/video/1006286/5bd0c1ccd4a93_thumb.jpg"
-                 width="284" height="190" alt="Премьерлига 5х5. 3 тур. Связист — Минск Юнайтед. 3-6">
+            {set $video =json_decode($_pls['tv.video'])}
+            {if !empty($video['video'])}
+                <img class="video__picture-img" src="{$video['image']}"
+                     width="284" height="190" alt="{$pagetitle}">
+            {else}
+                {$video['image']}
+            {/if}
+
         </a>
         <a href="#video_block" data-fancybox class="video__title">{$pagetitle}</a>
     </div>
     <div class="video__date">24 октября</div>
 </li>
-<div id="video_block"> {$_pls['tv.video']}</div>
+{set $video =json_decode($_pls['tv.video'])}
+{if !empty($video['video'])}
+    <div id="video_block">
+        <iframe width="560" height="315" src="{$video['video']}" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+{else}
+
+{/if}
