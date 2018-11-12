@@ -1,6 +1,6 @@
 <?php
-require_once '/home/s15918/www/core/elements/snippets/core/Base.php';
-require_once '/home/s15918/www/core/elements/snippets/core/Statistic.php';
+require_once '/var/www/site22.websfera.by/data/www/site22.websfera.by/core/elements/snippets/core//Base.php';
+require_once '/var/www/site22.websfera.by/data/www/site22.websfera.by/core/elements/snippets/core//Statistic.php';
 
 $stat = new Statistic($modx);
 

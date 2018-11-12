@@ -10,6 +10,7 @@ class Base extends Modx
     
     public $table_e = 's_events';
     public $table_p = 's_players';
+    public $table_m = 's_match';
     
     public function __construct($modx)
     {
@@ -76,6 +77,9 @@ class Base extends Modx
         return $tvs;
     }
     
+    /**
+     * Статистика клуба
+     */
     public function getRow()
     {
         $sql = 'SELECT * FROM s_club WHERE id > :id';
@@ -155,6 +159,21 @@ class Base extends Modx
         }
         
         return $output;
+    }
+    
+    /**
+     * Получение массива данных матча по его id
+     * @param $id
+     * @return array
+     */
+    public function getClubById($id)
+    {
+        $sql = "SELECT * FROM {$this->table_m} WHERE id = :id";
+        $statement = $this->modx->prepare($sql);
+        if ( $statement->execute(array('id'=>$id)) ) {
+            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        }
+        return $result;
     }
     
 }

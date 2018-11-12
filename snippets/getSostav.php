@@ -6,7 +6,6 @@
  * Time: 9:02
  */
 
-require_once '/home/s15918/www/core/elements/snippets/core/Base.php';
-$chunk = 'sostav';
-$q = new Base($modx);
-$result = $q->GetPlayerList($club,$chunk);
+require_once MODX_CORE_PATH. '/elements/snippets/core/Base.php';
+$base = new Base($modx);
+$result = $base->GetPlayerList($club,$chunk);

@@ -132,14 +132,14 @@
                                             {$_modx->resource.club1 | resource : 'pagetitle'} </a>
                                         <ul class="match-protocol__team match-protocol__team--left">
 
-                                            {'!getSostav' | snippet : ['club' => $_modx->resource.club1]}
+                                            {'!getSostav' | snippet : ['club' => $_modx->resource.club1, 'chunk' => 'sostav']}
 
                                         </ul>
                                         <a class="match-protocol__team-name" href="/team/1057445"
                                            title="Кобринское ПМС">
                                             {$_modx->resource.club2 | resource : 'pagetitle'} </a>
                                         <ul class="match-protocol__team match-protocol__team--right">
-                                            {'!getSostav' | snippet : ['club' => $_modx->resource.club2]}
+                                            {'!getSostav' | snippet : ['club' => $_modx->resource.club2, 'chunk' => 'sostav1']}
                                         </ul>
                                     </div>
                                     <div class="match-protocol__referees">
