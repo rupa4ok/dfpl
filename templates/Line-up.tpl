@@ -49,10 +49,11 @@
                                 </div>
                             </div>
                             <div class="team-promo__team-links">
-                                <a class="link link--team-social" href="https://vk.com/afcredbisons" target="_blank">
+                                <a class="link link--team-social" href="{$_modx->resource.parent | resource : 'url'}" target="_blank">
                                     https://vk.com/afcredbisons </a>
                             </div>
                         </div>
+
                         <div class="team-promo__results">
                             <div class="team-promo__results-form">
                                 <span class="team-promo__results-form-text">Последние матчи</span>

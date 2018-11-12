@@ -4,7 +4,6 @@ require_once '/home/s15918/www/core/elements/snippets/core/Base.php';
 $q = new Base($modx);
 
 $id = $modx->resource->get('id');
-$result = $q->getTv($id);
 
 $club = 17;
 $count1 = $q->getGoal($id,$club);

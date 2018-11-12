@@ -9,6 +9,7 @@ class Base extends Modx
 {
     
     public $table_e = 's_events';
+    public $table_p = 's_players';
     
     public function __construct($modx)
     {
@@ -38,6 +39,14 @@ class Base extends Modx
         return;
     }
     
+    /**
+     * Обновление полей в любой таблице бд
+     * @param $table
+     * @param $data
+     * @param $key
+     * @param $val
+     * @return bool|void
+     */
     public function update($table, $data, $key, $val){
         if(!$key || !$val) return false;
         $placeholders = array();
@@ -98,7 +107,7 @@ class Base extends Modx
     }
     
     /**
-     * Список игроков
+     * Вывод списка игроков
      */
     public function getPlayer()
     {
@@ -122,12 +131,30 @@ class Base extends Modx
         return;
     }
     
-    public function GetPlayerList()
+    /**
+     * Список игроков команды по id команды
+     * @param $club
+     * @param $chunk
+     * @return array
+     */
+    public function GetPlayerList($club,$chunk)
     {
-        $array = array('1', '2', '3');
-        $comma_separated = implode(",", $array);
-        echo $comma_separated;
-        return;
+        //Получаем список игроков с привязкой к команде
+        $sql = "SELECT * FROM {$this->table_p} WHERE club_id = :club";
+        $statement = $this->modx->prepare($sql);
+        if ( $statement->execute(array('club'=>$club)) ) {
+            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        }
+        //Вывод данных игрока в чанк
+        foreach ($result as $k => $res) {
+            $output[] = $this->modx->getChunk($chunk, array(
+                'fio' => $res['fio'],
+                'role' => $res['role']
+                ));
+            echo $output[$k];
+        }
+        
+        return $output;
     }
     
 }
