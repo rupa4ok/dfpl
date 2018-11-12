@@ -1,5 +1,4 @@
 <?php
-
 define('MODX_API_MODE', true);
 require_once '/home/s15918/www/index.php';
 

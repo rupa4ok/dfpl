@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d28dd0ff-10fe-4aa8-a1d5-cf7b8d2e8b76" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/chunks/catalog/sostav.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snippets/getSostav.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/core/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/core/Base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chunks/catalog/Photo.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/catalog/Photo.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chunks/catalog/news.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/catalog/news.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chunks/catalog/video.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/catalog/video.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snippets/getGoals.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/getGoals.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Line-up.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Line-up.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Match.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Match.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/getSostav.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/getSostav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/getStat.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/getStat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/getViews.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/getViews.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/MediaTemplate.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/MediaTemplate.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/OneTeam.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/OneTeam.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,8 +77,8 @@
       <file leaf-file-name="Match.tpl" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Match.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1463">
-              <caret line="81" column="30" lean-forward="true" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
+            <state relative-caret-position="182">
+              <caret line="35" column="88" lean-forward="true" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -119,8 +122,8 @@
       <file leaf-file-name="getViews.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snippets/getViews.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="69" />
+            <state relative-caret-position="189">
+              <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -137,8 +140,8 @@
       <file leaf-file-name="getGoals.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snippets/getGoals.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="210">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -325,7 +328,7 @@
       <workItem from="1541949570030" duration="7677000" />
       <workItem from="1541997838520" duration="603000" />
       <workItem from="1542005474437" duration="7326000" />
-      <workItem from="1542024251941" duration="5040000" />
+      <workItem from="1542024251941" duration="5999000" />
     </task>
     <task id="LOCAL-00001" summary="Перепиливаю старый шаблон">
       <created>1539634108058</created>
@@ -383,11 +386,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541963338667</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="12/11/2018 &#10;- Список игроков на странице матча&#10;- Вывод игроков команды&#10;- Общая статистика">
+      <created>1542031234616</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1542031234616</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79666000" />
+    <option name="totallyTimeSpent" value="80625000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -400,6 +410,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3297062" />
@@ -646,8 +657,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/snippets/getGoals.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="210">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -660,8 +671,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/snippets/getViews.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" selection-start-line="10" selection-end-line="10" selection-end-column="69" />
+        <state relative-caret-position="189">
+          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -709,8 +720,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Match.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="81" column="30" lean-forward="true" selection-start-line="81" selection-start-column="30" selection-end-line="81" selection-end-column="30" />
+        <state relative-caret-position="182">
+          <caret line="35" column="88" lean-forward="true" selection-start-line="35" selection-start-column="88" selection-end-line="35" selection-end-column="88" />
         </state>
       </provider>
     </entry>
