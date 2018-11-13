@@ -5,7 +5,7 @@
         <div class="main-container main-container--inner">
             <div class="main-content ">
                 <section class="teams-start-page">
-                    <h2 class="visually-hidden">Команда</h2>
+                    <h2 class="visually-hidden">{$_modx->resource.parent | resource : 'pagetitle'}</h2>
                     <section class="team-promo">
                         <h3 class="visually-hidden">Краткая информация о команде</h3>
                         <a class="team-promo__logo" href="/team/1056275">

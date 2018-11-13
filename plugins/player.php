@@ -48,4 +48,3 @@ if ($resource->get('parent') == 13) {
         }
     }
 }
-

@@ -49,6 +49,3 @@ if ($resource->get('template') == 30) {
         }
     }
 }
-
-
-
