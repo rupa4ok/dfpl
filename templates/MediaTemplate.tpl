@@ -10,12 +10,15 @@
     <main class="main">
         <div class="main-container main-container--inner">
             <div class="main-content">
+                
                 <section class="photo">
                     <h2 class="visually-hidden">Фото</h2>
                     <ul class="photo__list js-albums-list">
 
                         {'!pdoPage' | snippet : [
                         'parents' => '3',
+                        'includeTVs'=>'galleryPreview',
+                        'processTVs' => '1',
                         'tpl' => '@FILE /chunks/catalog/photo.tpl'
                         ]}
 

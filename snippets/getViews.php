@@ -1,7 +1,6 @@
 <?php
-
 define('MODX_API_MODE', true);
-require_once '/home/s15918/www/index.php';
+require_once '/var/www/site22.websfera.by/data/www/site22.websfera.by/index.php';
 
 // Включаем обработку ошибок
 $modx->getService('error','error.modError');

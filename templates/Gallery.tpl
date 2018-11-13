@@ -12,8 +12,6 @@
             <div class="main-content ">
 
                 {$_modx->runSnippet('!ms2Gallery', [
-                'parents' => '0',
-                'resources' => '{$id}'
                 ])}
 
             </div>

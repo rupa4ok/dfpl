@@ -18,13 +18,12 @@
                 <section class="match">
                     <h3 class="visually-hidden">Матч</h3>
                     <section class="match-promo">
-                        <div class="match-promo-unit match-promo-unit--active
-                                                match-promo-unit--shadow        "
+                        <div class="match-promo-unit match-promo-unit--active match-promo-unit--shadow "
                              style="background-image: url('/assets/257cb080/football_match_cover_cover.jpg');">
-                            <p class="match-promo__date-time ">
-                                23 Сентября / Воскресенье / 14:30 </p>
+                            <p class="match-promo__date-time ">{$_modx->resource.publishedon | date_format:"%d %B / %A / %H:%M"}</p>
                             <div class="match-promo__place-wrapper">
-                                <p class="match-promo__place" title="Стадион ФШМ, Минск, ул. Серова, 18">Стадион ФШМ</p>
+                                <p class="match-promo__place"
+                                   title="Стадион ФШМ, Минск, ул. Серова, 18">{$_modx->resource.place}</p>
                             </div>
                             <div class="match-promo__score-wrapper">
                                 <div class="match-promo__team-container match-promo__team-container--left">
@@ -32,14 +31,12 @@
                                         <div class="match-promo__team-text match-promo__team-text--right">
                                             <a class="match-promo__team-name" href="/team/1057445"
                                                title="Кобринское ПМС">
-                                                Кобринское ПМС </a>
-                                            <!--
-                                                        <p class="match-promo__team-city"></p>
-                                                -->                        </div>
+                                                {$_modx->resource.club1 | resource : 'pagetitle'} </a>
+                                        </div>
                                         <div class="match-promo__best-player mobile-hide
         match-promo__best-player--right        match-promo__small-star                    ">
                                             <a class="match-promo__best-player-name" href="/player/1473737">
-                                                Дмитрий Лукьянюк </a>
+                                                {$_modx->resource.best1 | resource : 'pagetitle'} </a>
                                             <p class="match-promo__best-player-text">
                                                 Лучший игрок команды </p>
                                         </div>
@@ -52,7 +49,7 @@
                                 </div>
                                 <a href="/match/1187160" id="match-score" class="match-promo__score">
                                     <div class="match-promo__score-main">
-                                        5 : 1
+                                        {'!getGoals' | snippet : []}
                                     </div>
                                 </a>
                                 <div class="match-promo__team-container match-promo__team-container--right">
@@ -64,14 +61,12 @@
                                     <div class="match-promo__team-content match-promo__team-content--left">
                                         <div class="match-promo__team-text match-promo__team-text--left">
                                             <a class="match-promo__team-name" href="/team/1057446" title="Хойники">
-                                                Хойники </a>
-                                            <!--
-                                                        <p class="match-promo__team-city"></p>
-                                                -->                        </div>
+                                                {$_modx->resource.club2 | resource : 'pagetitle'}</a>
+                                        </div>
                                         <div class="match-promo__best-player mobile-hide
         match-promo__best-player--left        match-promo__small-star                match-promo__small-star--left    ">
                                             <a class="match-promo__best-player-name" href="/player/1473773">
-                                                Евгений Савицкий </a>
+                                                {$_modx->resource.best2 | resource : 'pagetitle'} </a>
                                             <p class="match-promo__best-player-text">
                                                 Лучший игрок команды </p>
                                         </div>
@@ -80,9 +75,9 @@
                             </div>
                             <div class="match-promo__tournament-wrapper">
                                 <a class="match-promo__tournament" href="/tournament/1002382">
-                                    Кубок Беларуси 8х8 </a>
+                                    {$_modx->resource.parent | resource : 'parent' | resource : 'pagetitle'}  </a>
                                 <a class="match-promo__tour" href="/tournament/1002382/calendar?round_id=1003932">
-                                    1 тур </a>
+                                    {$_modx->resource.tour}</a>
                             </div>
                         </div>
                     </section>
@@ -119,11 +114,11 @@
                                         </a>
                                         <a class="match-protocol__team-name match-protocol__team-name--left"
                                            href="/team/1057445" title="Кобринское ПМС">
-                                            Кобринское ПМС </a>
+                                            {$_modx->resource.club1 | resource : 'pagetitle'} </a>
                                         <p class="match-protocol__title">Составы команд</p>
                                         <a class="match-protocol__team-name match-protocol__team-name--right"
                                            href="/team/1057446" title="Хойники">
-                                            Хойники </a>
+                                            {$_modx->resource.club2 | resource : 'pagetitle'} </a>
                                         <a class="match-protocol__team-logo match-protocol__team-logo--margin-left"
                                            href="/team/1057446">
                                             <img class="match-protocol__team-img"
@@ -134,295 +129,17 @@
                                     <div class="match-protocol__composition">
                                         <a class="match-protocol__team-name" href="/team/1057445"
                                            title="Кобринское ПМС">
-                                            Кобринское ПМС </a>
+                                            {$_modx->resource.club1 | resource : 'pagetitle'} </a>
                                         <ul class="match-protocol__team match-protocol__team--left">
-                                            <li class="match-protocol__member match-protocol__member--left">
-                                                                            <span class="match-protocol__member-amplua">
-                                Вр.
-                            </span>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473757">
-                                                        Михаил Кононович </a>
-                                                </div>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--left">
-                                                                            <span class="match-protocol__member-amplua">
-                                Зщ.
-                            </span>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473763">
-                                                        Константин Максак </a>
-                                                </div>
 
-                                                <ul class="event-list event-list--right">
-                                                    <li class="event-item">
-                                                        <svg class="goal" width="24" height="24.5">
-                                                            <use xlink:href="/img/icons.svg#goal"></use>
-                                                        </svg>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--left">
-                                                                            <span class="match-protocol__member-amplua">
-                                Зщ.
-                            </span>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473735">
-                                                        Олег Образцов </a>
-                                                </div>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--left">
-                                                                            <span class="match-protocol__member-amplua">
-                                Зщ.
-                            </span>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473747">
-                                                        Вячеслав Пархоменко </a>
-                                                </div>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--left">
-                                                                            <span class="match-protocol__member-amplua">
-                                Зщ.
-                            </span>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1474829">
-                                                        Василий Пивчик </a>
-                                                </div>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--left">
-                                                                            <span class="match-protocol__member-amplua">
-                                Зщ.
-                            </span>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473752">
-                                                        Денис Самосюк </a>
-                                                </div>
+                                            {'!getSostav' | snippet : ['club' => $_modx->resource.club1, 'chunk' => 'sostav']}
 
-                                                <ul class="event-list event-list--right">
-                                                    <li class="event-item">
-                                                        <svg class="goal" width="24" height="24.5">
-                                                            <use xlink:href="/img/icons.svg#goal"></use>
-                                                        </svg>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--left">
-                                                                            <span class="match-protocol__member-amplua">
-                                Пз.
-                            </span>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473738">
-                                                        Владислав Доценко </a>
-                                                </div>
-
-                                                <ul class="event-list event-list--right">
-                                                    <li class="event-item">
-                                                        <svg class="goal" width="24" height="24.5">
-                                                            <use xlink:href="/img/icons.svg#goal"></use>
-                                                        </svg>
-                                                    </li>
-                                                    <li class="event-item">
-                                                        <svg class="assist" width="34.5" height="21.3">
-                                                            <use xlink:href="/img/icons.svg#assist"></use>
-                                                        </svg>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--left">
-                                                                            <span class="match-protocol__member-amplua">
-                                Пз.
-                            </span>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473734">
-                                                        Александр Лоцук </a>
-                                                </div>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--left">
-                                                                            <span class="match-protocol__member-amplua">
-                                Пз.
-                            </span>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473737">
-                                                        Дмитрий Лукьянюк </a>
-                                                </div>
-
-                                                <ul class="event-list event-list--right">
-                                                    <li class="event-item">
-                                                        <svg class="goal" width="24" height="24.5">
-                                                            <use xlink:href="/img/icons.svg#goal"></use>
-                                                        </svg>
-                                                    </li>
-                                                    <li class="event-item event-item--number">x2</li>
-                                                </ul>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--left">
-                                                                            <span class="match-protocol__member-amplua">
-                                Пз.
-                            </span>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1474828">
-                                                        Никита Трубчик </a>
-                                                </div>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--left">
-                                                                            <span class="match-protocol__member-amplua">
-                                Пз.
-                            </span>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473742">
-                                                        Ярослав Трубчик </a>
-                                                </div>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--left">
-                                                                            <span class="match-protocol__member-amplua">
-                                Пз.
-                            </span>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473745">
-                                                        Александр Якубук </a>
-                                                </div>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--left">
-                                                                            <span class="match-protocol__member-amplua">
-                                Нп.
-                            </span>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473736">
-                                                        Андриан Володько </a>
-                                                </div>
-
-                                                <ul class="event-list event-list--right">
-                                                    <li class="event-item">
-                                                        <svg class="assist" width="34.5" height="21.3">
-                                                            <use xlink:href="/img/icons.svg#assist"></use>
-                                                        </svg>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--left">
-                                                                            <span class="match-protocol__member-amplua">
-                                Нп.
-                            </span>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473740">
-                                                        Андрей Климук </a>
-                                                </div>
-
-                                                <ul class="event-list event-list--right">
-                                                    <li class="event-item">
-                                                        <svg class="assist" width="34.5" height="21.3">
-                                                            <use xlink:href="/img/icons.svg#assist"></use>
-                                                        </svg>
-                                                    </li>
-                                                </ul>
-                                            </li>
                                         </ul>
                                         <a class="match-protocol__team-name" href="/team/1057445"
                                            title="Кобринское ПМС">
-                                            Хойники </a>
+                                            {$_modx->resource.club2 | resource : 'pagetitle'} </a>
                                         <ul class="match-protocol__team match-protocol__team--right">
-                                            <li class="match-protocol__member match-protocol__member--right">
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473773">
-                                                        Евгений Савицкий </a>
-                                                </div>
-                                                <span class="match-protocol__member-amplua">
-                                Вр.
-                            </span>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--right">
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473777">
-                                                        Захар Бородулин </a>
-                                                </div>
-                                                <span class="match-protocol__member-amplua">
-                                Зщ.
-                            </span>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--right">
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473774">
-                                                        Алексей Ториков </a>
-                                                </div>
-                                                <span class="match-protocol__member-amplua">
-                                Зщ.
-                            </span>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--right">
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473783">
-                                                        Матвей Власенко </a>
-                                                </div>
-                                                <span class="match-protocol__member-amplua">
-                                Пз.
-                            </span>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--right">
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473785">
-                                                        Анатолий Дуботдел </a>
-                                                </div>
-                                                <span class="match-protocol__member-amplua">
-                                Пз.
-                            </span>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--right">
-
-                                                <ul class="event-list event-list--left">
-                                                    <li class="event-item">
-                                                        <svg class="goal" width="24" height="24.5">
-                                                            <use xlink:href="/img/icons.svg#goal"></use>
-                                                        </svg>
-                                                    </li>
-                                                </ul>
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473780">
-                                                        Денис Ефименко </a>
-                                                </div>
-                                                <span class="match-protocol__member-amplua">
-                                Пз.
-                            </span>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--right">
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473772">
-                                                        Алексей Степаненко </a>
-                                                </div>
-                                                <span class="match-protocol__member-amplua">
-                                Пз.
-                            </span>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--right">
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473770">
-                                                        Дмитрий Терещенко </a>
-                                                </div>
-                                                <span class="match-protocol__member-amplua">
-                                Пз.
-                            </span>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--right">
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473771">
-                                                        Александр Клименко </a>
-                                                </div>
-                                                <span class="match-protocol__member-amplua">
-                                Нп.
-                            </span>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol__member--right">
-                                                <div class="match-protocol__member-captain-wrapper">
-                                                    <a class="match-protocol__member-name" href="/player/1473775">
-                                                        Андрей Марченко </a>
-                                                </div>
-                                                <span class="match-protocol__member-amplua">
-                                Нп.
-                            </span>
-                                            </li>
-                                            <li class="match-protocol__member match-protocol-empty"></li>
-                                            <li class="match-protocol__member match-protocol-empty"></li>
-                                            <li class="match-protocol__member match-protocol-empty"></li>
-                                            <li class="match-protocol__member match-protocol-empty"></li>
+                                            {'!getSostav' | snippet : ['club' => $_modx->resource.club2, 'chunk' => 'sostav1']}
                                         </ul>
                                     </div>
                                     <div class="match-protocol__referees">
@@ -732,7 +449,9 @@
                                                         <div class="vertical-timeline__event-info vertical-timeline__event-info--right">
                                                         </div>
                                                         <div class="vertical-timeline__score-wrapper">
-                                                            <div class="vertical-timeline__score">5 : 1</div>
+                                                            <div class="vertical-timeline__score">
+
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </li>

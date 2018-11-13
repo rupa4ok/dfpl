@@ -49,6 +49,21 @@
                                                title="10 сентября, 7 тонн-2 2 : 12 AFC Red Bisons">
                                                 В </a>
                                         </li>
+                                        <li class="form-results-item form-results-item--win">
+                                            <a class="form-results-link" href="/match/1179545"
+                                               title="10 сентября, 7 тонн-2 2 : 12 AFC Red Bisons">
+                                                В </a>
+                                        </li>
+                                        <li class="form-results-item form-results-item--win">
+                                            <a class="form-results-link" href="/match/1179545"
+                                               title="10 сентября, 7 тонн-2 2 : 12 AFC Red Bisons">
+                                                В </a>
+                                        </li>
+                                        <li class="form-results-item form-results-item--win">
+                                            <a class="form-results-link" href="/match/1179545"
+                                               title="10 сентября, 7 тонн-2 2 : 12 AFC Red Bisons">
+                                                В </a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
