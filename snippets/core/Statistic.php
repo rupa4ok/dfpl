@@ -21,10 +21,13 @@ class Statistic extends Modx
         $modx->setLogTarget(XPDO_CLI_MODE ? 'ECHO' : 'HTML');
     }
     
+    /**
+     * Пполучение итоговой статистики игрока по его id
+     * @param $id
+     */
     public function getStatisticByPlayer($id)
     {
-
-        $sql = 'SELECT * FROM s_players WHERE id = :id';
+        $sql = "SELECT * FROM {$this->table_p} WHERE id = :id";
         $statement = $this->modx->prepare($sql);
         if ( $statement->execute(array('id'=>$id)) ) {
             $result = $statement->fetchAll(PDO::FETCH_ASSOC);

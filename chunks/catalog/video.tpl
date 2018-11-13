@@ -12,7 +12,7 @@
         </a>
         <a href="#video_block" data-fancybox class="video__title">{$pagetitle}</a>
     </div>
-    <div class="video__date">24 октября</div>
+    <div class="video__date">{$createdon | date_format:"%d %B" | dateago}</div>
 </li>
 {set $video =json_decode($_pls['tv.video'])}
 {if !empty($video['video'])}

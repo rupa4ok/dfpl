@@ -8,6 +8,10 @@
 class Base extends Modx
 {
     
+    public $table_e = 's_events';
+    public $table_p = 's_players';
+    public $table_m = 's_match';
+    
     public function __construct($modx)
     {
         $this->modx = $modx;
@@ -36,6 +40,14 @@ class Base extends Modx
         return;
     }
     
+    /**
+     * Обновление полей в любой таблице бд
+     * @param $table
+     * @param $data
+     * @param $key
+     * @param $val
+     * @return bool|void
+     */
     public function update($table, $data, $key, $val){
         if(!$key || !$val) return false;
         $placeholders = array();
@@ -65,6 +77,9 @@ class Base extends Modx
         return $tvs;
     }
     
+    /**
+     * Статистика клуба
+     */
     public function getRow()
     {
         $sql = 'SELECT * FROM s_club WHERE id > :id';
@@ -86,7 +101,7 @@ class Base extends Modx
      */
     public function getGoal($id,$club)
     {
-        $sql = 'SELECT * FROM s_events WHERE match_id = :id AND club_id = :club AND status = 1';
+        $sql = "SELECT * FROM {$this->table_e} WHERE match_id = :id AND club_id = :club AND status = 1";
         $statement = $this->modx->prepare($sql);
         if ( $statement->execute(array('id'=>$id,'club'=>$club)) ) {
             $result = $statement->fetchAll(PDO::FETCH_ASSOC);
@@ -96,7 +111,7 @@ class Base extends Modx
     }
     
     /**
-     * Список игроков
+     * Вывод списка игроков
      */
     public function getPlayer()
     {
@@ -118,6 +133,47 @@ class Base extends Modx
             print_r($tvs[$k]);
         }
         return;
+    }
+    
+    /**
+     * Список игроков команды по id команды
+     * @param $club
+     * @param $chunk
+     * @return array
+     */
+    public function GetPlayerList($club,$chunk)
+    {
+        //Получаем список игроков с привязкой к команде
+        $sql = "SELECT * FROM {$this->table_p} WHERE club_id = :club";
+        $statement = $this->modx->prepare($sql);
+        if ( $statement->execute(array('club'=>$club)) ) {
+            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        }
+        //Вывод данных игрока в чанк
+        foreach ($result as $k => $res) {
+            $output[] = $this->modx->getChunk($chunk, array(
+                'fio' => $res['fio'],
+                'role' => $res['role']
+                ));
+            echo $output[$k];
+        }
+        
+        return $output;
+    }
+    
+    /**
+     * Получение массива данных матча по его id
+     * @param $id
+     * @return array
+     */
+    public function getClubById($id)
+    {
+        $sql = "SELECT * FROM {$this->table_m} WHERE id = :id";
+        $statement = $this->modx->prepare($sql);
+        if ( $statement->execute(array('id'=>$id)) ) {
+            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        }
+        return $result;
     }
     
 }

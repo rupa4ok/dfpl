@@ -17,6 +17,8 @@
 
                         {'!pdoPage' | snippet : [
                         'parents' => '3',
+                        'includeTVs'=>'galleryPreview',
+                        'processTVs' => '1',
                         'tpl' => '@FILE /chunks/catalog/photo.tpl'
                         ]}
 

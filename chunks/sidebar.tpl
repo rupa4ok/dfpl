@@ -20,131 +20,7 @@
                data-view-results="1"
                data-view-calendar="1"
         >
-        <div class="selects-list">
-            <div class="js-tournament-widget-tournament-select" data-league="1000532">
-                <select style="width: 260px;" class="js-select" data-light="true">
-                    <option selected value="1002296"
-                            data-is-parent="0"
-                            data-league="1000532"
-                    >
-                        5х5. Центр-Запад. Д1
-                    </option>
-                    <option value="1002294"
-                            data-is-parent="0"
-                            data-league="1000532"
-                    >
-                        5х5. Центр-Запад. Д2
-                    </option>
-                    <option value="1002295"
-                            data-is-parent="0"
-                            data-league="1000532"
-                    >
-                        5х5. Центр-Запад. Д3
-                    </option>
-                    <option value="1002256"
-                            data-is-parent="0"
-                            data-league="1000532"
-                    >
-                        5х5. Юго-Восток. 1
-                    </option>
-                    <option value="1002257"
-                            data-is-parent="0"
-                            data-league="1000532"
-                    >
-                        5х5. Юго-Восток. 2
-                    </option>
-                    <option value="1002258"
-                            data-is-parent="0"
-                            data-league="1000532"
-                    >
-                        5х5. Юго-Восток. 3
-                    </option>
-                    <option value="1002382"
-                            data-is-parent="0"
-                            data-league="1000532"
-                    >
-                        Кубок Беларуси 8х8
-                    </option>
-                </select>
-            </div>
-            <div class="js-tournament-widget-round-select" style="display:none;"
-                 data-league="1000532"
-                 data-tournament="1002296"
-                 data-parent="1002296"
-            >
-                <select style="width: 260px;" class="js-select" data-light="true">
-                    <option selected value="1004080">
-                        Регулярный чемпионат
-                    </option>
-                </select>
-            </div>
-            <div class="js-tournament-widget-round-select" style="display:none;"
-                 data-league="1000532"
-                 data-tournament="1002294"
-                 data-parent="1002294"
-            >
-                <select style="width: 260px;" class="js-select" data-light="true">
-                    <option value="1003797">
-                        Регулярный чемпионат
-                    </option>
-                </select>
-            </div>
-            <div class="js-tournament-widget-round-select" style="display:none;"
-                 data-league="1000532"
-                 data-tournament="1002295"
-                 data-parent="1002295"
-            >
-                <select style="width: 260px;" class="js-select" data-light="true">
-                    <option value="1003796">
-                        Регулярный чемпионат
-                    </option>
-                </select>
-            </div>
-            <div class="js-tournament-widget-round-select" style="display:none;"
-                 data-league="1000532"
-                 data-tournament="1002256"
-                 data-parent="1002256"
-            >
-                <select style="width: 260px;" class="js-select" data-light="true">
-                    <option value="1004019">
-                        Регулярный чемпионат
-                    </option>
-                </select>
-            </div>
-            <div class="js-tournament-widget-round-select" style="display:none;"
-                 data-league="1000532"
-                 data-tournament="1002257"
-                 data-parent="1002257"
-            >
-                <select style="width: 260px;" class="js-select" data-light="true">
-                    <option value="1003793">
-                        Регулярный чемпионат
-                    </option>
-                </select>
-            </div>
-            <div class="js-tournament-widget-round-select" style="display:none;"
-                 data-league="1000532"
-                 data-tournament="1002258"
-                 data-parent="1002258"
-            >
-                <select style="width: 260px;" class="js-select" data-light="true">
-                    <option value="1003935">
-                        Регулярный чемпионат
-                    </option>
-                </select>
-            </div>
-            <div class="js-tournament-widget-round-select" style="display:none;"
-                 data-league="1000532"
-                 data-tournament="1002382"
-                 data-parent="1002382"
-            >
-                <select style="width: 260px;" class="js-select" data-light="true">
-                    <option value="1003932">
-                        Кубок Беларуси по футболу 8х8
-                    </option>
-                </select>
-            </div>
-        </div>
+        
         <div class="js-tournament-widget-data"
              data-league="1000532"
              data-tournament="1002296"
@@ -153,7 +29,21 @@
             <div id="tournament-1002296-1004080">
                 <div class="sidebar__table sidebar__table--tournament">
                     <h3 class="sidebar__table-title">Турнирная таблица</h3>
-                    <table class="sidebar__table-content" cellspacing="0">
+                    <div class="selects-list">
+            <div class="js-tournament-widget-tournament-select" data-league="1000532">
+                <select style="width: 260px;" class="js-select" data-light="true">
+                    {'!pdoPage' | snippet : [
+                        'parents' => '23',
+                        'depth' => '0',
+                        'sortdir' => 'ASC'
+                        'tpl' => '@FILE /chunks/TournamentOptions.tpl'
+                        ]}
+                    
+                </select>
+            </div>
+           
+        </div>
+                    <table class="sidebar__table-content" data-idx="1" cellspacing="0">
                         <tr class="sidebar__table-row sidebar__table-row--head sidebar__tournament-row sidebar__tournament-row--head">
                             <td class="sidebar__table-cell sidebar__table-cell--color"></td>
                             <td class="sidebar__table-cell sidebar__table-cell--number">
