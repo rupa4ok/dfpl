@@ -101,7 +101,7 @@ class Base extends Modx
      */
     public function getGoal($id,$club)
     {
-        $sql = "SELECT * FROM {$this->table_e} WHERE match_id = :id AND club_id = :club AND status = 1";
+        $sql = "SELECT * FROM {$this->table_e} WHERE match_id = :id AND club_id = :club AND goal = 1";
         $statement = $this->modx->prepare($sql);
         if ( $statement->execute(array('id'=>$id,'club'=>$club)) ) {
             $result = $statement->fetchAll(PDO::FETCH_ASSOC);
