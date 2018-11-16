@@ -38,7 +38,6 @@ if ($resource->get('template') == 30) {
         $sql = "UPDATE {$table} SET club1 = {$club1}, club2 = {$club2}, tour = {$tour} WHERE id = {$match}";
         $statement = $modx->query($sql);
         
-        //Обновляем статистику игроков этого матча
         //Собираем статистику для данного игрока для турнира
         $sql = "SELECT e.player_id, SUM(e.goal) as goal,e.match_id FROM s_players AS p RIGHT JOIN s_events AS e ON p.club_id = e.player_id WHERE e.player_id = 14";
         $statement = $modx->query($sql);
