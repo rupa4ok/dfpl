@@ -1197,7 +1197,7 @@
                     </div>
                 </div>
 
-                <div class="sidebar__table sidebar__table--statistics">
+                <div class="sidebar_partners_block">
                     <h3 class="sidebar__table-title">Наши партнеры</h3>
                     <div class="sidebar_partners">
                         <div class="the_partner">
@@ -2504,7 +2504,7 @@
                     </div>
                 </div>
 
-                <div class="sidebar__table sidebar__table--statistics">
+                <div class="sidebar_partners_block">
                     <h3 class="sidebar__table-title">Наши партнеры</h3>
                     <div class="sidebar_partners">
                         <div class="the_partner">
