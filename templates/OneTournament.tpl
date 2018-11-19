@@ -4,10 +4,10 @@
     <main class="main">
         <section class="tournament">
             <div class="tournament-wrapper">
-                <h2 class="tournament__title">Премьерлига 5х5. Центр-Запад. Первый дивизион</h2>
+                <h2 class="tournament__title">{$_modx->resource.pagetitle}</h2>
                 <ul class="tournament__info">
                     <li class="tournament__info-item tournament__info-dates">
-                        18 сентября 2018 - 31 мая 2019
+                        {$_modx->resource.tournament_date}
                     </li>
                 </ul>
             </div>
@@ -18,11 +18,9 @@
                     <p class="text-information__paragraph">
                     </p>
                     <figure rel="width: 325px; height: 220px;" style="float: left; margin: 0px 10px 10px 0px;"><img
-                                src="http://cdn.sportspring.ru/content/tournament/image/2018/09/5b9d738b060b4_1920.jpg"
+                                src="{$_modx->resource.tournament_logo}"
                                 style="width: 325px; height: 220px;" width="325" height="220"></figure>
-                    <p>23 сентября 2018 года на стадионе ФШМ в г. Минске состоится первый розыгрыш Кубка Беларуси по
-                        футболу 8х8. В пилотном турнире подобного формата приняли вызов команды из Минска, Кобрина,
-                        Речицы и Хойников.</p>
+                    <p>{$_modx->resource.content}</p>
                     <div class="clear"></div>
                     <p></p>
                 </section>

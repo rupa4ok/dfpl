@@ -22,7 +22,7 @@ class Statistic extends Modx
     }
     
     /**
-     * Пполучение итоговой статистики игрока по его id
+     * Пполучение итоговой статистики игрока по id
      * @param $id
      */
     public function getStatisticByPlayer($id)

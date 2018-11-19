@@ -1,4 +1,4 @@
-{if $_modx->resource.template == 1}
+{if $_modx->resource.template == 1 ||  $_modx->resource.template == 4 || $_modx->resource.template == 5 || $_modx->resource.template == 3 || $_modx->resource.template == 8}
 
 
 <section class="sidebar">
