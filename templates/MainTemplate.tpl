@@ -4,102 +4,13 @@
     <main class="main">
         <section class="slider-carousel">
             <div class="slider-carousel__wrapper">
-                <div class="slider-carousel__slide">
-                    <a href="/posts/1006422" class="slider-carousel__image">
-                        <img src="http://cdn.sportspring.ru/news/1006422/5bbca04427bbe_910x610.jpg" width="846"
-                             height="570">
-                        <div class="slider-carousel__mobile-container">
-                            <div href="/posts/1006422" class="slider-carousel__title">
-                                Играй в Премьерлиге 5х5 - и выигрывай с Maxline!
-                            </div>
-                        </div>
-                    </a>
-                    <div class="slider-carousel__slide-content mobile-hide">
-                        <div class="slider-carousel__slide-date">
-                            09 октября
-                        </div>
-                        <a href="/posts/1006422" class="slider-carousel__title">
-                            Играй в Премьерлиге 5х5 - и выигрывай с Maxline! </a>
-                        <div class="slider-carousel__text">
-                            Начиная с третьей игровой недели, букмекерская контора Maxline предлагает котировки на матчи
-                            Первого дивизиона Центр-Запада футзального турнира Премьерлиги.
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="slider-carousel__slide">
-                    <a href="/posts/1006038" class="slider-carousel__image">
-                        <img src="http://cdn.sportspring.ru/news/1006038/5ba8e1c2d61a3_910x610.jpg" width="846"
-                             height="570">
-                        <div class="slider-carousel__mobile-container">
-                            <div href="/posts/1006038" class="slider-carousel__title">
-                                Минск Юнайтед - обладатель первого Кубка Беларуси по футболу 8х8!
-                            </div>
-                        </div>
-                    </a>
-                    <div class="slider-carousel__slide-content mobile-hide">
-                        <div class="slider-carousel__slide-date">
-                            24 сентября
-                        </div>
-                        <a href="/posts/1006038" class="slider-carousel__title">
-                            Минск Юнайтед - обладатель первого Кубка Беларуси по футболу 8х8! </a>
-                        <div class="slider-carousel__text">
-                            В воскресенье, 23 сентября, на стадионе ФШМ в Минске состоялся первый розыгрыш Кубка
-                            Беларуси по
-                            футболу 8х8, в котором приняли участие команды из Минска, Кобрина, Речицы и Хойников.
-                            Уверенную
-                            победу в турнире одержала столичная команда.
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="slider-carousel__slide">
-                    <a href="/posts/1005919" class="slider-carousel__image">
-                        <img src="http://cdn.sportspring.ru/news/1005919/5ba0fe3f1d181_910x610.jpg" width="846"
-                             height="570">
-                        <div class="slider-carousel__mobile-container">
-                            <div href="/posts/1005919" class="slider-carousel__title">
-                                23 сентября в Минске пройдет I Кубок Беларуси по футболу 8х8.
-                            </div>
-                        </div>
-                    </a>
-                    <div class="slider-carousel__slide-content mobile-hide">
-                        <div class="slider-carousel__slide-date">
-                            18 сентября
-                        </div>
-                        <a href="/posts/1005919" class="slider-carousel__title">
-                            23 сентября в Минске пройдет I Кубок Беларуси по футболу 8х8. </a>
-                        <div class="slider-carousel__text">
-                            В ближайшее воскресенье, 23 сентября, в Минске на стадионе ФШМ пройдет первый розыгрыш Кубка
-                            Беларуси по футболу 8х8.
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="slider-carousel__slide">
-                    <a href="/posts/1005685" class="slider-carousel__image">
-                        <img src="http://cdn.sportspring.ru/news/1005685/5b937eebb71d7_910x610.jpg" width="846"
-                             height="570">
-                        <div class="slider-carousel__mobile-container">
-                            <div href="/posts/1005685" class="slider-carousel__title">
-                                Новый мини-футбольный сезон стартует уже 9 сентября!
-                            </div>
-                        </div>
-                    </a>
-                    <div class="slider-carousel__slide-content mobile-hide">
-                        <div class="slider-carousel__slide-date">
-                            08 сентября
-                        </div>
-                        <a href="/posts/1005685" class="slider-carousel__title">
-                            Новый мини-футбольный сезон стартует уже 9 сентября! </a>
-                        <div class="slider-carousel__text">
-                            Пятый юбилейный сезон Премьерлиги 5х5 по мини-футболу стартует уже в ближайшее воскресенье,
-                            9
-                            сентября.
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
+                {'!pdoPage' | snippet : [
+                        'parents' => '77',
+                        'includeTVs'=>'image',
+                        'processTVs' => '1',
+                        'includeContent' => '1',
+                        'tpl' => '@FILE /chunks/catalog/main_slider_news.tpl'
+                        ]}
             </div>
             <div class="slider-carousel__dots-container"></div>
         </section>

@@ -13,37 +13,55 @@
                 <section class="news-list">
                     <h2 class="visually-hidden">Ввод результатов матча</h2>
                     {'!resultForm' | snippet : []}
-                    <form class="form-horizontal ajax-form" method="post">
-                        <input type="hidden" name="a" value="set">
-                        <select id="get_country" name="turn">
-                            <option selected disabled>Выберите турнир</option>
-                            <option value="24">Турнир 1</option>
-                            <option value="38">Турнир 2</option>
-                        </select>
-                        <select id="get_country" name="match">
-                            <option selected disabled>Выберите матч</option>
-                            <option value="32">Матч 1</option>
-                            <option value="36">Матч 2</option>
-                            <option value="65">Матч 3</option>
-                            <option value="80">Матч 4</option>
-                        </select>
-                        <button>Сохранить</button>
-                    </form>
+                    <h3>Выбранный турнир: {$modx->getObject('modResource', $modx->placeholders.turn)->get('pagetitle')}</h3>
+                    <h3>Выбранный матч: {$modx->getObject('modResource', $modx->placeholders.match)->get('pagetitle')}</h3>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <form method="post" class="form1">
+                                <input type="hidden" name="a" value="set">
+                                <div class="form-group">
+                                    <label for="turn">Турнир</label>
+                                    <select id="turn" name="turn" class="form-control">
+                                        <option selected disabled>Выберите турнир</option>
+                                        {set $arr = $_modx->getPlaceholder('res')}
+                                        {foreach $arr as $k => $value}
+                                            <option value="{$k}">{$value}</option>
+                                        {/foreach}
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="match">Матч</label>
+                                    <select id="match" name="match" class="form-control">
+                                        <option selected disabled>Выберите матч</option>
+                                        {set $arr = $_modx->getPlaceholder('res1')}
+                                        {foreach $arr as $k => $value}
+                                            <option value="{$k}">{$value}</option>
+                                        {/foreach}
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary mb-2">Сохранить</button>
+                            </form>
 
-                    <br>
-
-                    <form class="form-horizontal ajax-form" method="post">
-                        <input type="hidden" name="a" value="stat">
-                        <select id="get_country" name="player">
-                        {set $arr = $_modx->getPlaceholder('res')}
-                        {foreach $arr as $k => $value}
-                            <option value="{$k}">{$value}</option>
-                        {/foreach}
-                        </select>
-                        <input name="time" value="" placeholder="Время">
-
-                        <button>Сохранить</button>
-                    </form>
+                            <form method="post" class="form1">
+                                <input type="hidden" name="a" value="stat">
+                                <input type="hidden" name="a" value="stat">
+                                <div class="form-group">
+                                    <label for="turn">Игрок</label>
+                                    <select id="turn" name="turn" class="form-control">
+                                        {set $arr = $_modx->getPlaceholder('res')}
+                                        {foreach $arr as $k => $value}
+                                            <option value="{$k}">{$value}</option>
+                                        {/foreach}
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="match">Время гола</label>
+                                    <input class="form-control" name="time" value="" placeholder="Время">
+                                </div>
+                                <button type="submit" class="btn btn-primary mb-2">Сохранить</button>
+                            </form>
+                        </div>
+                    </div>
 
                 </section>
             </div>
@@ -83,5 +101,7 @@
             </div>
         </section>
     </main>
+    {include 'file:chunks/_addscripts.tpl'}
 {/block}
+
 

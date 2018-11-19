@@ -6,11 +6,17 @@
  * Time: 14:35
  */
 
-require_once MODX_CORE_PATH. '/elements/snippets/core/Base.php';
-require_once MODX_CORE_PATH. '/elements/snippets/core/Statistic.php';
+require_once MODX_CORE_PATH . '/elements/snippets/core/Base.php';
+require_once MODX_CORE_PATH . '/elements/snippets/core/Statistic.php';
 
 $base = new Base($modx);
+if (!isset($_POST['a'])) {
+    $request = 'set';
+} else {
+    $request = $_POST['a'];
+}
 
+//Проверка данных в сессии
 if (isset($_POST['turn'])) {
     $_SESSION['turn'] = $_POST['turn'];
 }
@@ -24,24 +30,39 @@ if (isset($_POST['time'])) {
     $_SESSION['time'] = $_POST['time'];
 }
 
+//Определяем данные данного матча
+$turnId = $_SESSION['turn'];
 $matchId = $_SESSION['match'];
 $playerId = $_SESSION['player'];
 $timeGoal = $_SESSION['time'];
-$result = $base->getClubList($matchId);
-$table = 's_players';
 
-echo 'Выбранный турнир: ' . $_SESSION['turn'];
-echo '  Выбранный матч: ' . $_SESSION['match'];
+//Вывод данных на страницу
+$modx->setPlaceholders(array(
+    'turn' => $turnId,
+    'match' => $matchId,
+));
 
-switch($_POST['a']) {
+//Список турниров
+$turnList = $base->getTurn();
+$modx->setPlaceholder('res',$turnList);
+
+//Список матчей
+$matchList = $base->getMatch($turnId);
+$modx->setPlaceholder('res1',$matchList);
+
+//Список игроков
+$result = $base->getClubById($matchId);
+$modx->setPlaceholder('res2',$matchList);
+
+switch ($request) {
     case 'set':
         
         break;
     case 'stat':
-    
-        $club_id = $base->getClubById($table,$playerId);
+        
+        $club_id = $base->getClubById($playerId);
         $clubId = $club_id['0']['club_id'];
-
+        
         $data = [
             'match_id' => $matchId,
             'player_id' => $playerId,
@@ -56,4 +77,3 @@ switch($_POST['a']) {
         
         break;
 }
-

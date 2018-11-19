@@ -128,6 +128,48 @@ class Base extends Modx
     }
     
     /**
+     *Получение списка турниров
+     */
+    public function getTurn()
+    {
+        $where = array(
+            'parent' => 23,
+            'template' => 22
+        );
+        $resources = $this->modx->getCollection('modResource',$where);
+        $turnList = '';
+        foreach ($resources as $k => $res) {
+            $turnList[$res->get('id')] = $res->get('pagetitle');
+        }
+        return $turnList;
+    }
+    
+    /**
+     *Получение списка матчей
+     */
+    public function getMatch($turnId)
+    {
+        $where = array(
+            'parent' => $turnId,
+            'template' => 36
+        );
+        $resources = $this->modx->getCollection('modResource',$where);
+        foreach ($resources as $k => $res) {
+            $resId = $res->get('id');
+        }
+        $where = array(
+            'parent' => $resId,
+            'template' => 30
+        );
+        $resources = $this->modx->getCollection('modResource',$where);
+        $matchList = '';
+        foreach ($resources as $k => $res) {
+            $matchList[$res->get('id')] = $res->get('pagetitle');
+        }
+        return $matchList;
+    }
+    
+    /**
      *
      */
     public function getTeam()
@@ -163,12 +205,12 @@ class Base extends Modx
             ));
             echo $output[$k];
         }
-        
         return $output;
     }
     
     /**
      * Получение массива данных матча по его id
+     *
      * @param $id
      * @return array
      */

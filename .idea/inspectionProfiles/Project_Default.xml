@@ -2,10 +2,5 @@
   <profile version="1.0">
     <description>NEW</description>
     <option name="myName" value="Project Default" />
-    <inspection_tool class="PhpCSValidationInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false">
-      <option name="CODING_STANDARD" value="Custom" />
-      <option name="CUSTOM_RULESET_PATH" value="D:/composer/vendor/squizlabs/php_codesniffer/CodeSniffer/Standards/PSR2" />
-      <option name="SHOW_SNIFF_NAMES" value="true" />
-    </inspection_tool>
   </profile>
 </component>
