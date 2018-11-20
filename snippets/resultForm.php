@@ -102,10 +102,12 @@ switch ($request) {
 
             //Расчет новой статистики игрока
             $result = $stat->playerStatUpdate($playerId,$goal);
+            
+            //Считаем количество голов и очки команд
+            $result = $stat->getClubStat($matchId);
 
             //Получаем статистику клуба для обновления
-
-            //@TODO сделать расчет статистики клуба и выйгрышей/очков команды
+            
 
             $error = 'Данные сохранены';
             $modx->setPlaceholder('errors',$error);

@@ -267,12 +267,6 @@ class Base extends Modx
         return $clubId;
     }
     
-    /**
-     *
-     *
-     * @param $data
-     * @return mixed
-     */
     public function getEventItem($data)
     {
         $sql = "SELECT * FROM {$this->table_e} WHERE player_id = :player_id AND club_id = :club_id AND time = :time";

@@ -1200,30 +1200,16 @@
                 <div class="sidebar_partners_block">
                     <h3 class="sidebar__table-title">Наши партнеры</h3>
                     <div class="sidebar_partners">
+                        {foreach $_modx->resource['partners'] | fromJSON as $item}
                         <div class="the_partner">
-                            <a href="http://soccershop.by/"
+                            <a href="{$item['partner_link']}"
                                title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
+                                <img src="{$item['partner_image']}">
                             </a>
                         </div>
-                        <div class="the_partner">
-                            <a href="http://soccershop.by/"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                            </a>
-                        </div>
-                        <div class="the_partner">
-                            <a href="http://soccershop.by/"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                            </a>
-                        </div>
-                        <div class="the_partner">
-                            <a href="http://soccershop.by/"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                            </a>
-                        </div>
+                        {/foreach}
+                        
+                      
                     </div>
 
                 </div>
@@ -1234,10 +1220,7 @@
     </div>
 </section>
 
-
-
 {else}
-
 
 <section class="sidebar">
 
@@ -1305,8 +1288,6 @@
                         </div>
                     </div>
                 </div>
-
-
 
 <section class="sidebar">
     <div class="birth-widget mobile-hide">
@@ -2507,30 +2488,14 @@
                 <div class="sidebar_partners_block">
                     <h3 class="sidebar__table-title">Наши партнеры</h3>
                     <div class="sidebar_partners">
+                        {foreach $_modx->resource['partners'] | fromJSON as $item}
                         <div class="the_partner">
-                            <a href="http://soccershop.by/"
+                            <a href="{$item['partner_link']}"
                                title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
+                                <img src="{$item['partner_image']}">
                             </a>
                         </div>
-                        <div class="the_partner">
-                            <a href="http://soccershop.by/"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                            </a>
-                        </div>
-                        <div class="the_partner">
-                            <a href="http://soccershop.by/"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                            </a>
-                        </div>
-                        <div class="the_partner">
-                            <a href="http://soccershop.by/"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                            </a>
-                        </div>
+                        {/foreach}
                     </div>
 
                 </div>
@@ -2540,8 +2505,6 @@
         </div>
     </div>
 </section>
-
-
 
 {/if}
 

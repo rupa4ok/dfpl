@@ -20,4 +20,3 @@ echo $count1 . ':' . $count2;
 //$tv = $modx->resource->getTVValue('goals');
 //$arr = json_decode($tv, true);
 //print_r($arr);
-
