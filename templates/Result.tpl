@@ -44,11 +44,10 @@
 
                             <form method="post" class="form1">
                                 <input type="hidden" name="a" value="stat">
-                                <input type="hidden" name="a" value="stat">
                                 <div class="form-group">
-                                    <label for="turn">Игрок</label>
-                                    <select id="turn" name="turn" class="form-control">
-                                        {set $arr = $_modx->getPlaceholder('res')}
+                                    <label for="player">Игрок</label>
+                                    <select id="player" name="player" class="form-control">
+                                        {set $arr = $_modx->getPlaceholder('res2')}
                                         {foreach $arr as $k => $value}
                                             <option value="{$k}">{$value}</option>
                                         {/foreach}
@@ -58,9 +57,20 @@
                                     <label for="match">Время гола</label>
                                     <input class="form-control" name="time" value="" placeholder="Время">
                                 </div>
-                                <button type="submit" class="btn btn-primary mb-2">Сохранить</button>
+                                <button type="submit" name="save" value="save" class="btn btn-primary mb-2">Сохранить</button>
                             </form>
                         </div>
+                        <div class="col-md-12">
+                            <h4 class="red">{$_modx->getPlaceholder('errors')}</h4>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        {set $arr = $_modx->getPlaceholder('event')}
+                        {foreach $arr as $k => $value}
+                            {$value.player_id} - {$value.time}
+                            <br>
+                        {/foreach}
                     </div>
 
                 </section>

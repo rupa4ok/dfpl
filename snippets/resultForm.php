@@ -10,25 +10,34 @@ require_once MODX_CORE_PATH . '/elements/snippets/core/Base.php';
 require_once MODX_CORE_PATH . '/elements/snippets/core/Statistic.php';
 
 $base = new Base($modx);
+$stat = new Statistic($modx);
 if (!isset($_POST['a'])) {
-    $request = 'set';
+    $request = 'save';
 } else {
-    $request = $_POST['a'];
+    $request = $_POST['save'];
 }
 
 //Проверка данных в сессии
 if (isset($_POST['turn'])) {
     $_SESSION['turn'] = $_POST['turn'];
-}
+} else (
+    $_SESSION['turn'] = '24'
+);
 if (isset($_POST['match'])) {
     $_SESSION['match'] = $_POST['match'];
-}
+} else (
+    $_SESSION['match'] = '32'
+);
 if (isset($_POST['player'])) {
     $_SESSION['player'] = $_POST['player'];
-}
+} else (
+    $_SESSION['player'] = ''
+);
 if (isset($_POST['time'])) {
     $_SESSION['time'] = $_POST['time'];
-}
+} else (
+    $_SESSION['time'] = ''
+);
 
 //Определяем данные данного матча
 $turnId = $_SESSION['turn'];
@@ -51,18 +60,24 @@ $matchList = $base->getMatch($turnId);
 $modx->setPlaceholder('res1',$matchList);
 
 //Список игроков
-$result = $base->getClubById($matchId);
-$modx->setPlaceholder('res2',$matchList);
+$players = $base->getClubById($matchId);
+foreach ($players as $k => $list) {
+    $club1 = $list['club1'];
+    $club2 = $list['club2'];
+}
+
+$playerList = $base->getPlayerListByClub($club1, $club2);
+$modx->setPlaceholder('res2',$playerList);
 
 switch ($request) {
     case 'set':
-        
+
         break;
-    case 'stat':
-        
-        $club_id = $base->getClubById($playerId);
-        $clubId = $club_id['0']['club_id'];
-        
+    case 'save':
+
+        $clubId = $base->getClubId($playerId);
+
+        //Массив данных для записи
         $data = [
             'match_id' => $matchId,
             'player_id' => $playerId,
@@ -70,10 +85,34 @@ switch ($request) {
             'time' => $timeGoal,
             'goal' => 1,
         ];
-        
-        print_r($data);
-        $table = 's_events';
-        $result = $base->insert($table, $data);
-        
+
+        //Проверка существования записи в бд
+        $result = $base->getEventItem($data);
+
+        if ($result > 0) {
+            $error = 'Данные уже существуют';
+            $modx->setPlaceholder('errors',$error);
+            break;
+        } else {
+            $table = 's_events';
+            $result = $base->insert($table, $data);
+
+            //Получаем статистику данного игрока для обновления
+            $goal = $stat->getPlayerGoals($playerId);
+
+            //Расчет новой статистики игрока
+            $result = $stat->playerStatUpdate($playerId,$goal);
+
+            //Получаем статистику клуба для обновления
+
+            //@TODO сделать расчет статистики клуба и выйгрышей/очков команды
+
+            $error = 'Данные сохранены';
+            $modx->setPlaceholder('errors',$error);
+        }
         break;
 }
+
+//Вывод записей для данного матча
+$eventList = $stat->getEventMatchList($matchId);
+$modx->setPlaceholder('event',$eventList);

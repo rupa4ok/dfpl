@@ -34,7 +34,7 @@ if ($resource->get('template') == 30) {
     //Проверяем совпадает ли id страницы матча с id матча в таблице статистики
     if ($match == $id) {
         
-        //Матч существует - обновляем поля статистики
+        //Матч существует - обновляем поля статистики $TODO добавить запись текущегу турнира
         $sql = "UPDATE {$table} SET club1 = {$club1}, club2 = {$club2}, tour = {$tour} WHERE id = {$match}";
         $statement = $modx->query($sql);
         
