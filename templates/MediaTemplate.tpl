@@ -16,7 +16,7 @@
                     <ul class="photo__list js-albums-list">
 
                         {'!pdoPage' | snippet : [
-                        'parents' => '3',
+                        'parents' => $_modx->resource.id,
                         'includeTVs'=>'galleryPreview',
                         'processTVs' => '1',
                         'tpl' => '@FILE /chunks/catalog/photo.tpl'

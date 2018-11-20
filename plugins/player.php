@@ -10,7 +10,7 @@
 if ($resource->get('parent') == 13) {
     
     //Получаем данные со страницы игрока
-    $table = 's_players';
+    $table_p = 's_players';
     $id = $resource->get('id');
     $fio = $resource->get('pagetitle');
     $clubs_id = $resource->getTVValue('club');
@@ -25,7 +25,7 @@ if ($resource->get('parent') == 13) {
     ];
     
     //Получаем из таблицы статистики юзера с id страницы игрока
-    $sql = "SELECT * FROM {$table} WHERE id = {$id}";
+    $sql = "SELECT * FROM {$table_p} WHERE id = {$id}";
     $statement = $modx->query($sql);
     $user = $statement->fetchAll(PDO::FETCH_ASSOC);
     $user = $user[0]['id'];
@@ -34,7 +34,7 @@ if ($resource->get('parent') == 13) {
     if ($user == $id) {
         
         //Юзер существует - обновляем поля статистики
-        $sql = "UPDATE {$table} SET fio = '{$fio}', club_id = {$clubs_id}, role = '{$role}' WHERE id = {$user}";
+        $sql = "UPDATE {$table_p} SET fio = '{$fio}', club_id = {$clubs_id}, role = '{$role}' WHERE id = {$user}";
         $statement = $modx->query($sql);
     } else {
         
@@ -42,9 +42,10 @@ if ($resource->get('parent') == 13) {
         $keys = array_keys($data);
         $fields = '`' . implode('`,`', $keys) . '`';
         $placeholders = substr(str_repeat('?,', count($keys)), 0, -1);
-        $sql = "INSERT INTO {$table} ({$fields}) VALUES ({$placeholders})";
+        $sql = "INSERT INTO {$table_p} ({$fields}) VALUES ({$placeholders})";
         if(!$modx->prepare($sql)->execute(array_values($data))){
             $modx->log(1, print_r($sql, true));
         }
     }
+    
 }

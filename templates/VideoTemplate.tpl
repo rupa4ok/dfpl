@@ -15,7 +15,7 @@
                     <ul class="video__list js-videos-list">
 
                         {'!pdoPage' | snippet : [
-                        'parents' => '10',
+                        'parents' => $_modx->resource.id,
                         'includeTVs'=>'video',
                         'processTVs' => '1',
                         'tpl' => '@FILE /chunks/catalog/video.tpl'

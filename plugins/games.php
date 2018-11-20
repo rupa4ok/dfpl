@@ -34,9 +34,14 @@ if ($resource->get('template') == 30) {
     //Проверяем совпадает ли id страницы матча с id матча в таблице статистики
     if ($match == $id) {
         
-        //Матч существует - обновляем поля статистики
+        //Матч существует - обновляем поля статистики $TODO добавить запись текущегу турнира
         $sql = "UPDATE {$table} SET club1 = {$club1}, club2 = {$club2}, tour = {$tour} WHERE id = {$match}";
         $statement = $modx->query($sql);
+        
+        //Собираем статистику для данного игрока для турнира
+        $sql = "SELECT e.player_id, SUM(e.goal) as goal,e.match_id FROM s_players AS p RIGHT JOIN s_events AS e ON p.club_id = e.player_id WHERE e.player_id = 14";
+        $statement = $modx->query($sql);
+        $user = $statement->fetchAll(PDO::FETCH_ASSOC);
     } else {
         
         //Если матча не существует, создаем новый матч с id страницы матча

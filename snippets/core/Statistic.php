@@ -6,10 +6,12 @@
  * Time: 7:36
  */
 
-class Statistic extends Modx
+class Statistic extends Base
 {
     
+    public $table_e = 's_events';
     public $table_p = 's_players';
+    public $table_m = 's_match';
     
     public function __construct($modx)
     {
@@ -22,7 +24,7 @@ class Statistic extends Modx
     }
     
     /**
-     * Пполучение итоговой статистики игрока по его id
+     * Получение итоговой статистики игрока по id
      * @param $id
      */
     public function getStatisticByPlayer($id)
@@ -42,6 +44,43 @@ class Statistic extends Modx
                 ),'stat.');
             }
         }
+        return;
+    }
+    
+    public function getPlayerGoals($playerId)
+    {
+        $sql = "SELECT SUM(goal) as goal FROM {$this->table_e} WHERE player_id = :player_id";
+        $statement = $this->modx->prepare($sql);
+        if ($statement->execute(array('player_id' => $playerId))) {
+            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+            foreach ($result as $res) {
+                $goal = $res['goal'];
+            }
+        }
+        return $goal;
+    }
+    
+    public function getEventMatchList($matchId)
+    {
+        $sql = "SELECT * FROM {$this->table_e} WHERE match_id = :match_id";
+        $statement = $this->modx->prepare($sql);
+        $eventList = '';
+        if ($statement->execute(array('match_id' => $matchId))) {
+            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+            foreach ($result as $res) {
+                $eventList[$res['id']] = [
+                    'player_id' => $res['player_id'],
+                    'time' => $res['time']
+                ];
+            }
+        }
+        return $eventList;
+    }
+    
+    public function playerStatUpdate($playerId,$goal)
+    {
+        $sql = "UPDATE {$this->table_p} SET goal = {$goal} WHERE id = {$playerId}";
+        $statement = $this->modx->query($sql);
         return;
     }
     
