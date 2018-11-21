@@ -11,6 +11,7 @@
 <script src="assets/b5586130/yii.js"></script>
 <script src="plugins/jquery.nicescroll/jquery.nicescroll.min.js"></script>
 <script src="plugins/jquery.cookie/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/widgets/main-calendar-widget.js"></script>
 <script src="plugins/slick/slick.min.js"></script>
@@ -22,6 +23,7 @@
 <script src="assets/724123e/js/albums.js"></script>
 <script src="assets/a94d7669/js/videos.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
+
 
 </body>
 

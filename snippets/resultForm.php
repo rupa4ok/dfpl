@@ -103,12 +103,23 @@ switch ($request) {
             //Расчет новой статистики игрока
             $result = $stat->playerStatUpdate($playerId,$goal);
             
-            //Считаем количество голов и очки команд
-            $result = $stat->getClubStat($matchId);
+            //@TODO сделать расчет статистики команд через cron при зависании страницы ввода результата или статистики
+            //Считаем количество голов и очки для команд
+            $club = $base->getClubById($matchId);
+            foreach ($club as $res) {
+                $result1 = $club[0]['club1'];
+                $result2 = $club[0]['club2'];
+            }
+    
+            $club = $result1;
+            $count1 = $base->getGoal($matchId,$club);
+            $club = $result2;
+            $count2 = $base->getGoal($matchId,$club);
+            
+            echo 'Счет: ' . $count1 . ' - ' . $count2;
 
             //Получаем статистику клуба для обновления
             
-
             $error = 'Данные сохранены';
             $modx->setPlaceholder('errors',$error);
         }

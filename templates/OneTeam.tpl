@@ -132,7 +132,7 @@
                     <h2 class="visually-hidden">Календарь прошедших и будущих матчей</h2>
                     <div class="matches-overview__past-matches">
                         <h3 class="matches-overview__title">Прошедшие матчи</h3>
-                        <ul class="matches-overview__list"
+                        <ul class="matches-overview__list with_top"
                         >
                             <li class="matches-overview__item ">
                                 <a class="matches-overview__round" href="/match/1198966">

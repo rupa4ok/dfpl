@@ -47,6 +47,12 @@ class Statistic extends Base
         return;
     }
     
+    /**
+     * Количество голов игрока по его id
+     *
+     * @param $playerId
+     * @return mixed
+     */
     public function getPlayerGoals($playerId)
     {
         $sql = "SELECT SUM(goal) as goal FROM {$this->table_e} WHERE player_id = :player_id";
@@ -60,6 +66,12 @@ class Statistic extends Base
         return $goal;
     }
     
+    /**
+     * Список событий матча
+     *
+     * @param $matchId
+     * @return string
+     */
     public function getEventMatchList($matchId)
     {
         $sql = "SELECT * FROM {$this->table_e} WHERE match_id = :match_id";
@@ -75,6 +87,26 @@ class Statistic extends Base
             }
         }
         return $eventList;
+    }
+    
+    /**
+     * Получение списка клубов для таблицы со статистикой игр/выйгрышей/пройгрышей по id турнира
+     *
+     * @param $clubId
+     * @return string
+     */
+    public function getClubId($turnId)
+    {
+        $clubId = '';
+        $sql = "SELECT * FROM {$this->table_p} WHERE id = :id";
+        $statement = $this->modx->prepare($sql);
+        if ($statement->execute(array('id' => $playerId))) {
+            $resources = $statement->fetchAll(PDO::FETCH_ASSOC);
+            foreach ($resources as $k => $res) {
+                $clubId = $res['club_id'];
+            }
+        }
+        return $clubId;
     }
     
     public function playerStatUpdate($playerId,$goal)

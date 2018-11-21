@@ -9,9 +9,11 @@
 class Base extends Modx
 {
     
+    public $table_c = 's_club';
     public $table_e = 's_events';
     public $table_p = 's_players';
     public $table_m = 's_match';
+    public $table_s = 'FLshsZHjFCKh_site_content';
     
     public function __construct($modx)
     {
@@ -142,6 +144,35 @@ class Base extends Modx
             $turnList[$res->get('id')] = $res->get('pagetitle');
         }
         return $turnList;
+    }
+    
+    /**
+     * Получение списка клубов в турнире
+     *
+     * @param $turnId
+     * @return mixed
+     */
+    public function getClubByTurn($turnId)
+    {
+        $sql = "SELECT * FROM {$this->table_c} AS c LEFT JOIN {$this->table_s} AS s
+        ON c.club_id = s.id WHERE turn_id = :turn_id";
+        $statement = $this->modx->prepare($sql);
+        if ($statement->execute(array('turn_id' => $turnId))) {
+            $resources = $statement->fetchAll(PDO::FETCH_ASSOC);
+            foreach ($resources as $k => $res) {
+                $k++;
+                $clubList[$res['id']] = [
+                    'id' => $k,
+                    'pagetitle' => $res['pagetitle'],
+                    'uri' => $res['uri'],
+                    'played' => $res['played'],
+                    'win' => $res['win'],
+                    'draw' => $res['draw'],
+                    'lose' => $res['lose']
+                ];
+            }
+        }
+        return $clubList;
     }
     
     /**
