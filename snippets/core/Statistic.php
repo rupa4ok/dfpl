@@ -44,7 +44,6 @@ class Statistic extends Base
                 ),'stat.');
             }
         }
-        return;
     }
     
     /**
@@ -100,7 +99,7 @@ class Statistic extends Base
         $clubId = '';
         $sql = "SELECT * FROM {$this->table_p} WHERE id = :id";
         $statement = $this->modx->prepare($sql);
-        if ($statement->execute(array('id' => $playerId))) {
+        if ($statement->execute(array('id' => $turnId))) {
             $resources = $statement->fetchAll(PDO::FETCH_ASSOC);
             foreach ($resources as $k => $res) {
                 $clubId = $res['club_id'];
@@ -112,8 +111,7 @@ class Statistic extends Base
     public function playerStatUpdate($playerId,$goal)
     {
         $sql = "UPDATE {$this->table_p} SET goal = {$goal} WHERE id = {$playerId}";
-        $statement = $this->modx->query($sql);
-        return;
+        $this->modx->query($sql);
     }
     
 }

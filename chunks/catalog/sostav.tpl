@@ -3,7 +3,6 @@
         [[+role]]
     </span>
     <div class="match-protocol__member-captain-wrapper">
-        <a class="match-protocol__member-name" href="/player/1473757">
-            [[+fio]] </a>
+        <a class="match-protocol__member-name" href="/igroki/[[+player]]">[[+fio]]</a>
     </div>
 </li>

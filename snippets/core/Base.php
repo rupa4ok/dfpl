@@ -118,13 +118,15 @@ class Base extends Modx
     /**
      * Вывод списка игроков
      */
-    public function getPlayer()
+    public function getPlayer($id)
     {
-        $res = $this->modx->getObject('modResource', 14);
+        $res = $this->modx->getObject('modResource', $id);
         $tvs = $res->getMany('TemplateVarResources');
         foreach ($tvs as $k => $tv) {
             $tvs[$k] = $tv->toArray();
+            echo '<pre>';
             print_r($tvs[$k]);
+            echo '</pre>';
         }
         return;
     }
@@ -161,14 +163,18 @@ class Base extends Modx
             $resources = $statement->fetchAll(PDO::FETCH_ASSOC);
             foreach ($resources as $k => $res) {
                 $k++;
+                $arr = $this->modx->getObject('modResource', $res['id']);
+                $image = $arr->getTVValue(15);
                 $clubList[$res['id']] = [
                     'id' => $k,
                     'pagetitle' => $res['pagetitle'],
                     'uri' => $res['uri'],
+                    'image' => $image,
                     'played' => $res['played'],
                     'win' => $res['win'],
                     'draw' => $res['draw'],
-                    'lose' => $res['lose']
+                    'lose' => $res['lose'],
+                    'score' => $res['score']
                 ];
             }
         }
@@ -256,6 +262,7 @@ class Base extends Modx
         //Вывод данных игрока в чанк
         foreach ($result as $k => $res) {
             $output[] = $this->modx->getChunk($chunk, array(
+                'player' => $res['id'],
                 'fio' => $res['fio'],
                 'role' => $res['role']
             ));

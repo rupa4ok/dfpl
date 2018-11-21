@@ -18,8 +18,8 @@
                 <section class="match">
                     <h3 class="visually-hidden">Матч</h3>
                     <section class="match-promo">
-                        <div class="match-promo-unit match-promo-unit--active match-promo-unit--shadow "
-                             style="background-image: url('/assets/257cb080/football_match_cover_cover.jpg');">
+                        <div class="match-promo-unit match-promo-unit--active match-promo-unit"
+                             style="background-image: url('/assets/257cb080/cover.jpg');">
                             <p class="match-promo__date-time ">{$_modx->resource.publishedon | date_format:"%d %B / %A / %H:%M"}</p>
                             <div class="match-promo__place-wrapper">
                                 <p class="match-promo__place"
@@ -43,7 +43,7 @@
                                     </div>
                                     <a class="match-promo__team-logo" href="/team/1057445">
                                         <img class="match-promo__team-img"
-                                             src="http://cdn.sportspring.ru/team/1057445/logo/5b9fa77ce5fab_100x100.jpg"
+                                             src="{$_modx->resource.club1 | resource : 'logo'}"
                                              alt="">
                                     </a>
                                 </div>
@@ -55,7 +55,7 @@
                                 <div class="match-promo__team-container match-promo__team-container--right">
                                     <a class="match-promo__team-logo" href="/team/1057446">
                                         <img class="match-promo__team-img"
-                                             src="http://cdn.sportspring.ru/team/1057446/logo/5b9fa7a9bca0c_100x100.jpg"
+                                             src="{$_modx->resource.club2 | resource : 'logo'}"
                                              alt="">
                                     </a>
                                     <div class="match-promo__team-content match-promo__team-content--left">
@@ -77,7 +77,7 @@
                                 <a class="match-promo__tournament" href="/tournament/1002382">
                                     {$_modx->resource.parent | resource : 'parent' | resource : 'pagetitle'}  </a>
                                 <a class="match-promo__tour" href="/tournament/1002382/calendar?round_id=1003932">
-                                    {$_modx->resource.tour}</a>
+                                    Тур: {$_modx->resource.tour}</a>
                             </div>
                         </div>
                     </section>
@@ -109,7 +109,7 @@
                                         <a class="match-protocol__team-logo match-protocol__team-logo--margin-right"
                                            href="/team/1057445">
                                             <img class="match-protocol__team-img"
-                                                 src="http://cdn.sportspring.ru/team/1057445/logo/5b9fa77ce5fab_100x100.jpg"
+                                                 src="{$_modx->resource.club1 | resource : 'logo'}"
                                                  width="58" height="58" alt="">
                                         </a>
                                         <a class="match-protocol__team-name match-protocol__team-name--left"
@@ -122,7 +122,7 @@
                                         <a class="match-protocol__team-logo match-protocol__team-logo--margin-left"
                                            href="/team/1057446">
                                             <img class="match-protocol__team-img"
-                                                 src="http://cdn.sportspring.ru/team/1057446/logo/5b9fa7a9bca0c_100x100.jpg"
+                                                 src="{$_modx->resource.club2 | resource : 'logo'}"
                                                  width="58" height="58" alt="">
                                         </a>
                                     </div>

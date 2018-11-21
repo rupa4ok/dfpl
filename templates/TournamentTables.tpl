@@ -65,10 +65,6 @@
                                                 title="Поражений">
                                                 П
                                             </th>
-                                            <th class="table__cell table__cell--goals-scored_goals-missed table__cell--goals-scored_goals-missed-head"
-                                                title="Мячей забито-Мячей пропущено">
-                                                Мз - Мп
-                                            </th>
                                             <th class="table__cell table__cell--points table__cell--points-head"
                                                 title="Очки">
                                                 О
@@ -80,32 +76,33 @@
                                         {'!getTable' | snippet : []}
                                         {set $arr = $_modx->getPlaceholder('table')}
                                         {foreach $arr as $k => $value}
-                                            <option value="{$k}">{$value}</option>
-
                                             <tr class="table__row">
                                                 <td class="table__cell table__cell--color "
-                                                    style="background-color: #55AA00;"></td>
+                                                        {if $value.id > 1}
+                                                            style="background-color: #FF0000;"
+                                                        {else}
+                                                            style="background-color: #55AA00;"
+                                                        {/if}
+                                                >
+                                                </td>
                                                 <td class="table__cell table__cell--number ">
-                                                    6
+                                                    {$value.id}
                                                 </td>
                                                 <td class="table__cell table__cell--team ">
                                                     <a class="table__team"
-                                                       href="/tournament/1002296/teams/application?team_id=1057569">
+                                                       href="{$value.uri}">
                                                         <div class="table__team-logo">
-                                                            <img src="http://cdn.sportspring.ru/team/1057569/logo/5bb3507178628_100x100.jpg"
-                                                                 class="table__team-img">
+                                                            <img src="{$value.image}" class="table__team-img">
                                                         </div>
-                                                        <span class="table__team-name">Пячоць</span>
+                                                        <span class="table__team-name">{$value.pagetitle}</span>
                                                     </a>
                                                 </td>
-                                                <td class="table__cell table__cell--games-number">4</td>
-                                                <td class="table__cell table__cell--wins">1</td>
-                                                <td class="table__cell table__cell--draws table__cell--draws">2</td>
-                                                <td class="table__cell table__cell--losses">1</td>
-                                                <td class="table__cell table__cell--goals-scored_goals-missed">13 - 12</td>
-                                                <td class="table__cell table__cell--points">
-                                                    5
-                                                </td>
+
+                                                <td class="table__cell table__cell--games-number">{$value.played}</td>
+                                                <td class="table__cell table__cell--wins">{$value.win}</td>
+                                                <td class="table__cell table__cell--draws table__cell--draws">{$value.draw}</td>
+                                                <td class="table__cell table__cell--losses">{$value.lose}</td>
+                                                <td class="table__cell table__cell--points">{$value.score}</td>
                                                 <td class="table__cell table__cell--form-results">
                                                     <ul class="form-results-list">
                                                         <li class="form-results-item form-results-item--loss">
@@ -133,68 +130,6 @@
                                             </tr>
                                         {/foreach}
 
-
-
-
-
-
-
-
-
-
-                                        <tr class="table__row">
-                                            <td class="table__cell table__cell--color "
-                                                style="background-color: #FF0000;"></td>
-                                            <td class="table__cell table__cell--number ">
-                                                10
-                                            </td>
-                                            <td class="table__cell table__cell--team ">
-                                                <a class="table__team"
-                                                   href="/tournament/1002296/teams/application?team_id=1057573">
-                                                    <div class="table__team-logo">
-                                                        <img src="http://cdn.sportspring.ru/team/1057573/logo/5bae21d58c8f8_100x100.jpg"
-                                                             class="table__team-img">
-                                                    </div>
-                                                    <span class="table__team-name">Прогресс</span>
-                                                </a>
-                                            </td>
-                                            <td class="table__cell table__cell--games-number">5</td>
-                                            <td class="table__cell table__cell--wins">0</td>
-                                            <td class="table__cell table__cell--draws table__cell--draws">0</td>
-                                            <td class="table__cell table__cell--losses">5</td>
-                                            <td class="table__cell table__cell--goals-scored_goals-missed">13 - 53</td>
-                                            <td class="table__cell table__cell--points">
-                                                0
-                                            </td>
-                                            <td class="table__cell table__cell--form-results">
-                                                <ul class="form-results-list">
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192371"
-                                                           title="25 сентября, Прогресс 3 : 11 Минск Юнайтед">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192328"
-                                                           title="02 октября, МФК Штурм 8 : 2 Прогресс">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192335"
-                                                           title="16 октября, Прогресс 3 : 8 Связист">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192339"
-                                                           title="26 октября, Смена 19 : 3 Прогресс">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192345"
-                                                           title="30 октября, Прогресс 2 : 7 Пячоць">
-                                                            П </a>
-                                                    </li>
-                                                </ul>
-                                            </td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -2036,7 +1971,7 @@
                     </section>
                 </section>
             </div>
-                {include 'file:chunks/sidebar.tpl'}
+            {include 'file:chunks/sidebar.tpl'}
             </section>
 
 

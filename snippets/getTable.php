@@ -19,7 +19,4 @@ $turnId = $modx->resource->get('parent');
 
 //Список клубов учавствующих в турнире
 $clubList = $base->getClubByTurn($turnId);
-print_r($clubList);
-
 $modx->setPlaceholder('table',$clubList);
-

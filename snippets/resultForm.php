@@ -99,6 +99,7 @@ switch ($request) {
 
             //Получаем статистику данного игрока для обновления
             $goal = $stat->getPlayerGoals($playerId);
+            //@TODO добавить количество игр лучших игроков
 
             //Расчет новой статистики игрока
             $result = $stat->playerStatUpdate($playerId,$goal);
@@ -119,6 +120,8 @@ switch ($request) {
             echo 'Счет: ' . $count1 . ' - ' . $count2;
 
             //Получаем статистику клуба для обновления
+            
+            
             
             $error = 'Данные сохранены';
             $modx->setPlaceholder('errors',$error);
