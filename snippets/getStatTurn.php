@@ -6,4 +6,12 @@
  * Time: 10:30
  */
 
-//@TODO Статистика турнира http://s15918.h4.modhost.pro/turniryi/u-8/statistika.html
+//@TODO реализация тз
+
+require_once MODX_CORE_PATH . '/elements/snippets/core/Base.php';
+require_once MODX_CORE_PATH . '/elements/snippets/core/Statistic.php';
+$stat = new Statistic($modx);
+
+$turnId = $modx->resource->get('parent');
+
+//Статистика игрока в клубе в зависимости от турнира

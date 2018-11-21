@@ -132,8 +132,14 @@
                     <h2 class="visually-hidden">Календарь прошедших и будущих матчей</h2>
                     <div class="matches-overview__past-matches">
                         <h3 class="matches-overview__title">Прошедшие матчи</h3>
-                        <ul class="matches-overview__list with_top"
-                        >
+                        <ul class="matches-overview__list with_top">
+                            {'!pdoPage' | snippet : [
+                                'parents' => '35',
+                                'includeTVs'=>'club1,club2',
+                                'processTVs' => '1',
+                                'includeContent' => '1',
+                                'tpl' => '@FILE /chunks/catalog/matches.tpl'
+                                ]}
                             <li class="matches-overview__item ">
                                 <a class="matches-overview__round" href="/match/1198966">
                                     5х5. Юго-Восток. 2 </a>
@@ -289,7 +295,80 @@
                     </div>
                     <div class="matches-overview__future-matches">
                         <h3 class="matches-overview__title">Будущие матчи</h3>
-                        <ul class="matches-overview__list">
+                        <ul class="matches-overview__list with_top">
+                            
+                             {'!pdoPage' | snippet : [
+                                'parents' => '35',
+                                'includeTVs'=>'club1,club2',
+                                'processTVs' => '1',
+                                'includeContent' => '1',
+                                'tpl' => '@FILE /chunks/catalog/matches.tpl'
+                                ]}
+                            <li class="matches-overview__item ">
+                                <a class="matches-overview__round" href="/match/1208446">
+                                    5х5. Юго-Восток. 2 </a>
+                                <a class="matches-overview__link" href="/match/1208446">
+                                    <div class="matches-overview__date-time-wrapper">
+                                        <div class="matches-overview__date-time">
+                                            05 НОЯБ. / ПН / 20:55
+                                        </div>
+                                    </div>
+                                    <table class="matches-overview__score">
+                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
+                                                <div class="matches-overview__team">Лев</div>
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
+                                                -
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
+                                                rowspan="2">
+                                            </td>
+                                        </tr>
+                                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
+                                                <div class="matches-overview__team">AFC Red Bisons</div>
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
+                                                -
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                            <li class="matches-overview__item ">
+                                <a class="matches-overview__round" href="/match/1208446">
+                                    5х5. Юго-Восток. 2 </a>
+                                <a class="matches-overview__link" href="/match/1208446">
+                                    <div class="matches-overview__date-time-wrapper">
+                                        <div class="matches-overview__date-time">
+                                            05 НОЯБ. / ПН / 20:55
+                                        </div>
+                                    </div>
+                                    <table class="matches-overview__score">
+                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
+                                                <div class="matches-overview__team">Лев</div>
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
+                                                -
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
+                                                rowspan="2">
+                                            </td>
+                                        </tr>
+                                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
+                                                <div class="matches-overview__team">AFC Red Bisons</div>
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
+                                                -
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                            
                             <li class="matches-overview__item ">
                                 <a class="matches-overview__round" href="/match/1208446">
                                     5х5. Юго-Восток. 2 </a>
@@ -328,96 +407,30 @@
                 <section class="photo">
                     <h2 class="visually-hidden">Фото</h2>
                     <ul class="photo__list js-albums-list">
-                        <li class="photo__item">
-                            <div class="photo__item-wrapper-top">
-                                <a href="/team/1056275/photos/view?album_id=1005544" class="photo__picture">
-                                    <img class="photo__picture-img"
-                                         src="http://cdn.sportspring.ru/albums/1005544/5bceedc29ee7f_284x190.jpg"
-                                         width="284" height="190" alt="5 тур. Титан — AFC Red Bisons ">
-                                </a>
-                                <a href="/team/1056275/photos/view?album_id=1005544" class="photo__title">
-                                    5 тур. Титан — AFC Red Bisons </a>
-                            </div>
-                            <div class="photo__item-wrapper-bottom">
-                                <div class="photo__date">23 октября</div>
-                                <div class="photo__number">58</div>
-                            </div>
-                        </li>
-                        <li class="photo__item">
-                            <div class="photo__item-wrapper-top">
-                                <a href="/team/1056275/photos/view?album_id=1005333" class="photo__picture">
-                                    <img class="photo__picture-img"
-                                         src="http://cdn.sportspring.ru/albums/1005333/5bc5ea67377f1_284x190.jpg"
-                                         width="284" height="190" alt="4 тур. AFC Red Bisons — AFC Football Wizzards">
-                                </a>
-                                <a href="/team/1056275/photos/view?album_id=1005333" class="photo__title">
-                                    4 тур. AFC Red Bisons — AFC Football Wizzards </a>
-                            </div>
-                            <div class="photo__item-wrapper-bottom">
-                                <div class="photo__date">16 октября</div>
-                                <div class="photo__number">56</div>
-                            </div>
-                        </li>
-                        <li class="photo__item">
-                            <div class="photo__item-wrapper-top">
-                                <a href="/team/1056275/photos/view?album_id=1005125" class="photo__picture">
-                                    <img class="photo__picture-img"
-                                         src="http://cdn.sportspring.ru/albums/1005125/5bbc894b2b621_284x190.jpg"
-                                         width="284" height="190" alt="3 тур. A1QA — AFC Red Bisons">
-                                </a>
-                                <a href="/team/1056275/photos/view?album_id=1005125" class="photo__title">
-                                    3 тур. A1QA — AFC Red Bisons </a>
-                            </div>
-                            <div class="photo__item-wrapper-bottom">
-                                <div class="photo__date">09 октября</div>
-                                <div class="photo__number">89</div>
-                            </div>
-                        </li>
+                        {'!pdoPage' | snippet : [
+                        'parents' => '3',
+                        'limit' => '3',
+                        'sortdir' => 'ASC',
+                        'includeTVs'=>'galleryPreview',
+                        'processTVs' => '1',
+                        'tpl' => '@FILE /chunks/catalog/photo.tpl'
+                        ]}
                     </ul>
-                    <a class="button button--photo" href="/team/1056275/photos">Все фото</a>
+                    <a class="button button--photo" href="http://s15918.h4.modhost.pro/media/foto/">Все фото</a>
                 </section>
                 <section class="video">
                     <h2 class="visually-hidden">Видео</h2>
                     <ul class="video__list js-videos-list">
-
-                        <li class="video__item">
-                            <div class="video__item-wrapper">
-                                <a href="/team/1056275/videos/view?video_id=1006185" class="video__picture">
-                                    <img class="video__picture-img"
-                                         src="http://cdn.sportspring.ru/video/1006185/5bceba525f13e_thumb.jpg"
-                                         width="284" height="190" alt="5 тур. Титан - Red Bisons 8-11. Запись матча">
-                                </a>
-                                <a href="/team/1056275/videos/view?video_id=1006185" class="video__title">
-                                    5 тур. Титан - Red Bisons 8-11. Запись матча </a>
-                            </div>
-                            <div class="video__date">23 октября</div>
-                        </li>
-                        <li class="video__item">
-                            <div class="video__item-wrapper">
-                                <a href="/team/1056275/videos/view?video_id=1006184" class="video__picture">
-                                    <img class="video__picture-img"
-                                         src="http://cdn.sportspring.ru/video/1006184/5bceba007726c_thumb.jpg"
-                                         width="284" height="190" alt="5 тур. Титан - Red Bisons - 8-11. Обзор матча">
-                                </a>
-                                <a href="/team/1056275/videos/view?video_id=1006184" class="video__title">
-                                    5 тур. Титан - Red Bisons - 8-11. Обзор матча </a>
-                            </div>
-                            <div class="video__date">23 октября</div>
-                        </li>
-                        <li class="video__item">
-                            <div class="video__item-wrapper">
-                                <a href="/team/1056275/videos/view?video_id=1005641" class="video__picture">
-                                    <img class="video__picture-img"
-                                         src="http://cdn.sportspring.ru/video/1005641/5bbdc64d3bff6_thumb.jpg"
-                                         width="284" height="190" alt="3 тур. A1QA - Red Bisons 1-5. Запись матча">
-                                </a>
-                                <a href="/team/1056275/videos/view?video_id=1005641" class="video__title">
-                                    3 тур. A1QA - Red Bisons 1-5. Запись матча </a>
-                            </div>
-                            <div class="video__date">10 октября</div>
-                        </li>
+                        {'!pdoPage' | snippet : [
+                        'parents' => 10,
+                        'sortdir' => 'ASC',
+                        'limit' => '3',
+                        'includeTVs'=>'video',
+                        'processTVs' => '1',
+                        'tpl' => '@FILE /chunks/catalog/video.tpl'
+                        ]}
                     </ul>
-                    <a class="button button--video" href="/team/1056275/videos">Все видео</a>
+                    <a class="button button--video" href="http://s15918.h4.modhost.pro/media/video/">Все видео</a>
                 </section>
             </div>
             

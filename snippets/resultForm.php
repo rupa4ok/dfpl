@@ -66,6 +66,7 @@ foreach ($players as $k => $list) {
     $club2 = $list['club2'];
 }
 
+//Вывод списка игроков
 $playerList = $base->getPlayerListByClub($club1, $club2);
 $modx->setPlaceholder('res2',$playerList);
 
@@ -126,6 +127,8 @@ switch ($request) {
             $error = 'Данные сохранены';
             $modx->setPlaceholder('errors',$error);
         }
+        break;
+    default;
         break;
 }
 

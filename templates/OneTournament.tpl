@@ -24,85 +24,32 @@
                     <div class="clear"></div>
                     <p></p>
                 </section>
-                <section class="matches-overview">
+                                <section class="matches-overview">
                     <h2 class="visually-hidden">Календарь прошедших и будущих матчей</h2>
                     <div class="matches-overview__past-matches">
                         <h3 class="matches-overview__title">Прошедшие матчи</h3>
                         <ul class="matches-overview__list with_top">
+                            {'!pdoPage' | snippet : [
+                                'parents' => '35',
+                                'includeTVs'=>'club1,club2',
+                                'processTVs' => '1',
+                                'includeContent' => '1',
+                                'tpl' => '@FILE /chunks/catalog/matches.tpl'
+                                ]}
                             <li class="matches-overview__item ">
-                                <a class="matches-overview__round" href="/match/1192327">
-                                    Регулярный чемпионат </a>
-                                <a class="matches-overview__link" href="/match/1192327">
+                                <a class="matches-overview__round" href="/match/1198966">
+                                    5х5. Юго-Восток. 2 </a>
+                                <a class="matches-overview__link" href="/match/1198966">
                                     <div class="matches-overview__date-time">
-                                        02 НОЯБ. / ПТ / 21:00
-                                    </div>
-                                    <table class="matches-overview__score">
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team matches-overview__score-cell--bold">
-                                                <div class="matches-overview__team">Минск Юнайтед</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals matches-overview__score-cell--bold">
-                                                9
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
-                                                <div class="matches-overview__team">West</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
-                                                4
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="matches-overview__item ">
-                                <a class="matches-overview__round" href="/match/1192343">
-                                    Регулярный чемпионат </a>
-                                <a class="matches-overview__link" href="/match/1192343">
-                                    <div class="matches-overview__date-time">
-                                        02 НОЯБ. / ПТ / 20:00
-                                    </div>
-                                    <table class="matches-overview__score">
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team matches-overview__score-cell--bold">
-                                                <div class="matches-overview__team">МФК Штурм</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals matches-overview__score-cell--bold">
-                                                4
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
-                                                <div class="matches-overview__team">Связист</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
-                                                0
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="matches-overview__item ">
-                                <a class="matches-overview__round" href="/match/1192345">
-                                    Регулярный чемпионат </a>
-                                <a class="matches-overview__link" href="/match/1192345">
-                                    <div class="matches-overview__date-time">
-                                        30 ОКТ. / ВТ / 22:00
+                                        22 ОКТ. / ПН / 20:55
                                     </div>
                                     <table class="matches-overview__score">
                                         <tr class="matches-overview__score-row matches-overview__score-row--row-1">
                                             <td class="matches-overview__score-cell matches-overview__score-cell--team ">
-                                                <div class="matches-overview__team">Прогресс</div>
+                                                <div class="matches-overview__team">Титан</div>
                                             </td>
                                             <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
-                                                2
+                                                8
                                             </td>
                                             <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
                                                 rowspan="2">
@@ -110,209 +57,90 @@
                                         </tr>
                                         <tr class="matches-overview__score-row matches-overview__score-row--row-2">
                                             <td class="matches-overview__score-cell matches-overview__score-cell--team matches-overview__score-cell--bold">
-                                                <div class="matches-overview__team">Пячоць</div>
+                                                <div class="matches-overview__team">AFC Red Bisons</div>
                                             </td>
                                             <td class="matches-overview__score-cell matches-overview__score-cell--goals matches-overview__score-cell--bold">
-                                                7
+                                                11
                                             </td>
                                         </tr>
                                     </table>
                                 </a>
                             </li>
                             <li class="matches-overview__item ">
-                                <a class="matches-overview__round" href="/match/1192360">
-                                    Регулярный чемпионат </a>
-                                <a class="matches-overview__link" href="/match/1192360">
+                                <a class="matches-overview__round" href="/match/1195249">
+                                    5х5. Юго-Восток. 2 </a>
+                                <a class="matches-overview__link" href="/match/1195249">
                                     <div class="matches-overview__date-time">
-                                        30 ОКТ. / ВТ / 21:00
-                                    </div>
-                                    <table class="matches-overview__score">
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
-                                                <div class="matches-overview__team">Итранзишэн</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
-                                                0
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team matches-overview__score-cell--bold">
-                                                <div class="matches-overview__team">Минск Юнайтед</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals matches-overview__score-cell--bold">
-                                                7
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="matches-overview__item ">
-                                <a class="matches-overview__round" href="/match/1192344">
-                                    Регулярный чемпионат </a>
-                                <a class="matches-overview__link" href="/match/1192344">
-                                    <div class="matches-overview__date-time">
-                                        30 ОКТ. / ВТ / 20:00
+                                        15 ОКТ. / ПН / 20:55
                                     </div>
                                     <table class="matches-overview__score">
                                         <tr class="matches-overview__score-row matches-overview__score-row--row-1">
                                             <td class="matches-overview__score-cell matches-overview__score-cell--team matches-overview__score-cell--bold">
-                                                <div class="matches-overview__team">Джек Хот</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals matches-overview__score-cell--bold">
-                                                10
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
-                                                <div class="matches-overview__team">Soccershop.by</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
-                                                3
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="matches-overview__item ">
-                                <a class="matches-overview__round" href="/match/1192339">
-                                    Регулярный чемпионат </a>
-                                <a class="matches-overview__link" href="/match/1192339">
-                                    <div class="matches-overview__date-time">
-                                        26 ОКТ. / ПТ / 21:00
-                                    </div>
-                                    <table class="matches-overview__score">
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team matches-overview__score-cell--bold">
-                                                <div class="matches-overview__team">Смена</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals matches-overview__score-cell--bold">
-                                                19
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
-                                                <div class="matches-overview__team">Прогресс</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
-                                                3
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="matches-overview__item ">
-                                <a class="matches-overview__round" href="/match/1192363">
-                                    Регулярный чемпионат </a>
-                                <a class="matches-overview__link" href="/match/1192363">
-                                    <div class="matches-overview__date-time">
-                                        23 ОКТ. / ВТ / 21:00
-                                    </div>
-                                    <table class="matches-overview__score">
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team matches-overview__score-cell--bold">
-                                                <div class="matches-overview__team">МФК Штурм</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals matches-overview__score-cell--bold">
-                                                6
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
-                                                <div class="matches-overview__team">Итранзишэн</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
-                                                2
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="matches-overview__item ">
-                                <a class="matches-overview__round" href="/match/1192338">
-                                    Регулярный чемпионат </a>
-                                <a class="matches-overview__link" href="/match/1192338">
-                                    <div class="matches-overview__date-time">
-                                        23 ОКТ. / ВТ / 20:00
-                                    </div>
-                                    <table class="matches-overview__score">
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
-                                                <div class="matches-overview__team">Связист</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
-                                                3
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
-                                                rowspan="2">
-                                            </td>
-                                        </tr>
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team matches-overview__score-cell--bold">
-                                                <div class="matches-overview__team">Минск Юнайтед</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals matches-overview__score-cell--bold">
-                                                6
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="matches-overview__item ">
-                                <a class="matches-overview__round" href="/match/1192341">
-                                    Регулярный чемпионат </a>
-                                <a class="matches-overview__link" href="/match/1192341">
-                                    <div class="matches-overview__date-time">
-                                        19 ОКТ. / ПТ / 21:00
-                                    </div>
-                                    <table class="matches-overview__score">
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team matches-overview__score-cell--bold">
-                                                <div class="matches-overview__team">Soccershop.by</div>
+                                                <div class="matches-overview__team">AFC Red Bisons</div>
                                             </td>
                                             <td class="matches-overview__score-cell matches-overview__score-cell--goals matches-overview__score-cell--bold">
                                                 5
                                             </td>
                                             <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
                                                 rowspan="2">
+                                                ТП
                                             </td>
                                         </tr>
                                         <tr class="matches-overview__score-row matches-overview__score-row--row-2">
                                             <td class="matches-overview__score-cell matches-overview__score-cell--team ">
-                                                <div class="matches-overview__team">Итранзишэн</div>
+                                                <div class="matches-overview__team">Орбита</div>
                                             </td>
                                             <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
-                                                4
+                                                0
                                             </td>
                                         </tr>
                                     </table>
                                 </a>
                             </li>
                             <li class="matches-overview__item ">
-                                <a class="matches-overview__round" href="/match/1192329">
-                                    Регулярный чемпионат </a>
-                                <a class="matches-overview__link" href="/match/1192329">
+                                <a class="matches-overview__round" href="/match/1191846">
+                                    5х5. Юго-Восток. 2 </a>
+                                <a class="matches-overview__link" href="/match/1191846">
                                     <div class="matches-overview__date-time">
-                                        19 ОКТ. / ПТ / 20:00
+                                        08 ОКТ. / ПН / 21:05
                                     </div>
                                     <table class="matches-overview__score">
                                         <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
+                                                <div class="matches-overview__team">A1QA</div>
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
+                                                1
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
+                                                rowspan="2">
+                                            </td>
+                                        </tr>
+                                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
                                             <td class="matches-overview__score-cell matches-overview__score-cell--team matches-overview__score-cell--bold">
-                                                <div class="matches-overview__team">Связист</div>
+                                                <div class="matches-overview__team">AFC Red Bisons</div>
                                             </td>
                                             <td class="matches-overview__score-cell matches-overview__score-cell--goals matches-overview__score-cell--bold">
-                                                7
+                                                5
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                            <li class="matches-overview__item ">
+                                <a class="matches-overview__round" href="/match/1179400">
+                                    5х5. Юго-Восток. 2 </a>
+                                <a class="matches-overview__link" href="/match/1179400">
+                                    <div class="matches-overview__date-time">
+                                        24 СЕНТ. / ПН / 20:10
+                                    </div>
+                                    <table class="matches-overview__score">
+                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
+                                                <div class="matches-overview__team">AFC Red Bisons</div>
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
+                                                1
                                             </td>
                                             <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
                                                 rowspan="2">
@@ -320,59 +148,74 @@
                                         </tr>
                                         <tr class="matches-overview__score-row matches-overview__score-row--row-2">
                                             <td class="matches-overview__score-cell matches-overview__score-cell--team ">
-                                                <div class="matches-overview__team">Джек Хот</div>
+                                                <div class="matches-overview__team">AFC Weak</div>
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
+                                                1
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                            <li class="matches-overview__item ">
+                                <a class="matches-overview__round" href="/match/1179545">
+                                    5х5. Юго-Восток. 2 </a>
+                                <a class="matches-overview__link" href="/match/1179545">
+                                    <div class="matches-overview__date-time">
+                                        10 СЕНТ. / ПН / 21:05
+                                    </div>
+                                    <table class="matches-overview__score">
+                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
+                                                <div class="matches-overview__team">7 тонн-2</div>
                                             </td>
                                             <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
                                                 2
                                             </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="matches-overview__item ">
-                                <a class="matches-overview__round" href="/match/1192367">
-                                    Регулярный чемпионат </a>
-                                <a class="matches-overview__link" href="/match/1192367">
-                                    <div class="matches-overview__date-time">
-                                        16 ОКТ. / ВТ / 22:00
-                                    </div>
-                                    <table class="matches-overview__score">
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
-                                                <div class="matches-overview__team">Пячоць</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
-                                                1
-                                            </td>
                                             <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
                                                 rowspan="2">
                                             </td>
                                         </tr>
                                         <tr class="matches-overview__score-row matches-overview__score-row--row-2">
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
-                                                <div class="matches-overview__team">West</div>
-                                            </td>
-                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
-                                                1
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </a>
-                            </li>
-                            <li class="matches-overview__item ">
-                                <a class="matches-overview__round" href="/match/1192332">
-                                    Регулярный чемпионат </a>
-                                <a class="matches-overview__link" href="/match/1192332">
-                                    <div class="matches-overview__date-time">
-                                        16 ОКТ. / ВТ / 21:00
-                                    </div>
-                                    <table class="matches-overview__score">
-                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
                                             <td class="matches-overview__score-cell matches-overview__score-cell--team matches-overview__score-cell--bold">
-                                                <div class="matches-overview__team">Минск Юнайтед</div>
+                                                <div class="matches-overview__team">AFC Red Bisons</div>
                                             </td>
                                             <td class="matches-overview__score-cell matches-overview__score-cell--goals matches-overview__score-cell--bold">
-                                                2
+                                                12
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="matches-overview__future-matches">
+                        <h3 class="matches-overview__title">Будущие матчи</h3>
+                        <ul class="matches-overview__list with_top">
+                            
+                             {'!pdoPage' | snippet : [
+                                'parents' => '35',
+                                'includeTVs'=>'club1,club2',
+                                'processTVs' => '1',
+                                'includeContent' => '1',
+                                'tpl' => '@FILE /chunks/catalog/matches.tpl'
+                                ]}
+                            <li class="matches-overview__item ">
+                                <a class="matches-overview__round" href="/match/1208446">
+                                    5х5. Юго-Восток. 2 </a>
+                                <a class="matches-overview__link" href="/match/1208446">
+                                    <div class="matches-overview__date-time-wrapper">
+                                        <div class="matches-overview__date-time">
+                                            05 НОЯБ. / ПН / 20:55
+                                        </div>
+                                    </div>
+                                    <table class="matches-overview__score">
+                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
+                                                <div class="matches-overview__team">Лев</div>
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
+                                                -
                                             </td>
                                             <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
                                                 rowspan="2">
@@ -380,10 +223,75 @@
                                         </tr>
                                         <tr class="matches-overview__score-row matches-overview__score-row--row-2">
                                             <td class="matches-overview__score-cell matches-overview__score-cell--team ">
-                                                <div class="matches-overview__team">МФК Штурм</div>
+                                                <div class="matches-overview__team">AFC Red Bisons</div>
                                             </td>
                                             <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
-                                                1
+                                                -
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                            <li class="matches-overview__item ">
+                                <a class="matches-overview__round" href="/match/1208446">
+                                    5х5. Юго-Восток. 2 </a>
+                                <a class="matches-overview__link" href="/match/1208446">
+                                    <div class="matches-overview__date-time-wrapper">
+                                        <div class="matches-overview__date-time">
+                                            05 НОЯБ. / ПН / 20:55
+                                        </div>
+                                    </div>
+                                    <table class="matches-overview__score">
+                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
+                                                <div class="matches-overview__team">Лев</div>
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
+                                                -
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
+                                                rowspan="2">
+                                            </td>
+                                        </tr>
+                                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
+                                                <div class="matches-overview__team">AFC Red Bisons</div>
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
+                                                -
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </a>
+                            </li>
+                            
+                            <li class="matches-overview__item ">
+                                <a class="matches-overview__round" href="/match/1208446">
+                                    5х5. Юго-Восток. 2 </a>
+                                <a class="matches-overview__link" href="/match/1208446">
+                                    <div class="matches-overview__date-time-wrapper">
+                                        <div class="matches-overview__date-time">
+                                            05 НОЯБ. / ПН / 20:55
+                                        </div>
+                                    </div>
+                                    <table class="matches-overview__score">
+                                        <tr class="matches-overview__score-row matches-overview__score-row--row-1">
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
+                                                <div class="matches-overview__team">Лев</div>
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
+                                                -
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--first-game"
+                                                rowspan="2">
+                                            </td>
+                                        </tr>
+                                        <tr class="matches-overview__score-row matches-overview__score-row--row-2">
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--team ">
+                                                <div class="matches-overview__team">AFC Red Bisons</div>
+                                            </td>
+                                            <td class="matches-overview__score-cell matches-overview__score-cell--goals ">
+                                                -
                                             </td>
                                         </tr>
                                     </table>
@@ -392,6 +300,9 @@
                         </ul>
                     </div>
                 </section>
+                
+                
+                
                 <section class="news-cards">
                     <h2 class="visually-hidden">Новости</h2>
                     <ul class="news-cards__list js-news">

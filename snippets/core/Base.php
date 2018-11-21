@@ -41,7 +41,6 @@ class Base extends Modx
         if (!$this->modx->prepare($sql)->execute(array_values($data))) {
             $this->modx->log(1, print_r($sql, true));
         }
-        return;
     }
     
     /**
@@ -64,7 +63,6 @@ class Base extends Modx
         if (!$this->modx->prepare($sql)->execute($data)) {
             $this->modx->log(1, print_r($sql, true));
         }
-        return;
     }
     
     /**
@@ -95,7 +93,6 @@ class Base extends Modx
                 $this->modx->setPlaceholders('name' . $res['id'], $res['name']);
             }
         }
-        return;
     }
     
     /**
@@ -109,9 +106,8 @@ class Base extends Modx
         $sql = "SELECT * FROM {$this->table_e} WHERE match_id = :id AND club_id = :club AND goal = 1";
         $statement = $this->modx->prepare($sql);
         if ($statement->execute(array('id' => $id, 'club' => $club))) {
-            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+            $count = $statement->rowCount();
         }
-        $count = $statement->rowCount();
         return $count;
     }
     
@@ -128,7 +124,6 @@ class Base extends Modx
             print_r($tvs[$k]);
             echo '</pre>';
         }
-        return;
     }
     
     /**
@@ -142,7 +137,7 @@ class Base extends Modx
         );
         $resources = $this->modx->getCollection('modResource',$where);
         $turnList = '';
-        foreach ($resources as $k => $res) {
+        foreach ($resources as $res) {
             $turnList[$res->get('id')] = $res->get('pagetitle');
         }
         return $turnList;
@@ -194,7 +189,7 @@ class Base extends Modx
             'template' => 36
         );
         $resources = $this->modx->getCollection('modResource',$where);
-        foreach ($resources as $k => $res) {
+        foreach ($resources as $res) {
             $resId = $res->get('id');
             $where = array(
                 'parent' => $resId,
@@ -204,7 +199,7 @@ class Base extends Modx
         
         $resources = $this->modx->getCollection('modResource',$where);
         $matchList = '';
-        foreach ($resources as $k => $res) {
+        foreach ($resources as $res) {
             $matchList[$res->get('id')] = $res->get('pagetitle');
         }
         return $matchList;
@@ -224,7 +219,7 @@ class Base extends Modx
         $statement = $this->modx->prepare($sql);
         if ($statement->execute(array(':club1_id' => $club1, ':club2_id' => $club2))) {
             $resources = $statement->fetchAll(PDO::FETCH_ASSOC);
-            foreach ($resources as $k => $res) {
+            foreach ($resources as $res) {
                 $playerList[$res['id']] = $res['fio'];
             }
         }
@@ -232,6 +227,8 @@ class Base extends Modx
     }
     
     /**
+     * Массив TV клуба по его Id
+     *
      * @param $matchId
      * @return mixed
      */
@@ -298,15 +295,23 @@ class Base extends Modx
         $statement = $this->modx->prepare($sql);
         if ($statement->execute(array('id' => $playerId))) {
             $resources = $statement->fetchAll(PDO::FETCH_ASSOC);
-            foreach ($resources as $k => $res) {
+            foreach ($resources as $res) {
                 $clubId = $res['club_id'];
             }
         }
         return $clubId;
     }
     
+    
+    /**
+     * Проверка наличия записи события матча в бд
+     *
+     * @param $data
+     * @return mixed
+     */
     public function getEventItem($data)
     {
+        $count = '';
         $sql = "SELECT * FROM {$this->table_e} WHERE player_id = :player_id AND club_id = :club_id AND time = :time";
         $statement = $this->modx->prepare($sql);
         if ($statement->execute(array(
@@ -315,9 +320,8 @@ class Base extends Modx
             'time' => $data['time'],
         ))) {
             $statement->fetchAll(PDO::FETCH_ASSOC);
+            $count = $statement->rowCount();
         }
-        $count = $statement->rowCount();
         return $count;
     }
-    
 }
