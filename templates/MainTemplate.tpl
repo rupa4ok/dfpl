@@ -844,19 +844,62 @@
 
                     </div>
                 </section>
+                
 
                 <section class="main_page_content_section">
                     <div class="main_page_content_block">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy
-                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                            make a type specimen book. It has
-                            survived not only five centuries, but also the leap into electronic typesetting, remaining
-                            essentially unchanged. It was popularised
-                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                            recently with desktop publishing software
-                            like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <a class="button" href="#">Все видео</a>
+                        <section class="news-cards">
+            <h2 class="visually-hidden">Новости</h2>
+                        <ul class="news-cards__list js-news">
+           {'!pdoPage' | snippet : [
+                        'parents' => 77,
+                        'includeTVs'=>'image',
+                        'processTVs' => '1',
+                        'limit' => '4',
+                        'includeContent' => '1',
+                        'tpl' => '@FILE /chunks/catalog/main_news.tpl'
+                        ]}     
+                    </ul>
+                            <a href="http://s15918.h4.modhost.pro/novosti/" class="button go-to-all">
+                                Все новости</a>
+                    </section>
+    
+
+            <section class="photo">
+            <h2 class="visually-hidden">Фото</h2>
+                        <ul class="photo__list js-albums-list">
+                            {'!pdoPage' | snippet : [
+                        'parents' => 3,
+                        'includeTVs'=>'galleryPreview',
+                        'processTVs' => '1',
+                        'limit' => '6',
+                        'tpl' => '@FILE /chunks/catalog/photo.tpl'
+                        ]}
+            </ul>
+                    <a class="button button--photo" href="http://s15918.h4.modhost.pro/media/foto/">Все фото</a>
+            </section>
+    
+
+        <section class="video">
+        <h2 class="visually-hidden">Видео</h2>
+                <ul class="video__list js-videos-list">
+                    
+                    
+                    
+                    {'!pdoPage' | snippet : [
+                        'parents' => 10,
+                        'limit' => '3',
+                        'includeTVs'=>'video',
+                        'processTVs' => '1',
+                        'tpl' => '@FILE /chunks/catalog/video.tpl'
+                        ]}
+                
+        
+            </ul>
+                    <a class="button button--video" href="http://s15918.h4.modhost.pro/media/video/">Все видео</a>
+            </section>
+    
+                        {$_modx->resource.content}
                     </div>
                 </section>
 

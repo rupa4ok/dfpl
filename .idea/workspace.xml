@@ -1,36 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d28dd0ff-10fe-4aa8-a1d5-cf7b8d2e8b76" name="Default" comment="21/11/2018 &#10;- Создание статусов игроков">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/23d1cd3b333633fdf330c9850db59870e15a8810" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e12462a555431d04a51ea050f2cd7743f3a8da2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/3978759c2d4bc7a22443ccfd807a70ac9ac90154" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/8894f545b8f57f9a20a4124be6c12bd55e250ffa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/9381befa79fa80d3392123e8c0e457fd395ebd17" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5856a3f247921a1cd9216d8d9974d039b662645" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b2bc3fa126aad76982cdf66fb04f71534a40049f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/beb1a08c167cfb125792f2a5304cd3a2e777fc45" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/7/c7b1c422a24ef4029b463d30cfe83beb7db5e469" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee493051d4d32c584b60d068872ce9bca5645c29" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chunks/catalog/matches.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chunks/catalog/player_table.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chunks/catalog/teams.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chunks/catalog/tournament_calendar.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chunks/catalog/tournaments_calendar_dates.tpl" afterDir="false" />
+    <list default="true" id="d28dd0ff-10fe-4aa8-a1d5-cf7b8d2e8b76" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/chunks/catalog/main_news.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chunks/_footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/_footer.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chunks/catalog/sostav1.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/catalog/sostav1.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/core/Base.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/core/Base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chunks/catalog/tournaments_calendar_dates.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/catalog/tournaments_calendar_dates.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chunks/catalog/video.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/catalog/video.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snippets/core/Statistic.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/core/Statistic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/getStatTurn.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/getStatTurn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/getTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/getTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/getEvents.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/getEvents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/getViews.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/getViews.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snippets/resultForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/resultForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/OneTeam.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/OneTeam.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/OneTournament.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/OneTournament.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Player.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Player.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Statistics.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Statistics.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/TournamentCalendar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/TournamentCalendar.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/teams.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teams.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Gallery.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Gallery.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/MainTemplate.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/MainTemplate.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Match.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Match.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/MediaTemplate.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/MediaTemplate.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/NewsTemplate.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NewsTemplate.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Stadiums.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Stadiums.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/TournamentTables.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/TournamentTables.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/VideoTemplate.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/VideoTemplate.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -94,75 +83,122 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="php" value="41" />
-          <entry key="tpl" value="30" />
+          <entry key="php" value="61" />
+          <entry key="tpl" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="41" />
+          <entry key="PHP" value="61" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Smarty" value="30" />
+          <entry key="Smarty" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="5" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="33" />
-          <entry key="php" value="2488" />
-          <entry key="tpl" value="792" />
+          <entry key="php" value="2809" />
+          <entry key="tpl" value="960" />
           <entry key="txt" value="76" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="2474" />
+          <entry key="PHP" value="2795" />
           <entry key="PLAIN_TEXT" value="109" />
           <entry key="SQL" value="14" />
-          <entry key="Smarty" value="792" />
+          <entry key="Smarty" value="960" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="getEvents.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/snippets/getEvents.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="90" lean-forward="true" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="resultForm.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snippets/resultForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-              <folding>
-                <marker date="1542826650785" expanded="true" signature="0:3554" ph="..." />
-                <marker date="1542826650785" expanded="true" signature="1484:1584" ph="..." />
-              </folding>
+            <state relative-caret-position="2793">
+              <caret line="133" column="33" selection-start-line="133" selection-start-column="33" selection-end-line="133" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Statistic.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="getSidebar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/snippets/getSidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getTable.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/snippets/getTable.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getMatchStat.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/snippets/getMatchStat.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="getViews.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/snippets/getViews.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Result.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Result.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1470">
+              <caret line="70" column="46" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Statistic.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/snippets/core/Statistic.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            <state relative-caret-position="829">
+              <caret line="174" column="5" selection-start-line="174" selection-start-column="5" selection-end-line="174" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getEvents.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/snippets/getEvents.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Match.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Match.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3969">
+              <caret line="189" column="42" selection-start-line="189" selection-start-column="42" selection-end-line="189" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -170,8 +206,8 @@
       <file leaf-file-name="Base.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snippets/core/Base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5702">
-              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="162">
+              <caret line="250" column="1" selection-start-line="250" selection-start-column="1" selection-end-line="325" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -187,6 +223,10 @@
       <find>КУБОК БЕЛАРУСИ 8Х8</find>
       <find>value</find>
       <find>match-promo__team-logo</find>
+      <find>tournaments_calendar_dates.tpl</find>
+      <find>image</find>
+      <find>match-timeline</find>
+      <find>vertical-timeline__event-item</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -203,12 +243,10 @@
       <list>
         <option value="$PROJECT_DIR$/chunks/_header.tpl" />
         <option value="$PROJECT_DIR$/chunks/_footer.tpl" />
-        <option value="$PROJECT_DIR$/templates/MediaTemplate.tpl" />
         <option value="$PROJECT_DIR$/templates/Line-up.tpl" />
         <option value="$PROJECT_DIR$/chunks/catalog/sostav.php" />
         <option value="$PROJECT_DIR$/templates/Player.tpl" />
         <option value="$PROJECT_DIR$/snippets/getStat.php" />
-        <option value="$PROJECT_DIR$/snippets/getViews.php" />
         <option value="$PROJECT_DIR$/snippets/core/cron.php" />
         <option value="$PROJECT_DIR$/chunks/_head.tpl" />
         <option value="E:/Сайты/Modx/modx-2.6.5-pl/modx-2.6.5-pl/index.php" />
@@ -220,7 +258,6 @@
         <option value="$PROJECT_DIR$/chunks/_addscripts.tpl" />
         <option value="$PROJECT_DIR$/templates/Stadiums.tpl" />
         <option value="$PROJECT_DIR$/templates/Result.tpl" />
-        <option value="$PROJECT_DIR$/snippets/getEvents.php" />
         <option value="$PROJECT_DIR$/chunks/sidebar.tpl" />
         <option value="$PROJECT_DIR$/templates/TextTemplate.tpl" />
         <option value="&lt;584d9e30-0912-4872-a7ae-34fa0d93ec29&gt;/composer.json" />
@@ -228,18 +265,22 @@
         <option value="$PROJECT_DIR$/plugins/games.php" />
         <option value="$PROJECT_DIR$/snippets/getGoals.php" />
         <option value="$PROJECT_DIR$/snippets/getSidebar.php" />
-        <option value="$PROJECT_DIR$/templates/Match.tpl" />
         <option value="$PROJECT_DIR$/snippets/getSostav.php" />
         <option value="$PROJECT_DIR$/chunks/catalog/sostav.tpl" />
-        <option value="$PROJECT_DIR$/snippets/getTable.php" />
         <option value="$PROJECT_DIR$/templates/Statistics.tpl" />
         <option value="$PROJECT_DIR$/snippets/getStatTurn.php" />
         <option value="$PROJECT_DIR$/templates/teams.tpl" />
         <option value="$PROJECT_DIR$/chunks/catalog/tournament_calendar.tpl" />
-        <option value="$PROJECT_DIR$/chunks/catalog/sostav1.tpl" />
         <option value="$PROJECT_DIR$/chunks/catalog/matches.tpl" />
         <option value="$PROJECT_DIR$/snippets/resultForm.php" />
+        <option value="$PROJECT_DIR$/templates/MediaTemplate.tpl" />
+        <option value="$PROJECT_DIR$/snippets/getTable.php" />
         <option value="$PROJECT_DIR$/snippets/core/Base.php" />
+        <option value="$PROJECT_DIR$/chunks/catalog/tournaments_calendar_dates.tpl" />
+        <option value="$PROJECT_DIR$/chunks/catalog/sostav1.tpl" />
+        <option value="$PROJECT_DIR$/snippets/getViews.php" />
+        <option value="$PROJECT_DIR$/snippets/getEvents.php" />
+        <option value="$PROJECT_DIR$/templates/Match.tpl" />
         <option value="$PROJECT_DIR$/snippets/core/Statistic.php" />
       </list>
     </option>
@@ -305,23 +346,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
               <item name="dfpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dfpl" type="462c0819:PsiDirectoryNode" />
-              <item name="chunks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dfpl" type="462c0819:PsiDirectoryNode" />
-              <item name="chunks" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
@@ -343,10 +374,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -355,7 +386,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../robolab" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -465,7 +496,13 @@
       <workItem from="1542759665763" duration="603000" />
       <workItem from="1542782235845" duration="10227000" />
       <workItem from="1542798211917" duration="2828000" />
-      <workItem from="1542819025948" duration="8141000" />
+      <workItem from="1542819025948" duration="8926000" />
+      <workItem from="1542872988322" duration="1472000" />
+      <workItem from="1542876670250" duration="5068000" />
+      <workItem from="1542886258499" duration="932000" />
+      <workItem from="1542888275611" duration="6000" />
+      <workItem from="1542890664130" duration="7925000" />
+      <workItem from="1542904915430" duration="56000" />
     </task>
     <task id="LOCAL-00001" summary="Перепиливаю старый шаблон">
       <created>1539634108058</created>
@@ -586,11 +623,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542798275088</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="22/11/2018 &#10;- Статистика&#10;- Правки Леши">
+      <created>1542830239770</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1542830239770</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180042000" />
+    <option name="totallyTimeSpent" value="196286000" />
   </component>
   <component name="TodoView">
     <todo-panel id="all">
@@ -603,15 +647,14 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3275488" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.3297062" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.3286334" />
       <window_info anchor="bottom" id="Migrations" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="14" weight="0.32535365" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3297062" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3297062" />
-      <window_info anchor="right" id="Remote Host" order="3" weight="0.19509594" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18869936" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.19509594" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20149253" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarLint" order="15" weight="0.3297062" />
       <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
@@ -626,6 +669,7 @@
       <window_info anchor="bottom" id="Command Line Tools Console" order="7" weight="0.3297062" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="File Transfer" order="14" weight="0.324295" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
@@ -653,54 +697,16 @@
     <MESSAGE value="20/11/2018 &#10;- Пересчет результатов матча со страницы внесения результатов" />
     <MESSAGE value="21/11/2018 &#10;- Создание таблийы игроков турнира&#10;- Правки по верстке&#10;- ПОдключение слайдеров" />
     <MESSAGE value="21/11/2018 &#10;- Создание статусов игроков" />
-    <option name="LAST_COMMIT_MESSAGE" value="21/11/2018 &#10;- Создание статусов игроков" />
+    <MESSAGE value="22/11/2018 &#10;- Статистика&#10;- Правки Леши" />
+    <option name="LAST_COMMIT_MESSAGE" value="22/11/2018 &#10;- Статистика&#10;- Правки Леши" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/snippets/core/Base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6153">
-          <caret line="293" column="20" selection-start-line="293" selection-start-column="20" selection-end-line="293" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Statistics.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="70" column="18" lean-forward="true" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/core/Statistic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/getStatTurn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/test.js" />
     <entry file="file://$PROJECT_DIR$/chunks/WelcomeChunk.php" />
     <entry file="file://$PROJECT_DIR$/templates/OneNewsTemplate.tpl" />
     <entry file="file://$PROJECT_DIR$/chunks/WelcomeChunk.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="9" lean-forward="true" selection-start-column="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/MediaTemplate.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -729,13 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Stadiums.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -777,26 +776,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/MainTemplate.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18438">
-          <caret line="878" column="8" lean-forward="true" selection-start-line="878" selection-start-column="8" selection-end-line="878" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/getMatchStat.php" />
     <entry file="file://$PROJECT_DIR$/chunks/_head.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/getStat.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/getViews.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/games.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -805,52 +790,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/getSidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/getGoals.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/TournamentTables.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1974">
-          <caret line="94" column="110" selection-start-line="94" selection-start-column="110" selection-end-line="94" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Result.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="25" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chunks/catalog/sostav.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Match.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="51" column="68" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/getSostav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -882,13 +825,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chunks/catalog/player_table.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/chunks/catalog/player_table.tpl" />
     <entry file="file://$PROJECT_DIR$/snippets/ajax.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -896,48 +833,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/getTable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chunks/catalog/tournaments_calendar_dates.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chunks/catalog/tournament_calendar.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="12" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chunks/catalog/sostav1.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chunks/catalog/matches.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chunks/catalog/video.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/chunks/catalog/tournament_calendar.tpl" />
+    <entry file="file://$PROJECT_DIR$/chunks/catalog/matches.tpl" />
     <entry file="file://$PROJECT_DIR$/templates/OneTeam.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
@@ -949,41 +846,169 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="16" column="52" lean-forward="true" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-          <folding>
-            <element signature="e#6#86#0#PHP" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/getStat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chunks/catalog/main_news.tpl" />
+    <entry file="file://$PROJECT_DIR$/chunks/_footer.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-421" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Stadiums.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/MainTemplate.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Gallery.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/MediaTemplate.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/NewsTemplate.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chunks/catalog/tournaments_calendar_dates.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/VideoTemplate.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chunks/catalog/video.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/getSostav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/TournamentTables.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="1538" column="46" selection-start-line="1538" selection-start-column="46" selection-end-line="1538" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chunks/catalog/sostav1.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/getGoals.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/snippets/resultForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <marker date="1542826650785" expanded="true" signature="0:3554" ph="..." />
-            <marker date="1542826650785" expanded="true" signature="1484:1584" ph="..." />
-          </folding>
+        <state relative-caret-position="2793">
+          <caret line="133" column="33" selection-start-line="133" selection-start-column="33" selection-end-line="133" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/core/Base.php">
+    <entry file="file://$PROJECT_DIR$/snippets/getSidebar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5702">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/core/Statistic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        <state relative-caret-position="126">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/snippets/getEvents.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="8" column="90" lean-forward="true" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Match.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3969">
+          <caret line="189" column="42" selection-start-line="189" selection-start-column="42" selection-end-line="189" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/getViews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/getMatchStat.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Result.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="70" column="46" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/getTable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/core/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="250" column="1" selection-start-line="250" selection-start-column="1" selection-end-line="325" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/core/Statistic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="829">
+          <caret line="174" column="5" selection-start-line="174" selection-start-column="5" selection-end-line="174" selection-end-column="5" />
         </state>
       </provider>
     </entry>

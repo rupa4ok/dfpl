@@ -19,7 +19,7 @@
                         'includeTVs'=>'image',
                         'processTVs' => '1',
                         'includeContent' => '1',
-                        'tpl' => '@FILE /chunks/catalog/news.tpl'
+                        'tpl' => '@FILE /chunks/catalog/main_news.tpl'
                         ]}
 
                        

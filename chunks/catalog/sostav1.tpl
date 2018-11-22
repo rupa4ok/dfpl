@@ -4,6 +4,6 @@
             [[+fio]] </a>
     </div>
     <span class="match-protocol__member-amplua">
-                                [[+role]]{$_pls['id']}
+                                [[+role]]
                             </span>
 </li>

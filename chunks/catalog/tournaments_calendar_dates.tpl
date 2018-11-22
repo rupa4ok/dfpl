@@ -5,12 +5,12 @@
             </span>
 </div>
 <ul class="schedule__matches-list">
-                                    {'!pdoPage' | snippet : [
-                                'parents' => '35',
-                                'includeTVs'=>'club1,club2',
-                                'processTVs' => '1',
-                                'where' => '{"$createdon:>=": "$_modx->resource.publishedon"}',
-                                'includeContent' => '1',
-                                'tpl' => '@FILE /chunks/catalog/tournament_calendar.tpl'
-                                ]}
+    {'!pdoPage' | snippet : [
+    'parents' => '35',
+    'includeTVs'=>'club1,club2',
+    'processTVs' => '1',
+    'where' => '{"$createdon:>=": $date}',
+    'includeContent' => '1',
+    'tpl' => '@FILE /chunks/catalog/tournament_calendar.tpl'
+    ]}
 </ul>

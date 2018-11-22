@@ -1511,6 +1511,19 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                               
+                                
+                                
+                                
+                                
+                                
                                 <div class="tabs__pane js-tab-cont" id="tournaments-tables-progress">
                                     <table class="table table--form" cellspacing="0">
                                         <tbody>
@@ -1523,20 +1536,23 @@
                                                 Форма
                                             </th>
                                         </tr>
-                                        <tr class="table__row">
+                                         {'!getTable' | snippet : []}
+                                        {set $arra = $_modx->getPlaceholder('table')}
+                                        {foreach $arra as $l => $ar_value}
+                                             <tr class="table__row">
                                             <td class="table__cell table__cell--color "
                                                 style="background-color: #55AA00;"></td>
                                             <td class="table__cell table__cell--number ">
-                                                1
+                                                {$ar_value.id}
                                             </td>
                                             <td class="table__cell table__cell--team ">
                                                 <a class="table__team"
                                                    href="/tournament/1002296/teams/application?team_id=1057390">
                                                     <div class="table__team-logo">
-                                                        <img src="http://cdn.sportspring.ru/team/1057390/logo/5b9d75f7254bc_100x100.jpg"
+                                                        <img src="{$ar_value.image}"
                                                              class="table__team-img">
                                                     </div>
-                                                    <span class="table__team-name">Минск Юнайтед</span>
+                                                    <span class="table__team-name">{$ar_value.pagetitle}</span>
                                                 </a>
                                             </td>
                                             <td class="table__cell table__cell--form-results">
@@ -1569,400 +1585,7 @@
                                                 </ul>
                                             </td>
                                         </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell table__cell--color "
-                                                style="background-color: #55AA00;"></td>
-                                            <td class="table__cell table__cell--number ">
-                                                2
-                                            </td>
-                                            <td class="table__cell table__cell--team ">
-                                                <a class="table__team"
-                                                   href="/tournament/1002296/teams/application?team_id=1057566">
-                                                    <div class="table__team-logo">
-                                                        <img src="http://cdn.sportspring.ru/team/1057566/logo/5bb35193da72e_100x100.jpg"
-                                                             class="table__team-img">
-                                                    </div>
-                                                    <span class="table__team-name">МФК Штурм</span>
-                                                </a>
-                                            </td>
-                                            <td class="table__cell table__cell--form-results">
-                                                <ul class="form-results-list">
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192328"
-                                                           title="02 октября, МФК Штурм 8 : 2 Прогресс">
-                                                            В </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192370"
-                                                           title="09 октября, Джек Хот 2 : 5 МФК Штурм">
-                                                            В </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192332"
-                                                           title="16 октября, Минск Юнайтед 2 : 1 МФК Штурм">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192363"
-                                                           title="23 октября, МФК Штурм 6 : 2 Итранзишэн">
-                                                            В </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192343"
-                                                           title="02 ноября, МФК Штурм 4 : 0 Связист">
-                                                            В </a>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell table__cell--color "
-                                                style="background-color: #55AA00;"></td>
-                                            <td class="table__cell table__cell--number ">
-                                                3
-                                            </td>
-                                            <td class="table__cell table__cell--team ">
-                                                <a class="table__team"
-                                                   href="/tournament/1002296/teams/application?team_id=1057570">
-                                                    <div class="table__team-logo">
-                                                        <img src="http://cdn.sportspring.ru/team/1057570/logo/5bb34c96d0c9f_100x100.jpg"
-                                                             class="table__team-img">
-                                                    </div>
-                                                    <span class="table__team-name">Soccershop.by</span>
-                                                </a>
-                                            </td>
-                                            <td class="table__cell table__cell--form-results">
-                                                <ul class="form-results-list">
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192368"
-                                                           title="28 сентября, Soccershop.by 6 : 2 Смена">
-                                                            В </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192331"
-                                                           title="02 октября, Пячоць 1 : 5 Soccershop.by">
-                                                            В </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192336"
-                                                           title="12 октября, West 4 : 5 Soccershop.by">
-                                                            В </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192341"
-                                                           title="19 октября, Soccershop.by 5 : 4 Итранзишэн">
-                                                            В </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192344"
-                                                           title="30 октября, Джек Хот 10 : 3 Soccershop.by">
-                                                            П </a>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell table__cell--color "
-                                                style="background-color: #55AA00;"></td>
-                                            <td class="table__cell table__cell--number ">
-                                                4
-                                            </td>
-                                            <td class="table__cell table__cell--team ">
-                                                <a class="table__team"
-                                                   href="/tournament/1002296/teams/application?team_id=1057568">
-                                                    <div class="table__team-logo">
-                                                        <img src="http://cdn.sportspring.ru/team/1057568/logo/5bb34eb1dcbdc_100x100.jpg"
-                                                             class="table__team-img">
-                                                    </div>
-                                                    <span class="table__team-name">Смена</span>
-                                                </a>
-                                            </td>
-                                            <td class="table__cell table__cell--form-results">
-                                                <ul class="form-results-list">
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192368"
-                                                           title="28 сентября, Soccershop.by 6 : 2 Смена">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192330"
-                                                           title="05 октября, Смена 5 : 3 Итранзишэн">
-                                                            В </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192334"
-                                                           title="12 октября, Джек Хот 1 : 4 Смена">
-                                                            В </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192339"
-                                                           title="26 октября, Смена 19 : 3 Прогресс">
-                                                            В </a>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell table__cell--color "
-                                                style="background-color: #55AA00;"></td>
-                                            <td class="table__cell table__cell--number ">
-                                                5
-                                            </td>
-                                            <td class="table__cell table__cell--team ">
-                                                <a class="table__team"
-                                                   href="/tournament/1002296/teams/application?team_id=1057567">
-                                                    <div class="table__team-logo">
-                                                        <img src="http://cdn.sportspring.ru/team/1057567/logo/5bb3527b96634_100x100.jpg"
-                                                             class="table__team-img">
-                                                    </div>
-                                                    <span class="table__team-name">Связист</span>
-                                                </a>
-                                            </td>
-                                            <td class="table__cell table__cell--form-results">
-                                                <ul class="form-results-list">
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192369"
-                                                           title="25 сентября, Итранзишэн 2 : 9 Связист">
-                                                            В </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192335"
-                                                           title="16 октября, Прогресс 3 : 8 Связист">
-                                                            В </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192329"
-                                                           title="19 октября, Связист 7 : 2 Джек Хот">
-                                                            В </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192338"
-                                                           title="23 октября, Связист 3 : 6 Минск Юнайтед">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192343"
-                                                           title="02 ноября, МФК Штурм 4 : 0 Связист">
-                                                            П </a>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell table__cell--color "
-                                                style="background-color: #55AA00;"></td>
-                                            <td class="table__cell table__cell--number ">
-                                                6
-                                            </td>
-                                            <td class="table__cell table__cell--team ">
-                                                <a class="table__team"
-                                                   href="/tournament/1002296/teams/application?team_id=1057569">
-                                                    <div class="table__team-logo">
-                                                        <img src="http://cdn.sportspring.ru/team/1057569/logo/5bb3507178628_100x100.jpg"
-                                                             class="table__team-img">
-                                                    </div>
-                                                    <span class="table__team-name">Пячоць</span>
-                                                </a>
-                                            </td>
-                                            <td class="table__cell table__cell--form-results">
-                                                <ul class="form-results-list">
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192331"
-                                                           title="02 октября, Пячоць 1 : 5 Soccershop.by">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--draw">
-                                                        <a class="form-results-link" href="/match/1192333"
-                                                           title="09 октября, Итранзишэн 4 : 4 Пячоць">
-                                                            Н </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--draw">
-                                                        <a class="form-results-link" href="/match/1192367"
-                                                           title="16 октября, Пячоць 1 : 1 West">
-                                                            Н </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192345"
-                                                           title="30 октября, Прогресс 2 : 7 Пячоць">
-                                                            В </a>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell table__cell--color "
-                                                style="background-color: #55AA00;"></td>
-                                            <td class="table__cell table__cell--number ">
-                                                7
-                                            </td>
-                                            <td class="table__cell table__cell--team ">
-                                                <a class="table__team"
-                                                   href="/tournament/1002296/teams/application?team_id=1057572">
-                                                    <div class="table__team-logo">
-                                                        <img src="http://cdn.sportspring.ru/team/1057572/logo/5bb353073b1f0_100x100.jpg"
-                                                             class="table__team-img">
-                                                    </div>
-                                                    <span class="table__team-name">Джек Хот</span>
-                                                </a>
-                                            </td>
-                                            <td class="table__cell table__cell--form-results">
-                                                <ul class="form-results-list">
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192370"
-                                                           title="09 октября, Джек Хот 2 : 5 МФК Штурм">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192334"
-                                                           title="12 октября, Джек Хот 1 : 4 Смена">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192329"
-                                                           title="19 октября, Связист 7 : 2 Джек Хот">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--win">
-                                                        <a class="form-results-link" href="/match/1192344"
-                                                           title="30 октября, Джек Хот 10 : 3 Soccershop.by">
-                                                            В </a>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell table__cell--color "
-                                                style="background-color: #55AA00;"></td>
-                                            <td class="table__cell table__cell--number ">
-                                                8
-                                            </td>
-                                            <td class="table__cell table__cell--team ">
-                                                <a class="table__team"
-                                                   href="/tournament/1002296/teams/application?team_id=1058158">
-                                                    <div class="table__team-logo">
-                                                        <img src="http://cdn.sportspring.ru/team/1058158/logo/5bb3418f75d16_100x100.jpg"
-                                                             class="table__team-img">
-                                                    </div>
-                                                    <span class="table__team-name">West</span>
-                                                </a>
-                                            </td>
-                                            <td class="table__cell table__cell--form-results">
-                                                <ul class="form-results-list">
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192336"
-                                                           title="12 октября, West 4 : 5 Soccershop.by">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--draw">
-                                                        <a class="form-results-link" href="/match/1192367"
-                                                           title="16 октября, Пячоць 1 : 1 West">
-                                                            Н </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192327"
-                                                           title="02 ноября, Минск Юнайтед 9 : 4 West">
-                                                            П </a>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell table__cell--color "
-                                                style="background-color: #FF0000;"></td>
-                                            <td class="table__cell table__cell--number ">
-                                                9
-                                            </td>
-                                            <td class="table__cell table__cell--team ">
-                                                <a class="table__team"
-                                                   href="/tournament/1002296/teams/application?team_id=1057571">
-                                                    <div class="table__team-logo">
-                                                        <img src="http://cdn.sportspring.ru/team/1057571/logo/5bb34f3a134e1_100x100.jpg"
-                                                             class="table__team-img">
-                                                    </div>
-                                                    <span class="table__team-name">Итранзишэн</span>
-                                                </a>
-                                            </td>
-                                            <td class="table__cell table__cell--form-results">
-                                                <ul class="form-results-list">
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192369"
-                                                           title="25 сентября, Итранзишэн 2 : 9 Связист">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192330"
-                                                           title="05 октября, Смена 5 : 3 Итранзишэн">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--draw">
-                                                        <a class="form-results-link" href="/match/1192333"
-                                                           title="09 октября, Итранзишэн 4 : 4 Пячоць">
-                                                            Н </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192341"
-                                                           title="19 октября, Soccershop.by 5 : 4 Итранзишэн">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192363"
-                                                           title="23 октября, МФК Штурм 6 : 2 Итранзишэн">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192360"
-                                                           title="30 октября, Итранзишэн 0 : 7 Минск Юнайтед">
-                                                            П </a>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr class="table__row">
-                                            <td class="table__cell table__cell--color "
-                                                style="background-color: #FF0000;"></td>
-                                            <td class="table__cell table__cell--number ">
-                                                10
-                                            </td>
-                                            <td class="table__cell table__cell--team ">
-                                                <a class="table__team"
-                                                   href="/tournament/1002296/teams/application?team_id=1057573">
-                                                    <div class="table__team-logo">
-                                                        <img src="http://cdn.sportspring.ru/team/1057573/logo/5bae21d58c8f8_100x100.jpg"
-                                                             class="table__team-img">
-                                                    </div>
-                                                    <span class="table__team-name">Прогресс</span>
-                                                </a>
-                                            </td>
-                                            <td class="table__cell table__cell--form-results">
-                                                <ul class="form-results-list">
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192371"
-                                                           title="25 сентября, Прогресс 3 : 11 Минск Юнайтед">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192328"
-                                                           title="02 октября, МФК Штурм 8 : 2 Прогресс">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192335"
-                                                           title="16 октября, Прогресс 3 : 8 Связист">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192339"
-                                                           title="26 октября, Смена 19 : 3 Прогресс">
-                                                            П </a>
-                                                    </li>
-                                                    <li class="form-results-item form-results-item--loss">
-                                                        <a class="form-results-link" href="/match/1192345"
-                                                           title="30 октября, Прогресс 2 : 7 Пячоць">
-                                                            П </a>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
+                                        {/foreach}
                                         </tbody>
                                     </table>
                                 </div>

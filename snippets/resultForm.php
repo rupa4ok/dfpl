@@ -78,6 +78,7 @@ switch ($request) {
 
         $clubId = $base->getClubId($playerId);
 
+        //@TODO Сделать проверку заполненности полей для ввода
         //Массив данных для записи
         $data = [
             'match_id' => $matchId,
@@ -121,8 +122,6 @@ switch ($request) {
             echo 'Счет: ' . $count1 . ' - ' . $count2;
 
             //Получаем статистику клуба для обновления
-            
-            
             
             $error = 'Данные сохранены';
             $modx->setPlaceholder('errors',$error);

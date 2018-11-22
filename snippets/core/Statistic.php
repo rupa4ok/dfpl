@@ -55,7 +55,7 @@ class Statistic extends Base
      */
     public function getEventMatchList($matchId)
     {
-        $sql = "SELECT * FROM {$this->table_e} WHERE match_id = :match_id";
+        $sql = "SELECT * FROM {$this->table_e} WHERE match_id = :match_id ORDER BY time";
         $statement = $this->modx->prepare($sql);
         $eventList = '';
         if ($statement->execute(array('match_id' => $matchId))) {
@@ -63,7 +63,8 @@ class Statistic extends Base
             foreach ($result as $res) {
                 $eventList[$res['id']] = [
                     'player_id' => $res['player_id'],
-                    'time' => $res['time']
+                    'time' => $res['time'],
+                    'club_id' => $res['club_id']
                 ];
             }
         }
@@ -94,6 +95,83 @@ class Statistic extends Base
     {
         $sql = "UPDATE {$this->table_p} SET goal = {$goal} WHERE id = {$playerId}";
         $this->modx->query($sql);
+    }
+    
+    public function GetPlayerList($club, $chunk)
+    {
+        //Получаем список игроков с привязкой к команде
+        $sql = "SELECT * FROM {$this->table_p} WHERE club_id = :club";
+        $statement = $this->modx->prepare($sql);
+        if ($statement->execute(array('club' => $club))) {
+            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        }
+        //Вывод данных игрока в чанк
+        foreach ($result as $k => $res) {
+            $output[] = $this->modx->getChunk($chunk, array(
+                'player' => $res['id'],
+                'fio' => $res['fio'],
+                'role' => $res['role']
+            ));
+            echo $output[$k];
+        }
+        return $output;
+    }
+    
+    /**
+     * Получение массива данных матча по его id
+     *
+     * @param $id
+     * @return array
+     */
+    public function getClubById($id)
+    {
+        $sql = "SELECT * FROM {$this->table_m} WHERE id = :id";
+        $statement = $this->modx->prepare($sql);
+        if ($statement->execute(array('id' => $id))) {
+            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+        }
+        return $result;
+    }
+    
+    /**
+     * @param $playerId
+     * @return string
+     */
+    public function getClubId($playerId)
+    {
+        $clubId = '';
+        $sql = "SELECT * FROM {$this->table_p} WHERE id = :id";
+        $statement = $this->modx->prepare($sql);
+        if ($statement->execute(array('id' => $playerId))) {
+            $resources = $statement->fetchAll(PDO::FETCH_ASSOC);
+            foreach ($resources as $res) {
+                $clubId = $res['club_id'];
+            }
+        }
+        return $clubId;
+    }
+    
+    
+    /**
+     * Проверка наличия записи события матча в бд
+     *
+     * @param $data
+     * @return mixed
+     */
+    public function getEventItem($data)
+    {
+        $count = '';
+        $sql = "SELECT * FROM {$this->table_e} WHERE player_id = :player_id AND club_id = :club_id AND time = :time";
+        $statement = $this->modx->prepare($sql);
+        if ($statement->execute(array(
+            'player_id' => $data['player_id'],
+            'club_id' => $data['club_id'],
+            'time' => $data['time'],
+        ))) {
+            $statement->fetchAll(PDO::FETCH_ASSOC);
+            $count = $statement->rowCount();
+        }
+        return $count;
     }
     
 }

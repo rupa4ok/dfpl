@@ -13,6 +13,9 @@
                 
                 <section class="photo">
                     <h2 class="visually-hidden">Фото</h2>
+                    <div id="pdopage">
+                        <div class="rows">
+                           
                     <ul class="photo__list js-albums-list">
 
                         {'!pdoPage' | snippet : [
@@ -21,29 +24,16 @@
                         'processTVs' => '1',
                         'tpl' => '@FILE /chunks/catalog/photo.tpl'
                         ]}
-
-                        <li class="photo__item">
-                            <div class="photo__item-wrapper-top">
-                                <a href="/photos/1005091" class="photo__picture">
-                                    <img class="photo__picture-img"
-                                         src="http://cdn.sportspring.ru/albums/1005091/5bbb64c26c3a4_284x190.jpg"
-                                         width="284" height="190" alt="11 тур. БелГИЭ — Alliance">
-                                </a>
-                                <a href="/photos/1005091" class="photo__title">
-                                    11 тур. БелГИЭ — Alliance </a>
-                            </div>
-                            <div class="photo__item-wrapper-bottom">
-                                <div class="photo__date">08 октября</div>
-                                <div class="photo__number">62</div>
-                            </div>
-                        </li>
+                        
+                        
+                        <a id="loadMore" class="button button--photo">Больше фото</a>
                     </ul>
-                    <a class="button button--photo js-albums-load-more"
-                       data-url="/load-more-albums"
-                       data-end-time="2018-10-08 11:19:00"
-                       data-limit="12"
-                       data-month=""
-                    >Больше фото</a>
+                   
+                        </div>
+                        
+                    </div>
+                    
+                   <!--  <a class="button button--photo js-albums-load-more">Больше фото</a> -->
                 </section>
             </div>
             <section class="sidebar">
