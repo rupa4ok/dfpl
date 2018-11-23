@@ -131,6 +131,7 @@ switch ($request) {
         break;
 }
 
+//@TODO сделать вывод всех записей для выбранного матча с возможностью удалять записи
 //Вывод записей для данного матча
-$eventList = $stat->getEventMatchList($matchId);
-$modx->setPlaceholder('event',$eventList);
+//$eventList = $stat->getEventMatchList($matchId);
+//$modx->setPlaceholder('event',$eventList);

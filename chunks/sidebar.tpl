@@ -1200,14 +1200,13 @@
                 <div class="sidebar_partners_block">
                     <h3 class="sidebar__table-title">Наши партнеры</h3>
                     <div class="sidebar_partners">
-                        {foreach $_modx->resource['partners'] | fromJSON as $item}
-                        <div class="the_partner">
-                            <a href="{$item['partner_link']}"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="{$item['partner_image']}">
-                            </a>
-                        </div>
-                        {/foreach}
+                        {'!pdoPage' | snippet : [
+                        'parents' => 87,
+                        'includeTVs'=>'partners',
+                        'processTVs' => '1',
+                        'includeContent' => '1',
+                        'tpl' => '@FILE /chunks/catalog/partners.tpl'
+                        ]}
                         
                       
                     </div>
@@ -1254,26 +1253,17 @@
                          data-social="vk,fb,ok,telegram,twi,spoiler" style="display: block;">
                         <div class="uscl-bar uscl-round uscl-style1 uscl-default uscl-absolute uscl-horizontal uscl-size32 uscl-eachCounter0 uscl-counter0 uscl-nomobile">
                             <div class="uscl-list">
-                                <div class="uscl-item"><span data-item="vk" title="Поделиться ВКонтакте"
-                                                             class="ico_uscl_soc ico_uscl ico_uscl-vk uscl-vk"></span>
-                                </div>
-                                <div class="uscl-item"><span data-item="fb" title="Поделиться в Facebook"
-                                                             class="ico_uscl_soc ico_uscl ico_uscl-fb uscl-fb"></span>
-                                </div>
-                                <div class="uscl-item"><span data-item="ok" title="Поделиться в OK.ru"
-                                                             class="ico_uscl_soc ico_uscl ico_uscl-ok uscl-ok"></span>
-                                </div>
-                                <div class="uscl-item"><span data-item="telegram" title="Поделиться в Telegram"
-                                                             class="ico_uscl_soc ico_uscl ico_uscl-telegram uscl-telegram"></span>
-                                </div>
-                                <div class="uscl-item"><span data-item="twi" title="Поделиться в Twitter"
-                                                             class="ico_uscl_soc ico_uscl ico_uscl-twi uscl-twi"></span>
-                                </div>
-                                <div class="uscl-item"><span data-item="spoiler" title="Все соц. сети"
-                                                             class="ico_uscl ico_uscl-spoiler uscl-spoiler"></span>
-                                </div>
-                                <div class="uscl-item uscl-slide"><span
-                                            class="uscl-slide-close ico_uscl-arrow ico_uscl"></span></div>
+                                
+                               {foreach $_modx->resource['comand_social'] | fromJSON as $item} 
+                                    <div class="social__item social__item--vk">
+                                        <a class="social__link social__link--vk" href="{$item['social_link']}" target="_blank">
+                                            <img src="{$item['social_image']}" alt="">
+                                        </a>
+                                    </div>
+                                {/foreach}
+                                
+                                
+                                
                             </div>
                             <span class="uscl-slide-open ico_uscl-like"></span>
                             <div id="uSocial-popup" class="uscl-popup">
@@ -2488,14 +2478,13 @@
                 <div class="sidebar_partners_block">
                     <h3 class="sidebar__table-title">Наши партнеры</h3>
                     <div class="sidebar_partners">
-                        {foreach $_modx->resource['partners'] | fromJSON as $item}
-                        <div class="the_partner">
-                            <a href="{$item['partner_link']}"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="{$item['partner_image']}">
-                            </a>
-                        </div>
-                        {/foreach}
+                         {'!pdoPage' | snippet : [
+                        'parents' => 87,
+                        'includeTVs'=>'partners',
+                        'processTVs' => '1',
+                        'includeContent' => '1',
+                        'tpl' => '@FILE /chunks/catalog/partners.tpl'
+                        ]}
                     </div>
 
                 </div>

@@ -15,7 +15,7 @@
                         </a>
                         <div class="team-promo__team-info">
                             <a class="team-promo__team-name" href="/team/1056275">
-                               {$_modx->resource.pagetitle}</a>
+                                {$_modx->resource.pagetitle}</a>
                             <div class="coach_row">
                                 <a class="team-promo__team-name" href="#">
                                     Тренер </a>
@@ -72,35 +72,20 @@
                                     https://vk.com/afcredbisons </a>
                             </div>
                         </div>
+                        {'!getTeamStat' | snippet : []}
+
                         <div class="team-promo__results">
                             <div class="team-promo__results-form">
                                 <span class="team-promo__results-form-text">Последние матчи</span>
                                 <ul class="form-results-list">
-                                    <li class="form-results-item form-results-item--win">
-                                        <a class="form-results-link" href="/match/1198966"
-                                           title="22 октября, Титан 8 : 11 AFC Red Bisons">
-                                            В </a>
-                                    </li>
-                                    <li class="form-results-item form-results-item--win">
-                                        <a class="form-results-link" href="/match/1195249"
-                                           title="15 октября, AFC Red Bisons 5 : 0 Орбита">
-                                            В </a>
-                                    </li>
-                                    <li class="form-results-item form-results-item--win">
-                                        <a class="form-results-link" href="/match/1191846"
-                                           title="08 октября, A1QA 1 : 5 AFC Red Bisons">
-                                            В </a>
-                                    </li>
-                                    <li class="form-results-item form-results-item--draw">
-                                        <a class="form-results-link" href="/match/1179400"
-                                           title="24 сентября, AFC Red Bisons 1 : 1 AFC Weak">
-                                            Н </a>
-                                    </li>
-                                    <li class="form-results-item form-results-item--win">
-                                        <a class="form-results-link" href="/match/1179545"
-                                           title="10 сентября, 7 тонн-2 2 : 12 AFC Red Bisons">
-                                            В </a>
-                                    </li>
+                                    {set $arr = $_modx->getPlaceholder('last')}
+                                    {foreach $arr as $value}
+                                        <li class="form-results-item form-results-item--win">
+                                            <a class="form-results-link" href="/match/1198966"
+                                               title="22 октября, Титан 8 : 11 AFC Red Bisons">
+                                                В </a>
+                                        </li>
+                                    {/foreach}
                                 </ul>
                             </div>
                             <ul class="js-dropdown" data-customize="team">
@@ -118,7 +103,10 @@
                                 </li>
                             </ul>
                             <div class="team-promo__statistics-values">
-                                5-4-1-0 / И-В-Н-П
+                                {set $arr = $_modx->getPlaceholder('total')}
+                                {foreach $arr as $value}
+                                    {$value.played}-{$value.win}-{$value.draw}-{$value.lose} / И-В-Н-П
+                                {/foreach}
                             </div>
                         </div>
                     </section>
@@ -134,12 +122,12 @@
                         <h3 class="matches-overview__title">Прошедшие матчи</h3>
                         <ul class="matches-overview__list with_top">
                             {'!pdoPage' | snippet : [
-                                'parents' => '35',
-                                'includeTVs'=>'club1,club2',
-                                'processTVs' => '1',
-                                'includeContent' => '1',
-                                'tpl' => '@FILE /chunks/catalog/matches.tpl'
-                                ]}
+                            'parents' => '35',
+                            'includeTVs'=>'club1,club2',
+                            'processTVs' => '1',
+                            'includeContent' => '1',
+                            'tpl' => '@FILE /chunks/catalog/matches.tpl'
+                            ]}
                             <li class="matches-overview__item ">
                                 <a class="matches-overview__round" href="/match/1198966">
                                     5х5. Юго-Восток. 2 </a>
@@ -296,14 +284,14 @@
                     <div class="matches-overview__future-matches">
                         <h3 class="matches-overview__title">Будущие матчи</h3>
                         <ul class="matches-overview__list with_top">
-                            
-                             {'!pdoPage' | snippet : [
-                                'parents' => '35',
-                                'includeTVs'=>'club1,club2',
-                                'processTVs' => '1',
-                                'includeContent' => '1',
-                                'tpl' => '@FILE /chunks/catalog/matches.tpl'
-                                ]}
+
+                            {'!pdoPage' | snippet : [
+                            'parents' => '35',
+                            'includeTVs'=>'club1,club2',
+                            'processTVs' => '1',
+                            'includeContent' => '1',
+                            'tpl' => '@FILE /chunks/catalog/matches.tpl'
+                            ]}
                             <li class="matches-overview__item ">
                                 <a class="matches-overview__round" href="/match/1208446">
                                     5х5. Юго-Восток. 2 </a>
@@ -368,7 +356,7 @@
                                     </table>
                                 </a>
                             </li>
-                            
+
                             <li class="matches-overview__item ">
                                 <a class="matches-overview__round" href="/match/1208446">
                                     5х5. Юго-Восток. 2 </a>
@@ -433,8 +421,8 @@
                     <a class="button button--video" href="http://s15918.h4.modhost.pro/media/video/">Все видео</a>
                 </section>
             </div>
-            
-                {include 'file:chunks/sidebar.tpl'}
+
+            {include 'file:chunks/sidebar.tpl'}
             </section>
         </div>
     </main>
