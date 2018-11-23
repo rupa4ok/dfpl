@@ -47,7 +47,6 @@ class Statistic extends Base
         return $goal;
     }
     
-
     /**
      * Список событий матча
      *
@@ -74,23 +73,27 @@ class Statistic extends Base
     }
     
     /**
-     * Получение списка клубов для таблицы со статистикой игр/выйгрышей/пройгрышей по id турнира
+     * Получение статистики клуба по его id
      *
      * @param $clubId
      * @return string
      */
-    public function getClubId($turnId)
+    public function getClubStatById($clubId)
     {
-        $clubId = '';
-        $sql = "SELECT * FROM {$this->table_p} WHERE id = :id";
+        $sql = "SELECT * FROM {$this->table_c} WHERE club_id = :club_id";
         $statement = $this->modx->prepare($sql);
-        if ($statement->execute(array('id' => $turnId))) {
+        if ($statement->execute(array('club_id' => $clubId))) {
             $resources = $statement->fetchAll(PDO::FETCH_ASSOC);
             foreach ($resources as $res) {
-                $clubId = $res['club_id'];
+                $clubStat[] = [
+                    'played' => $res['played'],
+                    'win' => $res['win'],
+                    'draw' => $res['draw'],
+                    'lose' => $res['lose']
+                ];
             }
+            return $clubStat;
         }
-        return $clubId;
     }
     
     public function playerStatUpdate($playerId,$goal)

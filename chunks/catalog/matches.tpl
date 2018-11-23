@@ -3,7 +3,7 @@
         {$pagetitle} </a>
     <a class="matches-overview__link" href="{$id|url}">
         <div class="matches-overview__date-time">
-            {$createdon | date_format:"%d %b / %a / %H:%M" | dateago}
+            {$createdon | date_format:"%d %b / %a / %H:%M"}
 
         </div>
         <table class="matches-overview__score">

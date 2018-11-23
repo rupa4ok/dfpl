@@ -65,13 +65,13 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        {set $arr = $_modx->getPlaceholder('event')}
-                        {foreach $arr as $k => $value}
-                            {$value.player_id} - {$value.time}
-                            <br>
-                        {/foreach}
-                    </div>
+                    {*<div class="row">*}
+                        {*{set $arr = $_modx->getPlaceholder('event')}*}
+                        {*{foreach $arr as $k => $value}*}
+                            {*{$value.player_id} - {$value.time}*}
+                            {*<br>*}
+                        {*{/foreach}*}
+                    {*</div>*}
 
                 </section>
             </div>
