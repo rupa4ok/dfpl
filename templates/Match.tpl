@@ -139,7 +139,10 @@
                                             {$_modx->resource.club1 | resource : 'pagetitle'} </a>
                                         <ul class="match-protocol__team match-protocol__team--left">
 
-                                            {'!getSostav' | snippet : ['club' => $_modx->resource.club1, 'chunk' => 'sostav']}
+                                            {'!getSostav' | snippet : [
+                                            'club' => $_modx->resource.club1,
+                                            'chunk' => 'sostav'
+                                            ]}
 
                                         </ul>
                                         <a class="match-protocol__team-name"
@@ -147,7 +150,10 @@
                                            title="Кобринское ПМС">
                                             {$_modx->resource.club2 | resource : 'pagetitle'} </a>
                                         <ul class="match-protocol__team match-protocol__team--right">
-                                            {'!getSostav' | snippet : ['club' => $_modx->resource.club2, 'chunk' => 'sostav1']}
+                                            {'!getSostav' | snippet : [
+                                            'club' => $_modx->resource.club2,
+                                            'chunk' => 'sostav1'
+                                            ]}
                                         </ul>
                                     </div>
                                     <div class="match-protocol__referees">
@@ -192,40 +198,11 @@
                                         <div class="vertical-timeline__time vertical-timeline__time--first">
                                             <ul class="vertical-timeline__event-list">
 
-                                                {'!getEvents' | snippet : []}
-
-                                                {set $arr = $_modx->getPlaceholder('event')}
-                                                {foreach $arr as $k => $value}
-
-                                                <li class="vertical-timeline__event-item">
-                                                    <div class="vertical-timeline__event-part vertical-timeline__event-part--left">
-                                                        <p class="vertical-timeline__title">первый тайм</p>
-                                                        <div class="vertical-timeline__event-info vertical-timeline__event-info--left">
-                                                        </div>
-                                                    </div>
-                                                    <div class="vertical-timeline__event-minute">
-                                                        {$value.time}'
-                                                    </div>
-                                                    <div class="vertical-timeline__event-part vertical-timeline__event-part--right">
-                                                        <div class="vertical-timeline__event-info vertical-timeline__event-info--right">
-                                                            <div class="event-item" title="Гол">
-                                                                <svg class="goal" width="24" height="24.5">
-                                                                    <use xlink:href="/img/icons.svg#goal"></use>
-                                                                </svg>
-                                                            </div>
-
-                                                            <div class="vertical-timeline__event-wrapper">
-                                                                <a class="vertical-timeline__event-author"
-                                                                   href="/player/1473780">
-                                                                    {$value.player_id}</a>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vertical-timeline__score-wrapper">
-                                                            <div class="vertical-timeline__score">0 : 1</div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                {/foreach}
+                                                {'!getEvents' | snippet : [
+                                                'club1' => $_modx->resource.club1,
+                                                'club2' => $_modx->resource.club2,
+                                                'chunk' => 'event',
+                                                ]}
 
                                             </ul>
                                         </div>

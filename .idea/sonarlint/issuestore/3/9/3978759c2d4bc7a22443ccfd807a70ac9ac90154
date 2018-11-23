@@ -1,20 +1,9 @@
 
-.	php:S3626"Remove this redundant jump.(ûÁİ…
-.	php:S3626"Remove this redundant jump.(ûÁİ…
-.	php:S3626"Remove this redundant jump.(ûÁİ…
-.	php:S3626"Remove this redundant jump.(ûÁİ…
-a	php:S1192"IDefine a constant instead of duplicating this literal "template" 3 times.(ÿè¶ùÿÿÿÿ
-Z	php:S1192"GDefine a constant instead of duplicating this literal "parent" 3 times.(‘ŠÀÜ
-_	php:S1192"LDefine a constant instead of duplicating this literal "modResource" 6 times.(¼¤ß¼
-`	php:S1192"HDefine a constant instead of duplicating this literal "club_id" 3 times.(³Á–“ûÿÿÿÿ
-\	php:S1192"JDefine a constant instead of duplicating this literal "pagetitle" 4 times.(™±'
-g	php:S1192"UDefine a constant instead of duplicating this literal "TemplateVarResources" 3 times.(ÍÒY
-Bphp:S121"0Add curly braces around the nested statement(s).(½®‹ã
-Bphp:S121"0Add curly braces around the nested statement(s).( ÃŸ¦
-q	php:S1488"^Immediately return this expression instead of assigning it to the temporary variable "$count".(àªâë
-q	php:S1488"^Immediately return this expression instead of assigning it to the temporary variable "$count".(àªâë
-:	php:S1481"'Remove this unused "$k" local variable.(ğâ à
-:	php:S1481"'Remove this unused "$k" local variable.(ğâ à
-:	php:S1481"'Remove this unused "$k" local variable.(ğâ à
-:	php:S1481"'Remove this unused "$k" local variable.(ğâ à
-D	php:S1481",Remove this unused "$result" local variable.(€®“şÿÿÿÿ
+j	php:S1192ª"HDefine a constant instead of duplicating this literal "club_id" 3 times.(³Á–“ûÿÿÿÿ8öÓ—êó,
+p	php:S1192L"UDefine a constant instead of duplicating this literal "TemplateVarResources" 3 times.(ÍÒY8öÓ—êó,
+Kphp:S121:"0Add curly braces around the nested statement(s).( ÃŸ¦8öÓ—êó,
+h	php:S1192K"LDefine a constant instead of duplicating this literal "modResource" 7 times.(¼¤ß¼8öÓ—êó,
+f	php:S1192"JDefine a constant instead of duplicating this literal "pagetitle" 4 times.(™±'8öÓ—êó,
+d	php:S1192‡"GDefine a constant instead of duplicating this literal "parent" 3 times.(‘ŠÀÜ8öÓ—êó,
+Kphp:S1218"0Add curly braces around the nested statement(s).(½®‹ã8öÓ—êó,
+k	php:S1192ˆ"IDefine a constant instead of duplicating this literal "template" 3 times.(ÿè¶ùÿÿÿÿ8öÓ—êó,

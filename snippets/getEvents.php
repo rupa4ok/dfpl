@@ -17,7 +17,6 @@ $stat = new Statistic($modx);
 $matchId = $modx->resource->get('id');
 
 //Получаем список событий
-$eventList = $stat->getEventMatchList($matchId);
-
-
-$modx->setPlaceholder('event',$eventList);
+$eventList = $stat->getEventMatchList($matchId,$chunk);
+print_r($eventList);
+echo $eventList;

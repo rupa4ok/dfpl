@@ -257,13 +257,12 @@ class Base extends Modx
             $result = $statement->fetchAll(PDO::FETCH_ASSOC);
         }
         //Вывод данных игрока в чанк
-        foreach ($result as $k => $res) {
+        foreach ($result as $res) {
             $output[] = $this->modx->getChunk($chunk, array(
                 'player' => $res['id'],
                 'fio' => $res['fio'],
                 'role' => $res['role']
             ));
-            echo $output[$k];
         }
         return $output;
     }
@@ -302,7 +301,6 @@ class Base extends Modx
         return $clubId;
     }
     
-    
     /**
      * Проверка наличия записи события матча в бд
      *
@@ -312,7 +310,8 @@ class Base extends Modx
     public function getEventItem($data)
     {
         $count = '';
-        $sql = "SELECT * FROM {$this->table_e} WHERE player_id = :player_id AND club_id = :club_id AND time = :time";
+        $sql = "SELECT * FROM {$this->table_e} WHERE player_id = :player_id
+                AND club_id = :club_id AND time = :time";
         $statement = $this->modx->prepare($sql);
         if ($statement->execute(array(
             'player_id' => $data['player_id'],
