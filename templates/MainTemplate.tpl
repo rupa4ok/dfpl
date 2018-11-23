@@ -16,9 +16,7 @@
         </section>
         <div class="main-container main-container--inner">
             <div class="main-content ">
-                
-                                    
-                                    
+
                     <div id="wr-tabs">
                     	<div class="tabs">
                     		<div class="tab activating"><p>Вкладка №1</p></div>
@@ -380,14 +378,9 @@
             </ul>
                     <a class="button button--photo" href="http://s15918.h4.modhost.pro/media/foto/">Все фото</a>
             </section>
-    
-
         <section class="video">
         <h2 class="visually-hidden">Видео</h2>
                 <ul class="main_video__list js-videos-list">
-                    
-                    
-                    
                     {'!pdoPage' | snippet : [
                         'parents' => 10,
                         'limit' => '3',
@@ -395,12 +388,9 @@
                         'processTVs' => '1',
                         'tpl' => '@FILE /chunks/catalog/video.tpl'
                         ]}
-                
-        
             </ul>
                     <a class="button button--video" href="http://s15918.h4.modhost.pro/media/video/">Все видео</a>
             </section>
-    
                         {$_modx->resource.content}
                     </div>
                 </section>

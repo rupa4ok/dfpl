@@ -2,46 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d28dd0ff-10fe-4aa8-a1d5-cf7b8d2e8b76" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dfpl_new.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a33eb0b74a31434a74b601493c385a6a4e98644" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/0/20abba9aef6acaac349bd332fb4c8d35a3a3f4e4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/23d1cd3b333633fdf330c9850db59870e15a8810" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e12462a555431d04a51ea050f2cd7743f3a8da2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33fb1179d500b4fa870206192ceb7749c43e7e39" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/3978759c2d4bc7a22443ccfd807a70ac9ac90154" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/46e890b61f5d53719eccf5c44b34945b26c1be8f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/a/4a2d060e611a06e4024d91a147532ac87d30081b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f240d335e2646cf453edce1777a29e13b211a33" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f32c726dbe682efb360249eb272d91e6ffe7e11" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85e861f08335753a7ef8806296dbdeb7a8d7ce8a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/8894f545b8f57f9a20a4124be6c12bd55e250ffa" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e7f984407cb4e50677f068301ff305bc7b4bd9e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/9381befa79fa80d3392123e8c0e457fd395ebd17" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/9952d43832103e38e268dacb7524a4ee5aa7c4f3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5856a3f247921a1cd9216d8d9974d039b662645" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af9ff1b243ae899f0e08430bcf2975d14ce82627" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b2bc3fa126aad76982cdf66fb04f71534a40049f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6138aa2fbe26115c90460d1bd3e0c9aa1bacc56" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/beb1a08c167cfb125792f2a5304cd3a2e777fc45" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0c5c03b0032372240c9858b1931c6978a9b6eab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/7/c7b1c422a24ef4029b463d30cfe83beb7db5e469" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e59ccb03dd0e1fa9c66fa0b982a5a6f8f3496b16" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee493051d4d32c584b60d068872ce9bca5645c29" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0fab109cfc967a4e016965ba5f829e521417b28" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fcea29437e9642e194096918e23423c5993bbb6f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/yii2settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chunks/_header.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/_header.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chunks/sidebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/sidebar.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/VideoTemplate.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/VideoTemplate.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/MainTemplate.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/MainTemplate.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -106,11 +68,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_header.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chunks/_header.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="72" column="49" lean-forward="true" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
+            <state relative-caret-position="878">
+              <caret line="78" column="74" lean-forward="true" selection-start-line="78" selection-start-column="74" selection-end-line="78" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainTemplate.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/MainTemplate.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8232">
+              <caret line="392" column="22" selection-start-line="392" selection-start-column="22" selection-end-line="392" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -184,6 +155,7 @@
         <option value="$PROJECT_DIR$/snippets/core/Statistic.php" />
         <option value="$PROJECT_DIR$/snippets/getEvents.php" />
         <option value="$PROJECT_DIR$/templates/VideoTemplate.tpl" />
+        <option value="$PROJECT_DIR$/templates/MainTemplate.tpl" />
       </list>
     </option>
   </component>
@@ -290,6 +262,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -411,7 +384,7 @@
       <workItem from="1542888275611" duration="6000" />
       <workItem from="1542890664130" duration="7925000" />
       <workItem from="1542904915430" duration="5599000" />
-      <workItem from="1542999795489" duration="1209000" />
+      <workItem from="1542999795489" duration="4367000" />
     </task>
     <task id="LOCAL-00001" summary="Перепиливаю старый шаблон">
       <created>1539634108058</created>
@@ -546,11 +519,18 @@
       <option name="project" value="LOCAL" />
       <updated>1542905033063</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="22/11/2018 22.30&#10;-Страница матча">
+      <created>1543001088519</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1543001088521</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203090000" />
+    <option name="totallyTimeSpent" value="206248000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -573,8 +553,8 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3297062" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3297062" />
-      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.19509594" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20362474" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.19509594" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20362474" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarLint" order="15" weight="0.3297062" />
       <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
@@ -618,7 +598,8 @@
     <MESSAGE value="21/11/2018 &#10;- Создание статусов игроков" />
     <MESSAGE value="22/11/2018 &#10;- Статистика&#10;- Правки Леши" />
     <MESSAGE value="22/11/2018 19.43&#10;-Страница матча и страница статистики" />
-    <option name="LAST_COMMIT_MESSAGE" value="22/11/2018 19.43&#10;-Страница матча и страница статистики" />
+    <MESSAGE value="22/11/2018 22.30&#10;-Страница матча" />
+    <option name="LAST_COMMIT_MESSAGE" value="22/11/2018 22.30&#10;-Страница матча" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/chunks/_scripts.tpl">
@@ -767,13 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/MainTemplate.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6153">
-          <caret line="293" column="50" lean-forward="true" selection-start-line="292" selection-start-column="74" selection-end-line="293" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chunks/_footer.tpl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -893,8 +867,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chunks/_header.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="72" column="49" lean-forward="true" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
+        <state relative-caret-position="878">
+          <caret line="78" column="74" lean-forward="true" selection-start-line="78" selection-start-column="74" selection-end-line="78" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/MainTemplate.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8232">
+          <caret line="392" column="22" selection-start-line="392" selection-start-column="22" selection-end-line="392" selection-end-column="22" />
         </state>
       </provider>
     </entry>
