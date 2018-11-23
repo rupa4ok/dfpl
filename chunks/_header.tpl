@@ -65,6 +65,11 @@
                 <button class="button header__hamburger js-mobile-menu-hamburger"><span></span></button>
             </div>
         </div>
+        <div id="video_block">
+        <iframe width="560" height="315" src="" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
         <nav id="SamMainMenu" class="navigation">
             <div class="navigation__wrapper">
                 {'pdoMenu'|snippet:[

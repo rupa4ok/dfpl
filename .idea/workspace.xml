@@ -1,29 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d28dd0ff-10fe-4aa8-a1d5-cf7b8d2e8b76" name="Default" comment="Merge branch 'develop'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;chunks/_footer.tpl&#10;#&#9;chunks/catalog/Photo.tpl&#10;#&#9;chunks/catalog/video.tpl&#10;#&#9;templates/Gallery.tpl&#10;#&#9;templates/Line-up.tpl&#10;#&#9;templates/MediaTemplate.tpl&#10;#&#9;templates/OneNewsTemplate.tpl&#10;#&#9;templates/OneTeam.tpl&#10;#&#9;templates/Player.tpl&#10;#&#9;templates/Statistics.tpl&#10;#&#9;templates/VideoTemplate.tpl">
-      <change afterPath="$PROJECT_DIR$/chunks/catalog/partners.tpl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snippets/getTeamStat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chunks/_footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/_footer.tpl" afterDir="false" />
+    <list default="true" id="d28dd0ff-10fe-4aa8-a1d5-cf7b8d2e8b76" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dfpl_new.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a33eb0b74a31434a74b601493c385a6a4e98644" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/0/20abba9aef6acaac349bd332fb4c8d35a3a3f4e4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/23d1cd3b333633fdf330c9850db59870e15a8810" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2e12462a555431d04a51ea050f2cd7743f3a8da2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33fb1179d500b4fa870206192ceb7749c43e7e39" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/3978759c2d4bc7a22443ccfd807a70ac9ac90154" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/46e890b61f5d53719eccf5c44b34945b26c1be8f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/a/4a2d060e611a06e4024d91a147532ac87d30081b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f240d335e2646cf453edce1777a29e13b211a33" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f32c726dbe682efb360249eb272d91e6ffe7e11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85e861f08335753a7ef8806296dbdeb7a8d7ce8a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/8894f545b8f57f9a20a4124be6c12bd55e250ffa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8e7f984407cb4e50677f068301ff305bc7b4bd9e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/3/9381befa79fa80d3392123e8c0e457fd395ebd17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/9/9952d43832103e38e268dacb7524a4ee5aa7c4f3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a5856a3f247921a1cd9216d8d9974d039b662645" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/f/af9ff1b243ae899f0e08430bcf2975d14ce82627" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b2bc3fa126aad76982cdf66fb04f71534a40049f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6138aa2fbe26115c90460d1bd3e0c9aa1bacc56" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/e/beb1a08c167cfb125792f2a5304cd3a2e777fc45" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0c5c03b0032372240c9858b1931c6978a9b6eab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/7/c7b1c422a24ef4029b463d30cfe83beb7db5e469" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e59ccb03dd0e1fa9c66fa0b982a5a6f8f3496b16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/ee493051d4d32c584b60d068872ce9bca5645c29" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0fab109cfc967a4e016965ba5f829e521417b28" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fcea29437e9642e194096918e23423c5993bbb6f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/yii2settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/chunks/_header.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/_header.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chunks/catalog/matches.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/catalog/matches.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chunks/catalog/photo.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/catalog/photo.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chunks/catalog/video.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/catalog/video.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chunks/sidebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/chunks/sidebar.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/core/Statistic.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/core/Statistic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippets/resultForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/resultForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/MainTemplate.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/MainTemplate.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/OneTeam.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/OneTeam.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Result.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Result.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/VideoTemplate.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/VideoTemplate.tpl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" executionDataType="PHAR" phpInterpreterId="e693fd98-6bc3-4bc2-82ad-cf4c33c054e3" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <pharPath>$PROJECT_DIR$/composer.phar</pharPath>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -41,56 +70,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/snippets/core/Statistic.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Match.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/snippets/resultForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="46" selection-start-line="46" selection-end-line="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/OneTeam.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6664">
-              <caret line="392" column="26" lean-forward="true" selection-start-line="392" selection-start-column="26" selection-end-line="392" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="matches.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chunks/catalog/matches.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="59" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="59" />
+            <state relative-caret-position="630">
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/snippets/getTeamStat.php">
+      <file leaf-file-name="VideoTemplate.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/VideoTemplate.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+            <state relative-caret-position="420">
+              <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Result.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/Result.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chunks/sidebar.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1564">
+              <caret line="1293" column="21" selection-start-line="1293" selection-start-column="21" selection-end-line="1293" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_header.tpl" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chunks/_header.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="72" column="49" lean-forward="true" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -110,6 +130,7 @@
     <option name="ONTO" value="refs/heads/stat" />
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -122,40 +143,97 @@
       <list>
         <option value="$PROJECT_DIR$/chunks/_header.tpl" />
         <option value="$PROJECT_DIR$/chunks/_footer.tpl" />
-        <option value="$PROJECT_DIR$/templates/MediaTemplate.tpl" />
         <option value="$PROJECT_DIR$/templates/Line-up.tpl" />
         <option value="$PROJECT_DIR$/chunks/catalog/sostav.php" />
         <option value="$PROJECT_DIR$/templates/Player.tpl" />
-        <option value="$PROJECT_DIR$/chunks/sidebar.tpl" />
         <option value="$PROJECT_DIR$/snippets/getStat.php" />
-        <option value="$PROJECT_DIR$/snippets/getViews.php" />
         <option value="$PROJECT_DIR$/snippets/core/cron.php" />
-        <option value="$PROJECT_DIR$/chunks/catalog/sostav.tpl" />
-        <option value="$PROJECT_DIR$/chunks/catalog/sostav1.tpl" />
         <option value="$PROJECT_DIR$/chunks/_head.tpl" />
         <option value="E:/Сайты/Modx/modx-2.6.5-pl/modx-2.6.5-pl/index.php" />
         <option value="E:/Сайты/Modx/modx-2.6.5-pl/modx-2.6.5-pl/core/model/modx/modx.class.php" />
         <option value="E:/Сайты/Modx/modx-2.6.5-pl/modx-2.6.5-pl/core/xpdo/xpdo.class.php" />
-        <option value="$PROJECT_DIR$/templates/Match.tpl" />
         <option value="$PROJECT_DIR$/plugins/player.php" />
-        <option value="$PROJECT_DIR$/snippets/getSostav.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/chunks/catalog/_addscripts.tpl" />
+        <option value="$PROJECT_DIR$/chunks/_addscripts.tpl" />
+        <option value="$PROJECT_DIR$/templates/Stadiums.tpl" />
+        <option value="$PROJECT_DIR$/templates/Result.tpl" />
+        <option value="$PROJECT_DIR$/chunks/sidebar.tpl" />
+        <option value="$PROJECT_DIR$/templates/TextTemplate.tpl" />
+        <option value="&lt;584d9e30-0912-4872-a7ae-34fa0d93ec29&gt;/composer.json" />
+        <option value="$PROJECT_DIR$/templates/TournamentTables.tpl" />
         <option value="$PROJECT_DIR$/plugins/games.php" />
         <option value="$PROJECT_DIR$/snippets/getGoals.php" />
-        <option value="$PROJECT_DIR$/templates/Result.tpl" />
+        <option value="$PROJECT_DIR$/snippets/getSidebar.php" />
+        <option value="$PROJECT_DIR$/chunks/catalog/sostav.tpl" />
+        <option value="$PROJECT_DIR$/templates/Statistics.tpl" />
+        <option value="$PROJECT_DIR$/snippets/getStatTurn.php" />
+        <option value="$PROJECT_DIR$/templates/teams.tpl" />
+        <option value="$PROJECT_DIR$/chunks/catalog/tournament_calendar.tpl" />
+        <option value="$PROJECT_DIR$/chunks/catalog/matches.tpl" />
         <option value="$PROJECT_DIR$/snippets/resultForm.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/templates/MediaTemplate.tpl" />
+        <option value="$PROJECT_DIR$/chunks/catalog/tournaments_calendar_dates.tpl" />
+        <option value="$PROJECT_DIR$/chunks/catalog/sostav1.tpl" />
+        <option value="$PROJECT_DIR$/snippets/getViews.php" />
+        <option value="$PROJECT_DIR$/snippets/getSostav.php" />
+        <option value="$PROJECT_DIR$/snippets/getTable.php" />
+        <option value="$PROJECT_DIR$/chunks/catalog/event.tpl" />
+        <option value="$PROJECT_DIR$/templates/Match.tpl" />
         <option value="$PROJECT_DIR$/snippets/core/Base.php" />
         <option value="$PROJECT_DIR$/snippets/core/Statistic.php" />
-        <option value="$PROJECT_DIR$/templates/OneTeam.tpl" />
-        <option value="$PROJECT_DIR$/snippets/getTeamStat.php" />
-        <option value="$PROJECT_DIR$/chunks/catalog/matches.tpl" />
-        <option value="$PROJECT_DIR$/chunks/catalog/photo.tpl" />
+        <option value="$PROJECT_DIR$/snippets/getEvents.php" />
+        <option value="$PROJECT_DIR$/templates/VideoTemplate.tpl" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="PHPCodeSnifferBlackList">
+    <option name="filePaths">
+      <list>
+        <option value="$PROJECT_DIR$/snippets/resultForm.php" />
+        <option value="$PROJECT_DIR$/snippets/resultForm.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
-      <path value="E:/Сайты/Modx/modx-2.6.5-pl" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -174,39 +252,34 @@
         <subPane>
           <expand>
             <path>
-              <item name="dfpl_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dfpl_new" type="462c0819:PsiDirectoryNode" />
+              <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dfpl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dfpl_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dfpl_new" type="462c0819:PsiDirectoryNode" />
+              <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dfpl" type="462c0819:PsiDirectoryNode" />
               <item name="chunks" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dfpl_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dfpl_new" type="462c0819:PsiDirectoryNode" />
+              <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dfpl" type="462c0819:PsiDirectoryNode" />
               <item name="chunks" type="462c0819:PsiDirectoryNode" />
               <item name="catalog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dfpl_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dfpl_new" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfpl_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dfpl_new" type="462c0819:PsiDirectoryNode" />
+              <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dfpl" type="462c0819:PsiDirectoryNode" />
               <item name="snippets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dfpl_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dfpl_new" type="462c0819:PsiDirectoryNode" />
+              <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dfpl" type="462c0819:PsiDirectoryNode" />
               <item name="snippets" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="dfpl_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dfpl_new" type="462c0819:PsiDirectoryNode" />
+              <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dfpl" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -245,7 +318,7 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\rupak\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -308,8 +381,37 @@
       <workItem from="1541997838520" duration="603000" />
       <workItem from="1542005474437" duration="7326000" />
       <workItem from="1542024251941" duration="27351000" />
-      <workItem from="1542112541661" duration="50000" />
-      <workItem from="1542981628756" duration="66000" />
+      <workItem from="1542298903908" duration="3155000" />
+      <workItem from="1542338210782" duration="742000" />
+      <workItem from="1542491468130" duration="297000" />
+      <workItem from="1542524683822" duration="1275000" />
+      <workItem from="1542526788083" duration="921000" />
+      <workItem from="1542541096296" duration="18000" />
+      <workItem from="1542609479289" duration="3082000" />
+      <workItem from="1542634834863" duration="5182000" />
+      <workItem from="1542648546944" duration="263000" />
+      <workItem from="1542661061762" duration="9802000" />
+      <workItem from="1542670964495" duration="7693000" />
+      <workItem from="1542695455811" duration="2461000" />
+      <workItem from="1542712313427" duration="3324000" />
+      <workItem from="1542719832825" duration="6536000" />
+      <workItem from="1542741742637" duration="2346000" />
+      <workItem from="1542757553752" duration="43000" />
+      <workItem from="1542757944522" duration="153000" />
+      <workItem from="1542758676060" duration="320000" />
+      <workItem from="1542759025266" duration="186000" />
+      <workItem from="1542759242142" duration="372000" />
+      <workItem from="1542759665763" duration="603000" />
+      <workItem from="1542782235845" duration="10227000" />
+      <workItem from="1542798211917" duration="2828000" />
+      <workItem from="1542819025948" duration="8926000" />
+      <workItem from="1542872988322" duration="1472000" />
+      <workItem from="1542876670250" duration="5068000" />
+      <workItem from="1542886258499" duration="932000" />
+      <workItem from="1542888275611" duration="6000" />
+      <workItem from="1542890664130" duration="7925000" />
+      <workItem from="1542904915430" duration="5599000" />
+      <workItem from="1542999795489" duration="1209000" />
     </task>
     <task id="LOCAL-00001" summary="Перепиливаю старый шаблон">
       <created>1539634108058</created>
@@ -381,18 +483,74 @@
       <option name="project" value="LOCAL" />
       <updated>1542035931259</updated>
     </task>
-    <task id="LOCAL-00011" summary="Merge branch 'develop'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;chunks/_footer.tpl&#10;#&#9;chunks/catalog/Photo.tpl&#10;#&#9;chunks/catalog/video.tpl&#10;#&#9;templates/Gallery.tpl&#10;#&#9;templates/Line-up.tpl&#10;#&#9;templates/MediaTemplate.tpl&#10;#&#9;templates/OneNewsTemplate.tpl&#10;#&#9;templates/OneTeam.tpl&#10;#&#9;templates/Player.tpl&#10;#&#9;templates/Statistics.tpl&#10;#&#9;templates/VideoTemplate.tpl">
-      <created>1542961493986</created>
+    <task id="LOCAL-00011" summary="12/11/2018 &#10;- Правки плагинов, запись статистики в момент сохранения на всех игроков сразу">
+      <created>1542225165316</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1542961493986</updated>
+      <updated>1542225165316</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="19/11/2018 &#10;- Правки клиента">
+      <created>1542613218713</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1542613218713</updated>
+    </task>
+    <task id="LOCAL-00013" summary="19/11/2018 &#10;- Правки клиента">
+      <created>1542613893856</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1542613893856</updated>
+    </task>
+    <task id="LOCAL-00014" summary="20/11/2018 &#10;- Страница внесения результатов матча">
+      <created>1542662053575</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1542662053576</updated>
+    </task>
+    <task id="LOCAL-00015" summary="20/11/2018 &#10;- Пересчет результатов матча со страницы внесения результатов">
+      <created>1542717358182</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1542717358182</updated>
+    </task>
+    <task id="LOCAL-00016" summary="21/11/2018 &#10;- Создание таблийы игроков турнира&#10;- Правки по верстке&#10;- ПОдключение слайдеров">
+      <created>1542758772675</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1542758772675</updated>
+    </task>
+    <task id="LOCAL-00017" summary="21/11/2018 &#10;- Создание статусов игроков">
+      <created>1542798275088</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1542798275088</updated>
+    </task>
+    <task id="LOCAL-00018" summary="22/11/2018 &#10;- Статистика&#10;- Правки Леши">
+      <created>1542830239770</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1542830239770</updated>
+    </task>
+    <task id="LOCAL-00019" summary="22/11/2018 19.43&#10;-Страница матча и страница статистики">
+      <created>1542905033063</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1542905033063</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116052000" />
+    <option name="totallyTimeSpent" value="203090000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -405,34 +563,40 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17324094" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32752994" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.3286334" />
+      <window_info anchor="bottom" id="Migrations" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="14" weight="0.3242655" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3297062" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3297062" />
+      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.19509594" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20362474" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="SonarLint" order="15" weight="0.3297062" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Command Line Tools Console" order="7" weight="0.3286334" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286334" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Migrations" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.3286334" />
-      <window_info anchor="bottom" id="File Transfer" order="14" weight="0.3286334" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.19989339" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
+      <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.3297062" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="7" weight="0.3297062" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
@@ -446,32 +610,17 @@
     <MESSAGE value="11/11/2018 Статистика матча" />
     <MESSAGE value="12/11/2018 &#10;- Список игроков на странице матча&#10;- Вывод игроков команды&#10;- Общая статистика" />
     <MESSAGE value="12/11/2018 &#10;- Лучший игрок команды" />
-    <MESSAGE value="Merge branch 'develop'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;chunks/_footer.tpl&#10;#&#9;chunks/catalog/Photo.tpl&#10;#&#9;chunks/catalog/video.tpl&#10;#&#9;templates/Gallery.tpl&#10;#&#9;templates/Line-up.tpl&#10;#&#9;templates/MediaTemplate.tpl&#10;#&#9;templates/OneNewsTemplate.tpl&#10;#&#9;templates/OneTeam.tpl&#10;#&#9;templates/Player.tpl&#10;#&#9;templates/Statistics.tpl&#10;#&#9;templates/VideoTemplate.tpl" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'develop'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;chunks/_footer.tpl&#10;#&#9;chunks/catalog/Photo.tpl&#10;#&#9;chunks/catalog/video.tpl&#10;#&#9;templates/Gallery.tpl&#10;#&#9;templates/Line-up.tpl&#10;#&#9;templates/MediaTemplate.tpl&#10;#&#9;templates/OneNewsTemplate.tpl&#10;#&#9;templates/OneTeam.tpl&#10;#&#9;templates/Player.tpl&#10;#&#9;templates/Statistics.tpl&#10;#&#9;templates/VideoTemplate.tpl" />
+    <MESSAGE value="12/11/2018 &#10;- Правки плагинов, запись статистики в момент сохранения на всех игроков сразу" />
+    <MESSAGE value="19/11/2018 &#10;- Правки клиента" />
+    <MESSAGE value="20/11/2018 &#10;- Страница внесения результатов матча" />
+    <MESSAGE value="20/11/2018 &#10;- Пересчет результатов матча со страницы внесения результатов" />
+    <MESSAGE value="21/11/2018 &#10;- Создание таблийы игроков турнира&#10;- Правки по верстке&#10;- ПОдключение слайдеров" />
+    <MESSAGE value="21/11/2018 &#10;- Создание статусов игроков" />
+    <MESSAGE value="22/11/2018 &#10;- Статистика&#10;- Правки Леши" />
+    <MESSAGE value="22/11/2018 19.43&#10;-Страница матча и страница статистики" />
+    <option name="LAST_COMMIT_MESSAGE" value="22/11/2018 19.43&#10;-Страница матча и страница статистики" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/Stadiums.tpl" />
-    <entry file="file://$PROJECT_DIR$/templates/Docs.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/TextTemplate.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chunks/_topmenu.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chunks/_scripts.tpl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -602,33 +751,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Windows/Temp/FileZillaPortableTemp/fz3temp-2/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="33" column="68" lean-forward="true" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Result.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="40" selection-start-line="25" selection-start-column="40" selection-end-line="28" selection-end-column="50" />
-          <folding>
-            <marker date="1542961689000" expanded="true" signature="3965:4237" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://C:/Windows/Temp/FileZillaPortableTemp/fz3temp-2/index.php" />
     <entry file="file://$PROJECT_DIR$/snippets/core/Base.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        <state relative-caret-position="1008">
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Windows/Temp/FileZillaPortableTemp/fz3temp-2/index 2.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://C:/Windows/Temp/FileZillaPortableTemp/fz3temp-2/index 2.php" />
     <entry file="file://$PROJECT_DIR$/chunks/catalog/partners.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -643,33 +774,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chunks/_header.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="68" column="45" lean-forward="true" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chunks/sidebar.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chunks/_footer.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/getSostav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/snippets/getTable.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -686,22 +792,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chunks/catalog/video.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="210">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/snippets/core/Statistic.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Match.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="29" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="29" />
+        <state relative-caret-position="1323">
+          <caret line="68" column="19" selection-start-line="68" selection-start-column="19" selection-end-line="68" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -709,13 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chunks/catalog/matches.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -737,6 +829,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6664">
           <caret line="392" column="26" lean-forward="true" selection-start-line="392" selection-start-column="26" selection-end-line="392" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chunks/catalog/event.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/getSostav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Match.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="829">
+          <caret line="205" selection-start-line="205" selection-end-line="205" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/getEvents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chunks/catalog/matches.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Result.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chunks/sidebar.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="1293" column="21" selection-start-line="1293" selection-start-column="21" selection-end-line="1293" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/VideoTemplate.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chunks/_header.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="72" column="49" lean-forward="true" selection-start-line="72" selection-start-column="49" selection-end-line="72" selection-end-column="49" />
         </state>
       </provider>
     </entry>

@@ -19,11 +19,6 @@
                         'processTVs' => '1',
                         'tpl' => '@FILE /chunks/catalog/video.tpl'
                         ]}
-                            <div id="video_block">
-        <iframe width="560" height="315" src="" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-    </div>
                     </ul>
                     <a id="loadMore" class="button button--video">Больше видео</a>
                 </section>

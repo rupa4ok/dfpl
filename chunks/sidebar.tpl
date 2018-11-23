@@ -1233,20 +1233,9 @@
                        'rowClass' => 'sidebar__navigation-item',
                        'hereClass' => 'sidebar__navigation-item--active'
                        ]}
-                       {else}
-                       {'pdoMenu'|snippet:[
-                       'parents' => $_modx->resource.parent,
-                       'outerClass' => 'sidebar__navigation',
-                       'tpl' => '@INLINE <li [[+classes]]><a class="sidebar__navigation-item-link" href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
-                       'tplOuter' => '@INLINE <ul id="mainnav-menu"[[+classes]]>[[+wrapper]]</ul>',
-                       'level' => '1',
-                       'rowClass' => 'sidebar__navigation-item',
-                       'hereClass' => 'sidebar__navigation-item--active'
-                       ]}
-                   {/if} 
-                            
-           <!-- uSocial -->
-                <div class="social-share">
+                       
+                       
+                                       <div class="social-share">
                     <div class="uSocial-Share" data-pid="36640cabffd1805ae3b46d757c85eb45" data-type="share"
                          data-url="http://premierliga.by/team/1056675"
                          data-options="round,style1,default,absolute,horizontal,size32,eachCounter0,counter0,nomobile"
@@ -1255,8 +1244,8 @@
                             <div class="uscl-list">
                                 
                                {foreach $_modx->resource['comand_social'] | fromJSON as $item} 
-                                    <div class="social__item social__item--vk">
-                                        <a class="social__link social__link--vk" href="{$item['social_link']}" target="_blank">
+                                    <div class="sidebar_social_block">
+                                        <a class="sidebar_social" href="{$item['social_link']}" target="_blank">
                                             <img src="{$item['social_image']}" alt="">
                                         </a>
                                     </div>
@@ -1278,6 +1267,59 @@
                         </div>
                     </div>
                 </div>
+
+                       
+                       
+                       
+                       
+                       {else}
+                       {'pdoMenu'|snippet:[
+                       'parents' => $_modx->resource.parent,
+                       'outerClass' => 'sidebar__navigation',
+                       'tpl' => '@INLINE <li [[+classes]]><a class="sidebar__navigation-item-link" href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
+                       'tplOuter' => '@INLINE <ul id="mainnav-menu"[[+classes]]>[[+wrapper]]</ul>',
+                       'level' => '1',
+                       'rowClass' => 'sidebar__navigation-item',
+                       'hereClass' => 'sidebar__navigation-item--active'
+                       ]}
+                       
+                       
+                                       <div class="social-share">
+                    <div class="uSocial-Share" data-pid="36640cabffd1805ae3b46d757c85eb45" data-type="share"
+                         data-url="http://premierliga.by/team/1056675"
+                         data-options="round,style1,default,absolute,horizontal,size32,eachCounter0,counter0,nomobile"
+                         data-social="vk,fb,ok,telegram,twi,spoiler" style="display: block;">
+                        <div class="uscl-bar uscl-round uscl-style1 uscl-default uscl-absolute uscl-horizontal uscl-size32 uscl-eachCounter0 uscl-counter0 uscl-nomobile">
+                            <div class="uscl-list">
+                                
+                               {foreach $_modx->resource.parent['comand_social'] | fromJSON as $item} 
+                                    <div class="sidebar_social_block">
+                                        <a class="sidebar_social" href="{$item['social_link']}" target="_blank">
+                                            <img src="{$item['social_image']}" alt="">
+                                        </a>
+                                    </div>
+                                {/foreach}
+                                
+                                
+                                
+                            </div>
+                            <span class="uscl-slide-open ico_uscl-like"></span>
+                            <div id="uSocial-popup" class="uscl-popup">
+                                <div class="uscl-popup-background"></div>
+                                <div class="uscl-popup-dialog">
+                                    <div class="uscl-popup-header">
+                                        <div class="uscl-popup-headline"></div>
+                                        <span class="uscl-popup-close ico_uscl ico_uscl-close"></span></div>
+                                    <div class="uscl-popup-body"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                   {/if} 
+                            
+           <!-- uSocial -->
 
 <section class="sidebar">
     <div class="birth-widget mobile-hide">
