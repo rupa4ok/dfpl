@@ -4,102 +4,13 @@
     <main class="main">
         <section class="slider-carousel">
             <div class="slider-carousel__wrapper">
-                <div class="slider-carousel__slide">
-                    <a href="/posts/1006422" class="slider-carousel__image">
-                        <img src="http://cdn.sportspring.ru/news/1006422/5bbca04427bbe_910x610.jpg" width="846"
-                             height="570">
-                        <div class="slider-carousel__mobile-container">
-                            <div href="/posts/1006422" class="slider-carousel__title">
-                                Играй в Премьерлиге 5х5 - и выигрывай с Maxline!
-                            </div>
-                        </div>
-                    </a>
-                    <div class="slider-carousel__slide-content mobile-hide">
-                        <div class="slider-carousel__slide-date">
-                            09 октября
-                        </div>
-                        <a href="/posts/1006422" class="slider-carousel__title">
-                            Играй в Премьерлиге 5х5 - и выигрывай с Maxline! </a>
-                        <div class="slider-carousel__text">
-                            Начиная с третьей игровой недели, букмекерская контора Maxline предлагает котировки на матчи
-                            Первого дивизиона Центр-Запада футзального турнира Премьерлиги.
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="slider-carousel__slide">
-                    <a href="/posts/1006038" class="slider-carousel__image">
-                        <img src="http://cdn.sportspring.ru/news/1006038/5ba8e1c2d61a3_910x610.jpg" width="846"
-                             height="570">
-                        <div class="slider-carousel__mobile-container">
-                            <div href="/posts/1006038" class="slider-carousel__title">
-                                Минск Юнайтед - обладатель первого Кубка Беларуси по футболу 8х8!
-                            </div>
-                        </div>
-                    </a>
-                    <div class="slider-carousel__slide-content mobile-hide">
-                        <div class="slider-carousel__slide-date">
-                            24 сентября
-                        </div>
-                        <a href="/posts/1006038" class="slider-carousel__title">
-                            Минск Юнайтед - обладатель первого Кубка Беларуси по футболу 8х8! </a>
-                        <div class="slider-carousel__text">
-                            В воскресенье, 23 сентября, на стадионе ФШМ в Минске состоялся первый розыгрыш Кубка
-                            Беларуси по
-                            футболу 8х8, в котором приняли участие команды из Минска, Кобрина, Речицы и Хойников.
-                            Уверенную
-                            победу в турнире одержала столичная команда.
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="slider-carousel__slide">
-                    <a href="/posts/1005919" class="slider-carousel__image">
-                        <img src="http://cdn.sportspring.ru/news/1005919/5ba0fe3f1d181_910x610.jpg" width="846"
-                             height="570">
-                        <div class="slider-carousel__mobile-container">
-                            <div href="/posts/1005919" class="slider-carousel__title">
-                                23 сентября в Минске пройдет I Кубок Беларуси по футболу 8х8.
-                            </div>
-                        </div>
-                    </a>
-                    <div class="slider-carousel__slide-content mobile-hide">
-                        <div class="slider-carousel__slide-date">
-                            18 сентября
-                        </div>
-                        <a href="/posts/1005919" class="slider-carousel__title">
-                            23 сентября в Минске пройдет I Кубок Беларуси по футболу 8х8. </a>
-                        <div class="slider-carousel__text">
-                            В ближайшее воскресенье, 23 сентября, в Минске на стадионе ФШМ пройдет первый розыгрыш Кубка
-                            Беларуси по футболу 8х8.
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="slider-carousel__slide">
-                    <a href="/posts/1005685" class="slider-carousel__image">
-                        <img src="http://cdn.sportspring.ru/news/1005685/5b937eebb71d7_910x610.jpg" width="846"
-                             height="570">
-                        <div class="slider-carousel__mobile-container">
-                            <div href="/posts/1005685" class="slider-carousel__title">
-                                Новый мини-футбольный сезон стартует уже 9 сентября!
-                            </div>
-                        </div>
-                    </a>
-                    <div class="slider-carousel__slide-content mobile-hide">
-                        <div class="slider-carousel__slide-date">
-                            08 сентября
-                        </div>
-                        <a href="/posts/1005685" class="slider-carousel__title">
-                            Новый мини-футбольный сезон стартует уже 9 сентября! </a>
-                        <div class="slider-carousel__text">
-                            Пятый юбилейный сезон Премьерлиги 5х5 по мини-футболу стартует уже в ближайшее воскресенье,
-                            9
-                            сентября.
-                        </div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
+                {'!pdoPage' | snippet : [
+                        'parents' => '77',
+                        'includeTVs'=>'image',
+                        'processTVs' => '1',
+                        'includeContent' => '1',
+                        'tpl' => '@FILE /chunks/catalog/main_slider_news.tpl'
+                        ]}
             </div>
             <div class="slider-carousel__dots-container"></div>
         </section>
@@ -933,19 +844,62 @@
 
                     </div>
                 </section>
+                
 
                 <section class="main_page_content_section">
                     <div class="main_page_content_block">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy
-                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                            make a type specimen book. It has
-                            survived not only five centuries, but also the leap into electronic typesetting, remaining
-                            essentially unchanged. It was popularised
-                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                            recently with desktop publishing software
-                            like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <a class="button" href="#">Все видео</a>
+                        <section class="news-cards">
+            <h2 class="visually-hidden">Новости</h2>
+                        <ul class="news-cards__list js-news">
+           {'!pdoPage' | snippet : [
+                        'parents' => 77,
+                        'includeTVs'=>'image',
+                        'processTVs' => '1',
+                        'limit' => '4',
+                        'includeContent' => '1',
+                        'tpl' => '@FILE /chunks/catalog/main_news.tpl'
+                        ]}     
+                    </ul>
+                            <a href="http://s15918.h4.modhost.pro/novosti/" class="button go-to-all">
+                                Все новости</a>
+                    </section>
+    
+
+            <section class="photo">
+            <h2 class="visually-hidden">Фото</h2>
+                        <ul class="photo__list js-albums-list">
+                            {'!pdoPage' | snippet : [
+                        'parents' => 3,
+                        'includeTVs'=>'galleryPreview',
+                        'processTVs' => '1',
+                        'limit' => '6',
+                        'tpl' => '@FILE /chunks/catalog/photo.tpl'
+                        ]}
+            </ul>
+                    <a class="button button--photo" href="http://s15918.h4.modhost.pro/media/foto/">Все фото</a>
+            </section>
+    
+
+        <section class="video">
+        <h2 class="visually-hidden">Видео</h2>
+                <ul class="video__list js-videos-list">
+                    
+                    
+                    
+                    {'!pdoPage' | snippet : [
+                        'parents' => 10,
+                        'limit' => '3',
+                        'includeTVs'=>'video',
+                        'processTVs' => '1',
+                        'tpl' => '@FILE /chunks/catalog/video.tpl'
+                        ]}
+                
+        
+            </ul>
+                    <a class="button button--video" href="http://s15918.h4.modhost.pro/media/video/">Все видео</a>
+            </section>
+    
+                        {$_modx->resource.content}
                     </div>
                 </section>
 
@@ -964,36 +918,5 @@
         </div>
         <div class="banner-index">
         </div>
-        <section class="partners mobile-hide">
-            <div class="partners-wrapper">
-                <h2 class="visually-hidden">Партнёры</h2>
-                <ul class="partners__list "
-                >
-                    <li class="partners__item">
-                        <a href="http://soccershop.by/" title="Soccershop.by — интернет-магазин футбольной атрибутики"
-                           target="_blank">
-                            <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a href="http://www.toks.by/" title="TOKS.by — интернет-магазин мужской обуви и аксессуаров"
-                           target="_blank">
-                            <img src="http://cdn.sportspring.ru/partner/2433/logo/5b90fb77948c8_135x135.jpg">
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a href="http://footline.by/" title="Footline.by — магазин футбольной атрибутики и сувениров"
-                           target="_blank">
-                            <img src="http://cdn.sportspring.ru/partner/2434/logo/5b90fc5812f3a_135x135.jpg">
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a href="https://maxline.by/" title="Maxline.by — букмекерская контора" target="_blank">
-                            <img src="http://cdn.sportspring.ru/partner/2653/logo/5bbc944b6beeb_135x135.jpg">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
     </main>
 {/block}

@@ -53,12 +53,6 @@
                 </a>
             </li>
         </ul>
-        <div class="footer__login">
-            <a href="/user/login" class="link--footer-login">
-                Войти </a>
-            <a href="/register" class="link--footer-register">
-                Регистрация </a>
-        </div>
     </div>
     {set $info = $_modx->getInfo('', false)}
     Время работы: {$info.totalTime}

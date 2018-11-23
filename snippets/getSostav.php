@@ -9,3 +9,4 @@
 require_once MODX_CORE_PATH. '/elements/snippets/core/Base.php';
 $base = new Base($modx);
 $result = $base->GetPlayerList($club,$chunk);
+echo $result;

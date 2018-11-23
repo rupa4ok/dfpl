@@ -88,15 +88,22 @@
                                 <a class="table__team" href="/team/1056648">
                                     <div class="table__team-logo">
                                         <img class="table__team-img"
-                                             src="http://cdn.sportspring.ru/team/1056648/logo/5bae1ecb13643_100x100.jpg"
+                                             src="{$_modx->resource.playerImage}"
                                              alt="Red Stars">
                                     </div>
-                                    <span class="table__team-name">Red Stars</span>
+                                    <span class="table__team-name">{$_modx->resource.club}</span>
                                 </a>
                             </td>
                             <td class="table__cell table__cell--variable">1</td>
                             <td class="table__cell table__cell--variable table__cell--goals">3</td>
                         </tr>
+                         {'!pdoPage' | snippet : [
+                            'parents' => 35,
+                            'includeTVs'=>'club1,club2',
+                            'processTVs' => '1',
+                            'includeContent' => '1',
+                            'tpl' => '@FILE /chunks/catalog/player_table.tpl'
+                            ]}
                         <tr class="table__row">
                             <td class="table__cell table__cell--tournament">
                                 <a class="player__tournament" href="#">5х5. Центр-Запад. Д2</a>
@@ -118,36 +125,5 @@
                 </section>
             </div>
         </div>
-        <section class="partners mobile-hide">
-            <div class="partners-wrapper">
-                <h2 class="visually-hidden">Партнёры</h2>
-                <ul class="partners__list "
-                >
-                    <li class="partners__item">
-                        <a href="http://soccershop.by/" title="Soccershop.by — интернет-магазин футбольной атрибутики"
-                           target="_blank">
-                            <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a href="http://www.toks.by/" title="TOKS.by — интернет-магазин мужской обуви и аксессуаров"
-                           target="_blank">
-                            <img src="http://cdn.sportspring.ru/partner/2433/logo/5b90fb77948c8_135x135.jpg">
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a href="http://footline.by/" title="Footline.by — магазин футбольной атрибутики и сувениров"
-                           target="_blank">
-                            <img src="http://cdn.sportspring.ru/partner/2434/logo/5b90fc5812f3a_135x135.jpg">
-                        </a>
-                    </li>
-                    <li class="partners__item">
-                        <a href="https://maxline.by/" title="Maxline.by — букмекерская контора" target="_blank">
-                            <img src="http://cdn.sportspring.ru/partner/2653/logo/5bbc944b6beeb_135x135.jpg">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
     </main>
 {/block}
