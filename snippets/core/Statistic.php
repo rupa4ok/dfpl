@@ -51,25 +51,17 @@ class Statistic extends Base
      * Список событий матча
      *
      * @param $matchId
-     * @param $chunk
-     * @return string
+     * @return array
      */
-    public function getEventMatchList($matchId,$chunk)
+    public function getEventMatchList($matchId)
     {
-        $sql = "SELECT * FROM {$this->table_e} WHERE match_id = :match_id ORDER BY time";
-        $statement = $this->modx->prepare($sql);
-        if ($statement->execute(array('match_id' => $matchId))) {
-            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
-            //Вывод данных игрока в чанк
-            foreach ($result as $res) {
-                $output[] = $this->modx->getChunk($chunk, array(
-                    'player_id' => $res['player_id'],
-                    'time' => $res['time'],
-                    'club_id' => $res['club_id']
-                ));
-            }
-        }
-        return $output;
+        $sql = "SELECT e.*,s.pagetitle as fio,s.uri FROM {$this->table_e} as e LEFT JOIN
+                {$this->table_s} as s ON e.player_id = s.id WHERE match_id = :match_id
+                ORDER BY time";
+        $options = [
+            'match_id' => $matchId,
+        ];
+        return $this->get($sql,$options);
     }
     
     /**

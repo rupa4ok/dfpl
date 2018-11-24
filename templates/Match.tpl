@@ -182,7 +182,7 @@
                                         </a>
                                         <a class="match-events__team-name match-events__team-name--left"
                                            href="{$_modx->resource.club1 | resource : 'uri'}" title="Лебяжий">
-                                            {$_modx->resource.club2 | resource : 'pagetitle'} </a>
+                                            {$_modx->resource.club1 | resource : 'pagetitle'} </a>
                                         <p class="match-events__title">События матча</p>
                                         <a class="match-events__team-name match-events__team-name--right"
                                            href="{$_modx->resource.club2 | resource : 'uri'}" title="Юркас-2">
@@ -201,48 +201,8 @@
                                                 {'!getEvents' | snippet : [
                                                 'club1' => $_modx->resource.club1,
                                                 'club2' => $_modx->resource.club2,
-                                                'chunk' => 'event',
+                                                'chunk' => 'event'
                                                 ]}
-
-                                            </ul>
-                                        </div>
-                                        <div class="vertical-timeline__time
-                                                vertical-timeline__time--last">
-                                            <ul class="vertical-timeline__event-list">
-
-
-
-                                                <li class="vertical-timeline__event-item">
-                                                    <div class="vertical-timeline__event-part vertical-timeline__event-part--left">
-                                                        <p class="vertical-timeline__title">второй тайм</p>
-                                                        <div class="vertical-timeline__event-info vertical-timeline__event-info--left">
-                                                            <div class="vertical-timeline__event-wrapper">
-                                                                <a class="vertical-timeline__event-author"
-                                                                   href="/player/1473737">
-                                                                    Дмитрий Лукьянюк </a>
-                                                                <a class="vertical-timeline__event-assist"
-                                                                   href="/player/1473738">
-                                                                    Владислав Доценко </a>
-                                                            </div>
-                                                            <div class="event-item" title="Гол">
-                                                                <svg class="goal" width="24" height="24.5">
-                                                                    <use xlink:href="/img/icons.svg#goal"></use>
-                                                                </svg>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="vertical-timeline__event-minute">
-                                                        25'
-                                                    </div>
-                                                    <div class="vertical-timeline__event-part vertical-timeline__event-part--right">
-                                                        <div class="vertical-timeline__event-info vertical-timeline__event-info--right">
-                                                        </div>
-                                                        <div class="vertical-timeline__score-wrapper">
-                                                            <div class="vertical-timeline__score">1 : 1</div>
-                                                        </div>
-                                                    </div>
-                                                </li>
 
                                             </ul>
                                         </div>

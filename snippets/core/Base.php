@@ -66,6 +66,21 @@ class Base extends Modx
     }
     
     /**
+     * Получение массива из запроса
+     *
+     * @param $sql
+     * @param $options
+     * @return mixed
+     */
+    public function get($sql, $options)
+    {
+        $statement = $this->modx->prepare($sql);
+        if ($statement->execute($options)) {
+            return $statement->fetchAll(PDO::FETCH_ASSOC);
+        }
+    }
+    
+    /**
      * Получаем массив tv текущего ресурса
      * @param $id
      * @return mixed | array
@@ -244,9 +259,9 @@ class Base extends Modx
     
     /**
      * Список игроков команды по id команды
+     *
      * @param $club
      * @param $chunk
-     * @return array
      */
     public function GetPlayerList($club, $chunk)
     {
@@ -255,16 +270,15 @@ class Base extends Modx
         $statement = $this->modx->prepare($sql);
         if ($statement->execute(array('club' => $club))) {
             $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+            //Вывод данных игрока в чанк
+            foreach ($result as $res) {
+                echo $output = $this->modx->getChunk($chunk, array(
+                    'player' => $res['id'],
+                    'fio' => $res['fio'],
+                    'role' => $res['role']
+                ));
+            }
         }
-        //Вывод данных игрока в чанк
-        foreach ($result as $res) {
-            $output[] = $this->modx->getChunk($chunk, array(
-                'player' => $res['id'],
-                'fio' => $res['fio'],
-                'role' => $res['role']
-            ));
-        }
-        return $output;
     }
     
     /**

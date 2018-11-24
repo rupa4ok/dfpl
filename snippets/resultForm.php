@@ -6,8 +6,6 @@
  * Time: 14:35
  */
 
-//@TODO Переделать ввод результатов
-
 require_once MODX_CORE_PATH . '/elements/snippets/core/Base.php';
 require_once MODX_CORE_PATH . '/elements/snippets/core/Statistic.php';
 
@@ -16,7 +14,11 @@ $stat = new Statistic($modx);
 if (!isset($_POST['a'])) {
     $request = 'save';
 } else {
-    $request = $_POST['save'];
+    $request = 'set';
+}
+
+if (isset($_POST['save'])) {
+    $request = 'save';
 }
 
 //Проверка данных в сессии
@@ -99,8 +101,10 @@ switch ($request) {
             break;
         } else {
             $table = 's_events';
-            $result = $base->insert($table, $data);
-
+            if ($_POST['time'] !== '') {
+                $result = $base->insert($table, $data);
+            }
+            
             //Получаем статистику данного игрока для обновления
             $goal = $stat->getPlayerGoals($playerId);
             //@TODO добавить количество игр лучших игроков
@@ -120,16 +124,16 @@ switch ($request) {
             $count1 = $base->getGoal($matchId,$club);
             $club = $result2;
             $count2 = $base->getGoal($matchId,$club);
-            
-            echo 'Счет: ' . $count1 . ' - ' . $count2;
 
             //Получаем статистику клуба для обновления
             
             $error = 'Данные сохранены';
             $modx->setPlaceholder('errors',$error);
+    
+            echo 'Счет: ' . $count1 . ' - ' . $count2;
         }
         break;
-    default;
+    default:
         break;
 }
 
