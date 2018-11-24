@@ -6,6 +6,8 @@
  * Time: 14:35
  */
 
+//@TODO Переделать ввод результатов
+
 require_once MODX_CORE_PATH . '/elements/snippets/core/Base.php';
 require_once MODX_CORE_PATH . '/elements/snippets/core/Statistic.php';
 

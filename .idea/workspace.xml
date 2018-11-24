@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d28dd0ff-10fe-4aa8-a1d5-cf7b8d2e8b76" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/MainTemplate.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/MainTemplate.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/resultForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/resultForm.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,7 +62,7 @@
       <file leaf-file-name="sidebar.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chunks/sidebar.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
+            <state relative-caret-position="27153">
               <caret line="1293" column="21" selection-start-line="1293" selection-start-column="21" selection-end-line="1293" selection-end-column="21" />
             </state>
           </provider>
@@ -71,17 +71,44 @@
       <file leaf-file-name="_header.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chunks/_header.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="878">
-              <caret line="78" column="74" lean-forward="true" selection-start-line="78" selection-start-column="74" selection-end-line="78" selection-end-column="74" />
+            <state relative-caret-position="1638">
+              <caret line="78" column="74" selection-start-line="78" selection-start-column="74" selection-end-line="78" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainTemplate.tpl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainTemplate.tpl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/MainTemplate.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="8232">
               <caret line="392" column="22" selection-start-line="392" selection-start-column="22" selection-end-line="392" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getEvents.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/snippets/getEvents.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getSidebar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/snippets/getSidebar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resultForm.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/snippets/resultForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -142,7 +169,6 @@
         <option value="$PROJECT_DIR$/templates/teams.tpl" />
         <option value="$PROJECT_DIR$/chunks/catalog/tournament_calendar.tpl" />
         <option value="$PROJECT_DIR$/chunks/catalog/matches.tpl" />
-        <option value="$PROJECT_DIR$/snippets/resultForm.php" />
         <option value="$PROJECT_DIR$/templates/MediaTemplate.tpl" />
         <option value="$PROJECT_DIR$/chunks/catalog/tournaments_calendar_dates.tpl" />
         <option value="$PROJECT_DIR$/chunks/catalog/sostav1.tpl" />
@@ -156,6 +182,7 @@
         <option value="$PROJECT_DIR$/snippets/getEvents.php" />
         <option value="$PROJECT_DIR$/templates/VideoTemplate.tpl" />
         <option value="$PROJECT_DIR$/templates/MainTemplate.tpl" />
+        <option value="$PROJECT_DIR$/snippets/resultForm.php" />
       </list>
     </option>
   </component>
@@ -231,12 +258,6 @@
               <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
               <item name="dfpl" type="462c0819:PsiDirectoryNode" />
               <item name="chunks" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dfpl" type="462c0819:PsiDirectoryNode" />
-              <item name="chunks" type="462c0819:PsiDirectoryNode" />
-              <item name="catalog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dfpl" type="b2602c69:ProjectViewProjectNode" />
@@ -384,7 +405,8 @@
       <workItem from="1542888275611" duration="6000" />
       <workItem from="1542890664130" duration="7925000" />
       <workItem from="1542904915430" duration="5599000" />
-      <workItem from="1542999795489" duration="4367000" />
+      <workItem from="1542999795489" duration="4481000" />
+      <workItem from="1543048850947" duration="1042000" />
     </task>
     <task id="LOCAL-00001" summary="Перепиливаю старый шаблон">
       <created>1539634108058</created>
@@ -526,11 +548,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543001088521</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="22/11/2018 23.30&#10;-Страница матча">
+      <created>1543006033132</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1543006033132</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206248000" />
+    <option name="totallyTimeSpent" value="207404000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -543,7 +572,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32752994" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" weight="0.3286334" />
@@ -553,8 +581,8 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3297062" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.3297062" />
-      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.19509594" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20362474" />
+      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.19509594" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20575693" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="SonarLint" order="15" weight="0.3297062" />
       <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
@@ -599,12 +627,11 @@
     <MESSAGE value="22/11/2018 &#10;- Статистика&#10;- Правки Леши" />
     <MESSAGE value="22/11/2018 19.43&#10;-Страница матча и страница статистики" />
     <MESSAGE value="22/11/2018 22.30&#10;-Страница матча" />
-    <option name="LAST_COMMIT_MESSAGE" value="22/11/2018 22.30&#10;-Страница матча" />
+    <MESSAGE value="22/11/2018 23.30&#10;-Страница матча" />
+    <MESSAGE value="24/11/2018 12.00&#10;-Страница результатов матча" />
+    <option name="LAST_COMMIT_MESSAGE" value="24/11/2018 12.00&#10;-Страница результатов матча" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/chunks/_scripts.tpl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc" />
     <entry file="file://$PROJECT_DIR$/templates/Line-up.tpl">
       <provider selected="true" editor-type-id="text-editor">
@@ -778,13 +805,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/resultForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/snippets/getTeamStat.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -830,13 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/snippets/getEvents.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chunks/catalog/matches.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -853,7 +866,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chunks/sidebar.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
+        <state relative-caret-position="27153">
           <caret line="1293" column="21" selection-start-line="1293" selection-start-column="21" selection-end-line="1293" selection-end-column="21" />
         </state>
       </provider>
@@ -867,8 +880,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/chunks/_header.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="878">
-          <caret line="78" column="74" lean-forward="true" selection-start-line="78" selection-start-column="74" selection-end-line="78" selection-end-column="74" />
+        <state relative-caret-position="1638">
+          <caret line="78" column="74" selection-start-line="78" selection-start-column="74" selection-end-line="78" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -876,6 +889,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8232">
           <caret line="392" column="22" selection-start-line="392" selection-start-column="22" selection-end-line="392" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/getEvents.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/getSidebar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/resultForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
         </state>
       </provider>
     </entry>
