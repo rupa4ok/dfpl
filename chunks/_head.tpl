@@ -15,7 +15,8 @@
     <meta name="twitter:title" content="Премьерлига. Любительский футбол">
     <meta name="twitter:site" content="Премьерлига. Любительский футбол">
     <link type="image/png" href="http://cdn.sportspring.ru/league/1000532/favicon.ico" rel="icon">
-
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
     <link href="css/jquery.fancybox.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/premierliga.css" rel="stylesheet">

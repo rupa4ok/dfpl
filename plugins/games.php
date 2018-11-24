@@ -11,7 +11,15 @@ if ($resource->get('template') == 30) {
     
     //Получаем данные со страницы матча
     $table = 's_match';
+    $table_c = 'FLshsZHjFCKh_site_content';
     $id = $resource->get('id');
+    $parent = $resource->get('parent');
+    
+    //Получаем id турнира
+    $sql = "SELECT parent FROM {$table_c} WHERE id = {$parent}";
+    $statement = $modx->query($sql);
+    $turn = $statement->fetchAll(PDO::FETCH_ASSOC);
+    $turnId = $turn[0]['parent'];
     $fio = $resource->get('pagetitle');
     $club1 = $resource->getTVValue('club1');
     $club2 = $resource->getTVValue('club2');
@@ -20,6 +28,7 @@ if ($resource->get('template') == 30) {
     //Массив данных для статистики
     $data = [
         'id' => $id,
+        'turn' => $turnId,
         'club1' => $club1,
         'club2' => $club2,
         'tour' => $tour
@@ -35,8 +44,9 @@ if ($resource->get('template') == 30) {
     if ($match == $id) {
         
         //Матч существует - обновляем поля статистики
-        $sql = "UPDATE {$table} SET club1 = {$club1}, club2 = {$club2}, tour = {$tour} WHERE id = {$match}";
+        $sql = "UPDATE {$table} SET turn = {$turnId}, club1 = {$club1}, club2 = {$club2}, tour = {$tour} WHERE id = {$match}";
         $statement = $modx->query($sql);
+        
     } else {
         
         //Если матча не существует, создаем новый матч с id страницы матча

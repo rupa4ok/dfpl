@@ -13,20 +13,14 @@
                 <section class="video">
                     <h2 class="visually-hidden">Видео</h2>
                     <ul class="video__list js-videos-list">
-
                         {'!pdoPage' | snippet : [
-                        'parents' => '10',
+                        'parents' => $_modx->resource.id,
                         'includeTVs'=>'video',
                         'processTVs' => '1',
                         'tpl' => '@FILE /chunks/catalog/video.tpl'
                         ]}
                     </ul>
-                    <a class="button button--video js-videos-load-more"
-                       data-url="/load-more-videos"
-                       data-end-time="2018-09-11 12:02:00"
-                       data-limit="12"
-                       data-month=""
-                    >Больше видео</a>
+                    <a id="loadMore" class="button button--video">Больше видео</a>
                 </section>
             </div>
 

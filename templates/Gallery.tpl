@@ -11,7 +11,7 @@
         <div class="main-container main-container--inner">
             <div class="main-content ">
 
-                {$_modx->runSnippet('!ms2Gallery', [
+                {$_modx->runSnippet('!msGallery', [
                 ])}
 
             </div>
