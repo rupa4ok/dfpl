@@ -31,12 +31,7 @@ if ($resource->get('parent') == 13) {
     $user = $user[0]['id'];
     
     //Проверяем совпадает ли id страницы игрока с id юзера в таблице статистики
-    if ($user == $id) {
-        
-        //Юзер существует - обновляем поля статистики
-        $sql = "UPDATE {$table_p} SET fio = '{$fio}', club_id = {$clubs_id}, role = '{$role}' WHERE id = {$user}";
-        $statement = $modx->query($sql);
-    } else {
+    if (!$user == $id) {
         
         //Если юзера не существует, создаем нового юзера с id страницы игрока
         $keys = array_keys($data);
