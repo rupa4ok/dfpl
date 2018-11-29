@@ -30,17 +30,4 @@ if ($resource->get('parent') == 13) {
     $user = $statement->fetchAll(PDO::FETCH_ASSOC);
     $user = $user[0]['id'];
     
-    //Проверяем совпадает ли id страницы игрока с id юзера в таблице статистики
-    if (!$user == $id) {
-        
-        //Если юзера не существует, создаем нового юзера с id страницы игрока
-        $keys = array_keys($data);
-        $fields = '`' . implode('`,`', $keys) . '`';
-        $placeholders = substr(str_repeat('?,', count($keys)), 0, -1);
-        $sql = "INSERT INTO {$table_p} ({$fields}) VALUES ({$placeholders})";
-        if(!$modx->prepare($sql)->execute(array_values($data))){
-            $modx->log(1, print_r($sql, true));
-        }
-    }
-    
 }
