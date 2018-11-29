@@ -6,4 +6,6 @@
  * Time: 9:55
  */
 
+require_once MODX_CORE_PATH . '/elements/snippets/core/Statistic.php';
+
 // @TODO Сделать правое меню - турнирная таблица и статистика

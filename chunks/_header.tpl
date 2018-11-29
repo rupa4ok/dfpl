@@ -13,7 +13,7 @@
                 </a>
                 <ul class="social mobile-hide">
                     <li class="social__item social__item--vk">
-                        <a class="social__link social__link--vk" href="https://vk.com/premierliga8x8" target="_blank">
+                        <a class="social__link social__link--vk" href="[[++vk]]" target="_blank">
                             <svg class="svg-icon--vk" width="18" height="18" version="1.1"
                                  xmlns="http://www.w3.org/2000/svg"
                                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000"
@@ -29,7 +29,7 @@
                         </a>
                     </li>
                     <li class="social__item social__item--instagram">
-                        <a class="social__link social__link--instagram" href="https://www.instagram.com/premierliga.by/"
+                        <a class="social__link social__link--instagram" href="[[++inst]]"
                            target="_blank">
                             <svg class="svg-icon--instagram" width="18" height="18" version="1.1"
                                  xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@
                     </li>
                     <li class="social__item social__item--youtube">
                         <a class="social__link social__link--youtube"
-                           href="https://www.youtube.com/channel/UCnsh1nVWZIMZPblhEntMnOQ?view_as=subscriber"
+                           href="[[++facebook]]"
                            target="_blank">
                             <svg class="svg-icon--youtube" width="20" height="20" version="1.1"
                                  xmlns="http://www.w3.org/2000/svg"
@@ -65,6 +65,11 @@
                 <button class="button header__hamburger js-mobile-menu-hamburger"><span></span></button>
             </div>
         </div>
+        <div id="video_block">
+        <iframe width="560" height="315" src="" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
         <nav id="SamMainMenu" class="navigation">
             <div class="navigation__wrapper">
                 {'pdoMenu'|snippet:[

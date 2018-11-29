@@ -14,7 +14,11 @@ $stat = new Statistic($modx);
 if (!isset($_POST['a'])) {
     $request = 'save';
 } else {
-    $request = $_POST['save'];
+    $request = 'set';
+}
+
+if (isset($_POST['save'])) {
+    $request = 'save';
 }
 
 //Проверка данных в сессии
@@ -66,6 +70,7 @@ foreach ($players as $k => $list) {
     $club2 = $list['club2'];
 }
 
+//Вывод списка игроков
 $playerList = $base->getPlayerListByClub($club1, $club2);
 $modx->setPlaceholder('res2',$playerList);
 
@@ -77,6 +82,7 @@ switch ($request) {
 
         $clubId = $base->getClubId($playerId);
 
+        //@TODO Сделать проверку заполненности полей для ввода
         //Массив данных для записи
         $data = [
             'match_id' => $matchId,
@@ -95,24 +101,43 @@ switch ($request) {
             break;
         } else {
             $table = 's_events';
-            $result = $base->insert($table, $data);
-
+            if ($_POST['time'] !== '') {
+                $result = $base->insert($table, $data);
+            }
+            
             //Получаем статистику данного игрока для обновления
             $goal = $stat->getPlayerGoals($playerId);
+            //@TODO добавить количество игр лучших игроков
 
             //Расчет новой статистики игрока
             $result = $stat->playerStatUpdate($playerId,$goal);
+            
+            //@TODO сделать расчет статистики команд через cron при зависании страницы ввода результата или статистики
+            //Считаем количество голов и очки для команд
+            $club = $base->getClubById($matchId);
+            foreach ($club as $res) {
+                $result1 = $club[0]['club1'];
+                $result2 = $club[0]['club2'];
+            }
+    
+            $club = $result1;
+            $count1 = $base->getGoal($matchId,$club);
+            $club = $result2;
+            $count2 = $base->getGoal($matchId,$club);
 
             //Получаем статистику клуба для обновления
-
-            //@TODO сделать расчет статистики клуба и выйгрышей/очков команды
-
+            
             $error = 'Данные сохранены';
             $modx->setPlaceholder('errors',$error);
+    
+            echo 'Счет: ' . $count1 . ' - ' . $count2;
         }
+        break;
+    default:
         break;
 }
 
+//@TODO сделать вывод всех записей для выбранного матча с возможностью удалять записи
 //Вывод записей для данного матча
-$eventList = $stat->getEventMatchList($matchId);
-$modx->setPlaceholder('event',$eventList);
+//$eventList = $stat->getEventMatchList($matchId);
+//$modx->setPlaceholder('event',$eventList);

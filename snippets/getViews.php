@@ -10,5 +10,6 @@ $modx->setLogTarget(XPDO_CLI_MODE ? 'ECHO' : 'HTML');
 require_once MODX_CORE_PATH. '/elements/snippets/core/Base.php';
 
 $q = new Base($modx);
+$id = $modx->resource->get('id');
 
-$result = $q->getPlayer();
+$result = $q->getPlayer($id);

@@ -42,12 +42,24 @@
                             </label>
 
                             <div class="schedule__unit js-calendar-matches-header js-calendar-last-matches-header">
-                                <div class="schedule__head">
-            <span class="schedule__head-text">
-                25 сентября, вторник            </span>
-                                </div>
+                                {'!pdoPage' | snippet : [
+                                'parents' => '35',
+                                'includeTVs'=>'club1,club2',
+                                'processTVs' => '1',
+                                'sortby' =>  $createdon,
+                                'includeContent' => '1',
+                                'tpl' => '@FILE /chunks/catalog/tournaments_calendar_dates.tpl'
+                                ]}
+                                
 
                                 <ul class="schedule__matches-list">
+                                    {'!pdoPage' | snippet : [
+                                'parents' => '35',
+                                'includeTVs'=>'club1,club2',
+                                'processTVs' => '1',
+                                'includeContent' => '1',
+                                'tpl' => '@FILE /chunks/catalog/tournament_calendar.tpl'
+                                ]}
                                     <li class="schedule__matches-item js-calendar-match js-calendar-last-match">
                                         <div class="schedule__time-place">
                 <span class="schedule__time">

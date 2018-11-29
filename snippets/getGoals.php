@@ -16,8 +16,3 @@ $count1 = $q->getGoal($id,$club);
 $club = $result2;
 $count2 = $q->getGoal($id,$club);
 echo $count1 . ':' . $count2;
-
-//$tv = $modx->resource->getTVValue('goals');
-//$arr = json_decode($tv, true);
-//print_r($arr);
-

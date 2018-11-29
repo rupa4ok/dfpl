@@ -9,9 +9,11 @@
 class Base extends Modx
 {
     
+    public $table_c = 's_club';
     public $table_e = 's_events';
     public $table_p = 's_players';
     public $table_m = 's_match';
+    public $table_s = 'FLshsZHjFCKh_site_content';
     
     public function __construct($modx)
     {
@@ -39,7 +41,6 @@ class Base extends Modx
         if (!$this->modx->prepare($sql)->execute(array_values($data))) {
             $this->modx->log(1, print_r($sql, true));
         }
-        return;
     }
     
     /**
@@ -62,7 +63,21 @@ class Base extends Modx
         if (!$this->modx->prepare($sql)->execute($data)) {
             $this->modx->log(1, print_r($sql, true));
         }
-        return;
+    }
+    
+    /**
+     * Получение массива из запроса
+     *
+     * @param $sql
+     * @param $options
+     * @return mixed
+     */
+    public function get($sql, $options)
+    {
+        $statement = $this->modx->prepare($sql);
+        if ($statement->execute($options)) {
+            return $statement->fetchAll(PDO::FETCH_ASSOC);
+        }
     }
     
     /**
@@ -93,7 +108,6 @@ class Base extends Modx
                 $this->modx->setPlaceholders('name' . $res['id'], $res['name']);
             }
         }
-        return;
     }
     
     /**
@@ -107,24 +121,24 @@ class Base extends Modx
         $sql = "SELECT * FROM {$this->table_e} WHERE match_id = :id AND club_id = :club AND goal = 1";
         $statement = $this->modx->prepare($sql);
         if ($statement->execute(array('id' => $id, 'club' => $club))) {
-            $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+            $count = $statement->rowCount();
         }
-        $count = $statement->rowCount();
         return $count;
     }
     
     /**
      * Вывод списка игроков
      */
-    public function getPlayer()
+    public function getPlayer($id)
     {
-        $res = $this->modx->getObject('modResource', 14);
+        $res = $this->modx->getObject('modResource', $id);
         $tvs = $res->getMany('TemplateVarResources');
         foreach ($tvs as $k => $tv) {
             $tvs[$k] = $tv->toArray();
+            echo '<pre>';
             print_r($tvs[$k]);
+            echo '</pre>';
         }
-        return;
     }
     
     /**
@@ -138,10 +152,43 @@ class Base extends Modx
         );
         $resources = $this->modx->getCollection('modResource',$where);
         $turnList = '';
-        foreach ($resources as $k => $res) {
+        foreach ($resources as $res) {
             $turnList[$res->get('id')] = $res->get('pagetitle');
         }
         return $turnList;
+    }
+    
+    /**
+     * Получение списка клубов в турнире
+     *
+     * @param $turnId
+     * @return mixed
+     */
+    public function getClubByTurn($turnId)
+    {
+        $sql = "SELECT * FROM {$this->table_c} AS c LEFT JOIN {$this->table_s} AS s
+        ON c.club_id = s.id WHERE turn_id = :turn_id";
+        $statement = $this->modx->prepare($sql);
+        if ($statement->execute(array('turn_id' => $turnId))) {
+            $resources = $statement->fetchAll(PDO::FETCH_ASSOC);
+            foreach ($resources as $k => $res) {
+                $k++;
+                $arr = $this->modx->getObject('modResource', $res['id']);
+                $image = $arr->getTVValue(15);
+                $clubList[$res['id']] = [
+                    'id' => $k,
+                    'pagetitle' => $res['pagetitle'],
+                    'uri' => $res['uri'],
+                    'image' => $image,
+                    'played' => $res['played'],
+                    'win' => $res['win'],
+                    'draw' => $res['draw'],
+                    'lose' => $res['lose'],
+                    'score' => $res['score']
+                ];
+            }
+        }
+        return $clubList;
     }
     
     /**
@@ -157,7 +204,7 @@ class Base extends Modx
             'template' => 36
         );
         $resources = $this->modx->getCollection('modResource',$where);
-        foreach ($resources as $k => $res) {
+        foreach ($resources as $res) {
             $resId = $res->get('id');
             $where = array(
                 'parent' => $resId,
@@ -167,7 +214,7 @@ class Base extends Modx
         
         $resources = $this->modx->getCollection('modResource',$where);
         $matchList = '';
-        foreach ($resources as $k => $res) {
+        foreach ($resources as $res) {
             $matchList[$res->get('id')] = $res->get('pagetitle');
         }
         return $matchList;
@@ -187,7 +234,7 @@ class Base extends Modx
         $statement = $this->modx->prepare($sql);
         if ($statement->execute(array(':club1_id' => $club1, ':club2_id' => $club2))) {
             $resources = $statement->fetchAll(PDO::FETCH_ASSOC);
-            foreach ($resources as $k => $res) {
+            foreach ($resources as $res) {
                 $playerList[$res['id']] = $res['fio'];
             }
         }
@@ -195,6 +242,8 @@ class Base extends Modx
     }
     
     /**
+     * Массив TV клуба по его Id
+     *
      * @param $matchId
      * @return mixed
      */
@@ -210,9 +259,9 @@ class Base extends Modx
     
     /**
      * Список игроков команды по id команды
+     *
      * @param $club
      * @param $chunk
-     * @return array
      */
     public function GetPlayerList($club, $chunk)
     {
@@ -221,16 +270,15 @@ class Base extends Modx
         $statement = $this->modx->prepare($sql);
         if ($statement->execute(array('club' => $club))) {
             $result = $statement->fetchAll(PDO::FETCH_ASSOC);
+            //Вывод данных игрока в чанк
+            foreach ($result as $res) {
+                echo $output = $this->modx->getChunk($chunk, array(
+                    'player' => $res['id'],
+                    'fio' => $res['fio'],
+                    'role' => $res['role']
+                ));
+            }
         }
-        //Вывод данных игрока в чанк
-        foreach ($result as $k => $res) {
-            $output[] = $this->modx->getChunk($chunk, array(
-                'fio' => $res['fio'],
-                'role' => $res['role']
-            ));
-            echo $output[$k];
-        }
-        return $output;
     }
     
     /**
@@ -260,7 +308,7 @@ class Base extends Modx
         $statement = $this->modx->prepare($sql);
         if ($statement->execute(array('id' => $playerId))) {
             $resources = $statement->fetchAll(PDO::FETCH_ASSOC);
-            foreach ($resources as $k => $res) {
+            foreach ($resources as $res) {
                 $clubId = $res['club_id'];
             }
         }
@@ -268,14 +316,16 @@ class Base extends Modx
     }
     
     /**
-     *
+     * Проверка наличия записи события матча в бд
      *
      * @param $data
      * @return mixed
      */
     public function getEventItem($data)
     {
-        $sql = "SELECT * FROM {$this->table_e} WHERE player_id = :player_id AND club_id = :club_id AND time = :time";
+        $count = '';
+        $sql = "SELECT * FROM {$this->table_e} WHERE player_id = :player_id
+                AND club_id = :club_id AND time = :time";
         $statement = $this->modx->prepare($sql);
         if ($statement->execute(array(
             'player_id' => $data['player_id'],
@@ -283,9 +333,8 @@ class Base extends Modx
             'time' => $data['time'],
         ))) {
             $statement->fetchAll(PDO::FETCH_ASSOC);
+            $count = $statement->rowCount();
         }
-        $count = $statement->rowCount();
         return $count;
     }
-    
 }

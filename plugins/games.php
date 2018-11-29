@@ -11,7 +11,15 @@ if ($resource->get('template') == 30) {
     
     //Получаем данные со страницы матча
     $table = 's_match';
+    $table_c = 'FLshsZHjFCKh_site_content';
     $id = $resource->get('id');
+    $parent = $resource->get('parent');
+    
+    //Получаем id турнира
+    $sql = "SELECT parent FROM {$table_c} WHERE id = {$parent}";
+    $statement = $modx->query($sql);
+    $turn = $statement->fetchAll(PDO::FETCH_ASSOC);
+    $turnId = $turn[0]['parent'];
     $fio = $resource->get('pagetitle');
     $club1 = $resource->getTVValue('club1');
     $club2 = $resource->getTVValue('club2');
@@ -20,6 +28,7 @@ if ($resource->get('template') == 30) {
     //Массив данных для статистики
     $data = [
         'id' => $id,
+        'turn' => $turnId,
         'club1' => $club1,
         'club2' => $club2,
         'tour' => $tour
@@ -34,14 +43,10 @@ if ($resource->get('template') == 30) {
     //Проверяем совпадает ли id страницы матча с id матча в таблице статистики
     if ($match == $id) {
         
-        //Матч существует - обновляем поля статистики $TODO добавить запись текущегу турнира
-        $sql = "UPDATE {$table} SET club1 = {$club1}, club2 = {$club2}, tour = {$tour} WHERE id = {$match}";
+        //Матч существует - обновляем поля статистики
+        $sql = "UPDATE {$table} SET turn = {$turnId}, club1 = {$club1}, club2 = {$club2}, tour = {$tour} WHERE id = {$match}";
         $statement = $modx->query($sql);
         
-        //Собираем статистику для данного игрока для турнира
-        $sql = "SELECT e.player_id, SUM(e.goal) as goal,e.match_id FROM s_players AS p RIGHT JOIN s_events AS e ON p.club_id = e.player_id WHERE e.player_id = 14";
-        $statement = $modx->query($sql);
-        $user = $statement->fetchAll(PDO::FETCH_ASSOC);
     } else {
         
         //Если матча не существует, создаем новый матч с id страницы матча

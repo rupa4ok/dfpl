@@ -1200,30 +1200,15 @@
                 <div class="sidebar_partners_block">
                     <h3 class="sidebar__table-title">Наши партнеры</h3>
                     <div class="sidebar_partners">
-                        <div class="the_partner">
-                            <a href="http://soccershop.by/"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                            </a>
-                        </div>
-                        <div class="the_partner">
-                            <a href="http://soccershop.by/"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                            </a>
-                        </div>
-                        <div class="the_partner">
-                            <a href="http://soccershop.by/"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                            </a>
-                        </div>
-                        <div class="the_partner">
-                            <a href="http://soccershop.by/"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                            </a>
-                        </div>
+                        {'!pdoPage' | snippet : [
+                        'parents' => 87,
+                        'includeTVs'=>'partners',
+                        'processTVs' => '1',
+                        'includeContent' => '1',
+                        'tpl' => '@FILE /chunks/catalog/partners.tpl'
+                        ]}
+                        
+                      
                     </div>
 
                 </div>
@@ -1234,10 +1219,7 @@
     </div>
 </section>
 
-
-
 {else}
-
 
 <section class="sidebar">
 
@@ -1251,46 +1233,26 @@
                        'rowClass' => 'sidebar__navigation-item',
                        'hereClass' => 'sidebar__navigation-item--active'
                        ]}
-                       {else}
-                       {'pdoMenu'|snippet:[
-                       'parents' => $_modx->resource.parent,
-                       'outerClass' => 'sidebar__navigation',
-                       'tpl' => '@INLINE <li [[+classes]]><a class="sidebar__navigation-item-link" href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
-                       'tplOuter' => '@INLINE <ul id="mainnav-menu"[[+classes]]>[[+wrapper]]</ul>',
-                       'level' => '1',
-                       'rowClass' => 'sidebar__navigation-item',
-                       'hereClass' => 'sidebar__navigation-item--active'
-                       ]}
-                   {/if} 
-                            
-           <!-- uSocial -->
-                <div class="social-share">
+                       
+                       
+                                       <div class="social-share">
                     <div class="uSocial-Share" data-pid="36640cabffd1805ae3b46d757c85eb45" data-type="share"
                          data-url="http://premierliga.by/team/1056675"
                          data-options="round,style1,default,absolute,horizontal,size32,eachCounter0,counter0,nomobile"
                          data-social="vk,fb,ok,telegram,twi,spoiler" style="display: block;">
                         <div class="uscl-bar uscl-round uscl-style1 uscl-default uscl-absolute uscl-horizontal uscl-size32 uscl-eachCounter0 uscl-counter0 uscl-nomobile">
                             <div class="uscl-list">
-                                <div class="uscl-item"><span data-item="vk" title="Поделиться ВКонтакте"
-                                                             class="ico_uscl_soc ico_uscl ico_uscl-vk uscl-vk"></span>
-                                </div>
-                                <div class="uscl-item"><span data-item="fb" title="Поделиться в Facebook"
-                                                             class="ico_uscl_soc ico_uscl ico_uscl-fb uscl-fb"></span>
-                                </div>
-                                <div class="uscl-item"><span data-item="ok" title="Поделиться в OK.ru"
-                                                             class="ico_uscl_soc ico_uscl ico_uscl-ok uscl-ok"></span>
-                                </div>
-                                <div class="uscl-item"><span data-item="telegram" title="Поделиться в Telegram"
-                                                             class="ico_uscl_soc ico_uscl ico_uscl-telegram uscl-telegram"></span>
-                                </div>
-                                <div class="uscl-item"><span data-item="twi" title="Поделиться в Twitter"
-                                                             class="ico_uscl_soc ico_uscl ico_uscl-twi uscl-twi"></span>
-                                </div>
-                                <div class="uscl-item"><span data-item="spoiler" title="Все соц. сети"
-                                                             class="ico_uscl ico_uscl-spoiler uscl-spoiler"></span>
-                                </div>
-                                <div class="uscl-item uscl-slide"><span
-                                            class="uscl-slide-close ico_uscl-arrow ico_uscl"></span></div>
+                                
+                               {foreach $_modx->resource['comand_social'] | fromJSON as $item} 
+                                    <div class="sidebar_social_block">
+                                        <a class="sidebar_social" href="{$item['social_link']}" target="_blank">
+                                            <img src="{$item['social_image']}" alt="">
+                                        </a>
+                                    </div>
+                                {/foreach}
+                                
+                                
+                                
                             </div>
                             <span class="uscl-slide-open ico_uscl-like"></span>
                             <div id="uSocial-popup" class="uscl-popup">
@@ -1306,7 +1268,58 @@
                     </div>
                 </div>
 
+                       
+                       
+                       
+                       
+                       {else}
+                       {'pdoMenu'|snippet:[
+                       'parents' => $_modx->resource.parent,
+                       'outerClass' => 'sidebar__navigation',
+                       'tpl' => '@INLINE <li [[+classes]]><a class="sidebar__navigation-item-link" href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>',
+                       'tplOuter' => '@INLINE <ul id="mainnav-menu"[[+classes]]>[[+wrapper]]</ul>',
+                       'level' => '1',
+                       'rowClass' => 'sidebar__navigation-item',
+                       'hereClass' => 'sidebar__navigation-item--active'
+                       ]}
+                       
+                       
+                                       <div class="social-share">
+                    <div class="uSocial-Share" data-pid="36640cabffd1805ae3b46d757c85eb45" data-type="share"
+                         data-url="http://premierliga.by/team/1056675"
+                         data-options="round,style1,default,absolute,horizontal,size32,eachCounter0,counter0,nomobile"
+                         data-social="vk,fb,ok,telegram,twi,spoiler" style="display: block;">
+                        <div class="uscl-bar uscl-round uscl-style1 uscl-default uscl-absolute uscl-horizontal uscl-size32 uscl-eachCounter0 uscl-counter0 uscl-nomobile">
+                            <div class="uscl-list">
+                                
+                               {foreach $_modx->resource.parent['comand_social'] | fromJSON as $item} 
+                                    <div class="sidebar_social_block">
+                                        <a class="sidebar_social" href="{$item['social_link']}" target="_blank">
+                                            <img src="{$item['social_image']}" alt="">
+                                        </a>
+                                    </div>
+                                {/foreach}
+                                
+                                
+                                
+                            </div>
+                            <span class="uscl-slide-open ico_uscl-like"></span>
+                            <div id="uSocial-popup" class="uscl-popup">
+                                <div class="uscl-popup-background"></div>
+                                <div class="uscl-popup-dialog">
+                                    <div class="uscl-popup-header">
+                                        <div class="uscl-popup-headline"></div>
+                                        <span class="uscl-popup-close ico_uscl ico_uscl-close"></span></div>
+                                    <div class="uscl-popup-body"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                   {/if} 
+                            
+           <!-- uSocial -->
 
 <section class="sidebar">
     <div class="birth-widget mobile-hide">
@@ -2507,30 +2520,13 @@
                 <div class="sidebar_partners_block">
                     <h3 class="sidebar__table-title">Наши партнеры</h3>
                     <div class="sidebar_partners">
-                        <div class="the_partner">
-                            <a href="http://soccershop.by/"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                            </a>
-                        </div>
-                        <div class="the_partner">
-                            <a href="http://soccershop.by/"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                            </a>
-                        </div>
-                        <div class="the_partner">
-                            <a href="http://soccershop.by/"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                            </a>
-                        </div>
-                        <div class="the_partner">
-                            <a href="http://soccershop.by/"
-                               title="Soccershop.by — интернет-магазин футбольной атрибутики" target="_blank">
-                                <img src="http://cdn.sportspring.ru/partner/2432/logo/5b90fbbb8c814_135x135.jpg">
-                            </a>
-                        </div>
+                         {'!pdoPage' | snippet : [
+                        'parents' => 87,
+                        'includeTVs'=>'partners',
+                        'processTVs' => '1',
+                        'includeContent' => '1',
+                        'tpl' => '@FILE /chunks/catalog/partners.tpl'
+                        ]}
                     </div>
 
                 </div>
@@ -2540,8 +2536,6 @@
         </div>
     </div>
 </section>
-
-
 
 {/if}
 
